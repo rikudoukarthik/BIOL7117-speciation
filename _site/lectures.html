@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Lecture notes – BIOL 7117: Speciation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6b3bef205c96c4f74d1e1b8d3d254fec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">BIOL 7117: Speciation</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./lectures.html" aria-current="page"> 
+<span class="menu-text">Lecture notes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./readings.html"> 
+<span class="menu-text">Reading notes</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#l01-overview-species-concepts" id="toc-l01-overview-species-concepts" class="nav-link active" data-scroll-target="#l01-overview-species-concepts">L01: Overview &amp; species concepts</a>
+  <ul class="collapse">
+  <li><a href="#course-overview" id="toc-course-overview" class="nav-link" data-scroll-target="#course-overview">Course overview</a></li>
+  <li><a href="#concepts-of-species" id="toc-concepts-of-species" class="nav-link" data-scroll-target="#concepts-of-species">Concepts of species</a>
+  <ul class="collapse">
+  <li><a href="#biological-species-concept" id="toc-biological-species-concept" class="nav-link" data-scroll-target="#biological-species-concept">Biological species concept</a></li>
+  <li><a href="#phylogenetic-species-concepts" id="toc-phylogenetic-species-concepts" class="nav-link" data-scroll-target="#phylogenetic-species-concepts">Phylogenetic species concepts</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#l02-geography-of-speciation" id="toc-l02-geography-of-speciation" class="nav-link" data-scroll-target="#l02-geography-of-speciation">L02: Geography of speciation</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lecture notes</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="l01-overview-species-concepts" class="level1">
+<h1>L01: Overview &amp; species concepts</h1>
+<p><strong>2025-08-26</strong></p>
+<section id="course-overview" class="level2">
+<h2 class="anchored" data-anchor-id="course-overview">Course overview</h2>
+<p>Follows Coyne &amp; Orr 2004(?) broadly. This was a highly impactful book, very timely, and heralded the dawn of the genomic era. The period of roughly 2012–20 saw incredible growth in our understanding of genomes and speciation. Species concepts are important, especially if your thesis includes the term “speciation”, but we won’t spend too much time in the class on these debates on definition.</p>
+<p>Till exam 1: reading fundamentals of speciation questions. Post-exam-1: stick with basic questions but delve on what genomics has done to advance understanding. Word and sentence counts in assignments need to be followed strictly, aim is to get used to condensing important information.</p>
+</section>
+<section id="concepts-of-species" class="level2">
+<h2 class="anchored" data-anchor-id="concepts-of-species">Concepts of species</h2>
+<p>Species are not just for bookkeeping; different species are actually different, and they do different things. Cryptic species are an example of why (community) ecologists should care about work of population geneticists.</p>
+<blockquote class="blockquote">
+<p>If one could conclude as to the nature of the Creator from a study of creation it would appear that God has an inordinate fondness for stars and beetles.</p>
+<p>— JBS Haldane, on creationism and the sheer number of beetle species</p>
+</blockquote>
+<p>Early ideas of species concepts can date back to, as with many things, Aristotle. His notion of a perfect “essence” asserted the existence of a perfect form for each species, variations from which are imperfections in its actualisation. The essence of a species was fixed, but involved descent as the crucial factor tying different individuals in a species together. This implied a fundamental difference between inter- and intraspecific variation.</p>
+<section id="biological-species-concept" class="level3">
+<h3 class="anchored" data-anchor-id="biological-species-concept">Biological species concept</h3>
+<p>The <strong>Darwinian revolution</strong> insisted that variation is not just noise, but rather the core (nuisance vs crux). <em>Everything</em> shares common descent, <em>variation</em> is at the heart of evolution, and there is no true difference between inter- and intraspecific variation. His way of distinguishing variants was using the morphological gap criterion (few intermediates), although his concept can be applied to ecology, behaviour or genetics too.</p>
+<p>Ernst Mayr, starting in the 1950s, adapted Darwin’s ideas to eventually come up with the biological species concept, where species are defined as interbreeding natural populations, reproductively isolated from others. Before him, Poulton (1904) had similar ideas, with the notion of “syngamy” (interbreeding) as the true meaning of species. (As did Lotsy and Dobzhansky.)</p>
+<p>Some adherents of BSC include those who worked extensively on model organisms like <em>Drosophila</em> in the lab (Coyne, Orr, Noor).</p>
+<p><strong>Impact of BSC</strong></p>
+<ul>
+<li>Species now defined by process important to their own maintenance (biological, as opposed to scientist sitting in a museum describing from specimens).</li>
+<li>Allowed, and drew attention to, concepts of gene flow and isolating mechanisms.</li>
+<li>Provided criterion for diagnosing cryptic taxa.</li>
+</ul>
+<p><strong>Problems of BSC</strong></p>
+<p>Less universally applicable than Darwinian concept:</p>
+<ul>
+<li>Provides no useful insight regarding large-ranged species having several geographically isolated populations (difficult to check interbreeding in allopatry).</li>
+<li>Hybridisation is rather common, even between non-sister taxa. This might not be just noise!</li>
+<li>Cannot deal with asexual organisms that have divided into obviously recognisable populations/groups.</li>
+<li>Circularity: diagnosis of species and cause of speciation are the same.</li>
+</ul>
+<p>Also, reproductive isolation not likely adaptive, and prezygotic compatibility is the true reality underlying species—isolating mechanisms a result rather than a cause of species separateness (Paterson 1985). <em>Recognition concept</em> vs isolation concept, common fertilisation system.</p>
+</section>
+<section id="phylogenetic-species-concepts" class="level3">
+<h3 class="anchored" data-anchor-id="phylogenetic-species-concepts">Phylogenetic species concepts</h3>
+<ul>
+<li>Hennig 1966: brought about rise of cladistics, and eventually phylogenetic species concept
+<ul>
+<li>Clade: monophyletic group</li>
+<li>Monophyly, history-based species concept</li>
+</ul></li>
+<li>Problems of monophyly-based PSC:
+<ul>
+<li>Can lead to considering vary small isolated groups (due to focus on monophyly)</li>
+<li>Forced to leave behind paraphyletic taxa</li>
+<li>Contingent on quality of trees! Early on, mostly mitochondrial DNA.</li>
+<li>And species tree vs gene tree discordance. Maddison 1997 showed how this discordance can arise (short speciation event times, wide branches?, related to incomplete lineage sorting). Can’t rely blindly on numbers from gene trees.</li>
+</ul></li>
+<li>Cracraft 1989: irreducible cluster of organisms, diagnosably distinct from others, and within which there is a parental pattern of ancestry and descent
+<ul>
+<li>Most proponents of diagnostic PSC came from museum background.</li>
+<li>Recently, this concept has started to make inroads into zoological taxonomy, raising subspecies previously demoted (under polytypic species concept) to species level.</li>
+</ul></li>
+<li>Modern phylogenetic approaches:
+<ul>
+<li>Species delimitations using multi-locus coalescent (Yang &amp; Rannala 2014); using Bayesian posterior to compare single-species or two-species models based on genomic data
+<ul>
+<li>Same problems as Bayesian methods in general: importance of prior info on phylogenetic relationships.</li>
+</ul></li>
+<li>Barcode of Life (Paul Hebert): driven by biodiversity crisis, don’t need to wait for taxonomic expertise, can instead just collect and insert in barcoding pipeline.
+<ul>
+<li>But for many species, there is no clean gap in barcodes to distinguish intra- and interspecific variation. So, useful for identifying taxa from samples, but controversial for describing new species.</li>
+<li>Problems: single gene taxonomy, gene-vs-species tree, introgression of mtDNA</li>
+</ul></li>
+</ul></li>
+<li>Ecological species concept (van Valen 1976):
+<ul>
+<li>Focus on stabilising selection over gene flow</li>
+<li>Especially true/useful for bacteria (can occupy very different niches and no gene flow, but acting like species in terms of where they are found, physiology, etc.)</li>
+</ul></li>
+<li>General lineage concept (De Queiroz 1998): Evolutionary indepndence, species as segments of population-level</li>
+<li>Alternative (dissent): species are not real!
+<ul>
+<li>Genetic markers: gene flow too low to maintain cohesion</li>
+<li>Taxonomy: subspecies elevated to species, but grade into each other</li>
+<li>Populations as evolutionary units and not species</li>
+<li>Phenetics</li>
+<li>Spatial and temporal forms that are not easy to tell apart as species vs not.</li>
+</ul></li>
+<li>Hellberg’s operational definition is based on genotypic cluster criterion (Mallet 1995)
+<ul>
+<li>Genotypic gaps between local populations (so cannot be applied to allopatric)</li>
+<li>Think of it as bimodal distribution of traits</li>
+<li>This view also uses Bayesian stats, “assignment tests”</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="l02-geography-of-speciation" class="level1">
+<h1>L02: Geography of speciation</h1>
+<p>Allopatric and sympatric speciation.</p>
+<p><strong>2025-08-28</strong></p>
+<ul>
+<li><p>Submit long summary of next week’s dicussion papers via Turnitin (before next class on Tue), including the word count (at the top). Make sure to summarise/synthesise in own perspective on the study/results (what they did vs what they found).</p></li>
+<li><p>Mayr was a big proponent of allopatry, and specifically peripatry, emphasising drift in populations. Worked on birds of paradise and <em>Dicrurus</em>.</p></li>
+<li><p>David Starr Jordan had these ideas well before Mayr; founder of Stanford Uni. His models were Indopacific wrasses.</p>
+<ul>
+<li>Jordan’s Law (1907): given any species in any region, nearest related species not likely to be found in the same region but in a neighbouring district separated from the first by a barrier of some sort.</li>
+<li>e.g., squirrels in Grand Canyon</li>
+</ul></li>
+<li><p>Allopatric speciation has been preferred model until recently.</p>
+<ul>
+<li>Easier because no gene flow to contend with</li>
+<li>Lots of opportunities for allopatry</li>
+<li>Evidence to support:
+<ul>
+<li>Concordance of geography and species borders</li>
+<li>Young sister species tend to be allopatric</li>
+<li>Geographic coincidence of multiple separations of sister species and/or hybrid zones (one barrier/feature showing up again separating multiple groups of species)</li>
+<li>Increase in reproductive isolation</li>
+</ul></li>
+</ul></li>
+<li><p>Not incorporating selection into calculations results in very long times to generate species</p></li>
+<li><p>Sympatric speciation: early on was problematic</p>
+<ul>
+<li>Genetic problem: recombination (Felsenstein 1981; he invented bootstrapping, MLE; 15 papers with &gt;1000 citations); need to mate different</li>
+<li>Ecological problem: coexistence, Gause’s Rule (competitive exclusion); need to live differently enough from others</li>
+<li>Solutions: disruptive sexual selection, disruptive natural selection (tie mating to habitat, fewer genes [of large effect] the better). –&gt; <strong>magic traits</strong></li>
+<li>Some additional requirements for sympatric speciation: need to be sister species, and need to be sure that past allopatry was unlikely.</li>
+<li>Lake Victoria cichlids: crazy sympatric speciation possible due to combination of factors like trophic divergence, sexual selection, microallpatry. (But also, idea that they are only 14,000 years old is controversial, some people don’t think the lake fully dried out.)</li>
+<li><em>Rhagolitis</em> sympatric differentiation between hawthorn and (Guy Bush) apple host: eventually found out it was allopatric and secondary contact (completion of process was in sympatry), Feder et al 2003</li>
+<li>Stickleback ecomorphs in postglacial lakes are a popular model.
+<ul>
+<li>Rundle &amp; Schluter 2004: secondary contact drove character displacement and resulted in sister species, even though completion was in sympatry</li>
+</ul></li>
+<li>Sympatric vs allopatric –&gt; primary divergence vs secondary contact introgression</li>
+</ul></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

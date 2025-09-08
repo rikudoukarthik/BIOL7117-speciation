@@ -1,0 +1,30 @@
+---
+title: "Geography of speciation"
+bibliography: "../biol7117-speciation.json"
+csl: "../evolution.csl"
+format: 
+  docx:
+    reference-doc: "../word_template.docx"
+    number-sections: false
+---
+
+Word count (koRpus): 772
+
+# Summary
+
+In "true" sympatric speciation, two groups having overlapping ranges and undergoing random mating diverge over time, despite gene flow in the initial stages, to later become reproductively isolated species. Genetically, divergence might be facilitated by "magic traits" encoded by pleiotropic genes, where a single gene or locus affects both an ecologically selected trait and a reproductive trait. Alternatively, linkage disequilibrium of allele pairs not separated during recombination could drive divergence. 
+<!-- In both cases, there is an involvement of one or a few loci with disproportionately large effects, i.e., "major effect loci". -->
+
+This theoretical model of speciation was not questioned much in earlier decades, and was even popularised by examples like Darwin's finches and the Lake Victoria cichlids. However, most recent empirical evidence has failed to support this model, instead suggesting older allopatry with admixture/introgression events upon secondary contact as driving incompatibility and divergence. @coathup2024 and @dean2019 used various modern genetic methods in different model systems to provide robust insight into this contentious topic of sympatric speciation. 
+
+@coathup2024 focused on the famous *Howea* palms of Lord Howe Island, two sister species that have diverged in soil substrate preferences and flowering times, under strong geographical isolation on the same 15 sq. km island. Previous work that assessed gene expression and genetic divergence in this system had identified candidate pleiotropic speciation genes. @coathup2024 built on this, using 11 T-DNA knockout mutants of *Arabidopsis thaliana* for high-throughput phenotyping, with the *A. thaliana* knockouts being in orthologues of the *Howea* candidate genes. These, as well as control wild type *A. thaliana*, were grown under various stress conditions emulating those of Lord Howe Island. The authors then measured morphology, various stress responses, and flowering time displacement in each of these plants---assessing whether these candidate genes were indeed pleiotropic loci affecting these two phenotypes of interest, which would be strong evidence in support of the "magic traits" theory.
+
+On the other hand, @dean2019 studied Three-spined Stickleback (*Gasterosteus aculeatus*) fish in the Scottish island of North Uist. Across its range, this stickleback has two distinct ecotypes (lagoon resident and anadromous) that show extensive hybridisation in sympatry or parapatry. The authors used targeted genotyping in combination with data on morphology and genome-wide single-nucleotide polymorphisms (SNPs) from this unique island system having high ecological heterogeneity, to assess levels of reproductive isolation between the ecotypes and also the colonisation history of this island stickleback population. 
+
+@coathup2024 found compelling evidence for five of the 11 candidate genes actually being pleiotropic loci, affecting both flowering times and soil stress (cadmium, drought and salt) responses. Of these, SAL1 and SIZ1 had the strongest impacts, resulting in later and earlier flowering times respectively. They also demonstrated parallels between *A. thaliana* and the *Howea* palms, most strikingly linking SIZ1 with tolerance of drought and calcareous soils. The North Uist sticklebacks showed not only strong reproductive isolation (despite gene flow) but also a complex colonisation history, suggesting that admixture upon secondary contact likely acted in tandem with some levels of disruptive ecological selection. Additionally, their level of reproductive isolation was notably stronger than in most other examples of sticklebacks, making the North Uist population a strong candidate system for further work on the geography of speciation.
+
+Taken together, the two studies which both used modern innovative methods represent contrasting evidence for the same familiar question in different systems. Not being well versed with advanced genetic techniques and microevolutionary literature, the methods and interpretations of both studies seem robust to me. However, interestingly, among the three hypotheses that @dean2019 considered, none actually describe the purely ecological sympatric speciation model; their first "classic" stickleback model involves multiple colonisations from an external population, which is not quite the same as in situ divergence. While this model might make biological sense for the sticklebacks, which are of marine origin, does this really stand as evidence against the "purely" ecological model? Further, while I interpreted their study as being on a single stickleback species, @dean2019 are inconsistent with their terminology, using "species-pairs" seemingly interchangeably with the two "ecotypes". Finally, @coathup2024 found evidence of pleiotropy in multiple loci, meaning that disentangling the relative roles of pleiotropy (magic traits) and linkage disequilibrium in driving speciation in the Lord Howe palms requires further investigation. 
+
+The two contradictory results need not be just inconvenient noise, and could instead be an important indication of the context-dependence of macroevolutionary processes [@mcgill2019; @mcgill2019a]. The results of @dean2019 suggest that purely ecological speciation is unlikely, and that admixture upon secondary contact likely acts alongside ecological selection. While this goes against the "linear, bifurcating process" model of speciation, @coathup2024 demonstrated that the Lord Howe palms may indeed be a robust example for this model. Thus, although examples of "true" primary sympatric speciation are rare, it might not fully be a zombie idea. 
+
+# References
