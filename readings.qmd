@@ -1,0 +1,65 @@
+---
+title: "Reading notes"
+---
+
+# Mallet 2013
+
+- 
+
+# Foote 2018
+
+- Sympatric speciation does not involve physical/geographic barriers, so offers insights into role of selection (natural and sexual) in driving speciation.
+- This speciation (divergence with gene flow) is therefore rare, extreme, restrictive, and controversial.
+- Genomic methods have provided evidence of two kinds: either multiple colonisations and secondary contact, or actual sympatric divergence.
+- Author overall argues for less focus on primary vs secondary contact as driving speciation, and more on mechanistic aspects of genomic architecture.
+- Previous methods used phylogenetics to infer sympatric speciation from monophyly, but monophyly is not a good indicator of sympatric speciation (consistent with, but not exclusive to). (One flaw of Coyne & Orr's criteria.)
+- Backwards-in-time approaches are limited to identifying gene flow events arising through coalescence. They cannot distinguish between periods of spatial isolation and of spatial overlap with on gene flow. 
+- In cases of actual sympatric speciation, we expect barrier loci to be clustered tightly (close together) in the genome, and at areas of low recombination, and to have a "large effect" especially affecting both reproductive isolation and ecological adaptation. That is, *linkage* or *pleiotropy*. Otherwise, ongoing gene flow (recombination, genome-wide homogenisation) would make it difficult for divergence.
+- Modern genomic methods are still biased towards disproving (and not supporting) primary sympatric speciation. Palaeogenomics is a useful tool to tackle this. 
+- Author argues that focus should be placed on sympatric speciation, and away from primary vs secondary.
+    
+# Discussion: Geography of speciation
+
+## Coathup et al 2024
+
+- Theory says sympatric speciation facilitated by magic traits which might be encoded by pleiotropic genes, but little evidence exists of sympatric speciation and empirical evidence of magic traits is rare. Authors investigated role of pleitropy in *Howea* speciation. They found multiple genes showing adaptive divergence between the sister species (sign of pleiotropy, in soil stress tolerance and flowering time). 
+- Alternative to magic traits/pleiotropy driving sympatric ecological speciation is linkage disequilibrium. (i.e., one allele with multiple effects vs two close alleles not separated in recombination.) In either case, "major effect loci".
+- Dunning et al 2016 and Osborne et al 2019 assessed gene expression and genetic divergence. They identified candidate pleiotropic speciation genes. The current study aimed to test whether these genes actually are pleiotropic loci affecting soil stress tolerance and flowering time. If so, this would be positive evidence for magic traits. 
+- Method: T-DNA knockout *A. thaliana* used for high-throughput phenotyping (knockouts in orthologues of candidate speciation genes, 11 knockout mutants).
+    - Grown under various stress emulating Lord Howe Island. Then morphology, stress responses and flowering time measured. 
+- Five genes potential speciation genes: knockouts in each of these showed displaced flowering times and altered soil stress response (cadmium, drought, salt). Largest effect sizes in SAL1 (latest flowering) and SIZ1 (earliest flowering)
+    - Knockout of SIZ1 caused reduced drought tolerance. *H. belmoreana* has lower expression of the two SIZ1 homologues and also cannot colonise calcareous soils. On the other hand, knockout of SAL1 caused increased drought tolerance (consistent with *H. forsteriana*), but reduced salt tolerance which doesn't match with *Howea* scenario---so less evidence for this locus driving sympatric speciation cf SIZ1.
+- Robust example of genetic architecture of sympatric speciation. Evidence of pleiotropy in multiple loci, so could be a combination of pleiotropy and linkage disequilibrium.
+
+How did knockout (removal) give these results? Counterintuitive?
+
+## Dean et al 2019
+
+- An assumption when considering sympatric species pairs is that they originated from a recent, genetically homogenous ancestor, but most evidence invokes introgression/admixture upon secondary contact as responsible for speciation. The authors compare two ecotypes of three-spined stickleback (no, multiple species-pairs?) using morphological data, targeted genotyping and genome-wide SNP data. 
+    - The two ecotypes show extensive hybridisation in sympatry/parapary.
+    - There are rare cases of complete reproductive isolation in sticklebacks, but these cases involve ancient allopatric origins.
+- Importance of genetic admixture upon secondary contact widely known in plants since 1970s, but has also started gaining popularity in animals. 
+    - Classic examples like Darwin's finches, Lake Victoria cichlids and *Anopheles* species complex all either involved genetic admixture events or are cryptic cases of homoploid hybrid speciation.
+- Overwhelming evidence for ancient allopatry, and against "true" sympatric ecological speciation. (And authors found the same.)
+- They find that the two ecotypes are strongly reproductively isolated, but also a complex colonisation history suggesting admixture upon secondary contact in addition to disruptive ecological selection (i.e., older allopatric origin). 
+- Three hypotheses (none consider sympatric speciation option? wait, the first classic one probably is)
+- Compelling morphological and genetic evidence of unusually strong reproductive isolation between lagoon resident and anadromous stickleback, in spite of (low) gene flow. Classic purely-ecological speciation model (relative sea level change) unlikely; at least two colonisation and therefore admixture upon secondary contact (alongside strong selection for maintenance of differentiation, i.e. partial ecological basis)
+- Reproductive isolation in this island species-pair example is considerably stronger than most other stickleback examples, so this could potentially be a very useful system to work further on these questions.
+- Also evidence against "linear, bifurcating process" model.
+
+Species pairs? Or just ecotypes? Confusing.
+
+# Rundle & Nosil 2005
+
+- Renewed interest in microevolutionary processes driving macroevolutionary speciation was linked to reclassficiation of speciation models from geographic scheme (sympatry vs allopatry) to focus on reproductive isolation.
+- Barriers as a result of ecologically driven divergent selection
+- Ecological speciation different from other models that focus on chance events (polyploidisation, hybridisation, genetic drift, founder events, population bottlenecks), or on non-divergent and/or non-ecological selection (runaway selection, sexual conflict)
+
+## Ecological causes of divergent selection
+
+Environmental differences, sexual selection, ecological interactions
+
+# Discussion: Pre-zygotic isolation
+
+## Zhang et al 2024
+

@@ -1,0 +1,141 @@
+---
+title: "Lecture notes"
+---
+
+# L01: Overview & species concepts
+
+**2025-08-26**
+
+## Course overview
+
+Follows Coyne & Orr 2004(?) broadly. This was a highly impactful book, very timely, and heralded the dawn of the genomic era. The period of roughly 2012--20 saw incredible growth in our understanding of genomes and speciation. Species concepts are important, especially if your thesis includes the term "speciation", but we won't spend too much time in the class on these debates on definition.
+
+Till exam 1: reading fundamentals of speciation questions. Post-exam-1: stick with basic questions but delve on what genomics has done to advance understanding. Word and sentence counts in assignments need to be followed strictly, aim is to get used to condensing important information.
+
+## Concepts of species
+
+Species are not just for bookkeeping; different species are actually different, and they do different things. Cryptic species are an example of why (community) ecologists should care about work of population geneticists.
+
+> If one could conclude as to the nature of the Creator from a study of creation it would appear that God has an inordinate fondness for stars and beetles.
+> 
+> --- JBS Haldane, on creationism and the sheer number of beetle species
+
+Early ideas of species concepts can date back to, as with many things, Aristotle. His notion of a perfect "essence" asserted the existence of a perfect form for each species, variations from which are imperfections in its actualisation. The essence of a species was fixed, but involved descent as the crucial factor tying different individuals in a species together. This implied a fundamental difference between inter- and intraspecific variation.
+
+### Biological species concept
+
+The **Darwinian revolution** insisted that variation is not just noise, but rather the core (nuisance vs crux). *Everything* shares common descent, *variation* is at the heart of evolution, and there is no true difference between inter- and intraspecific variation. His way of distinguishing variants was using the morphological gap criterion (few intermediates), although his concept can be applied to ecology, behaviour or genetics too. 
+
+Ernst Mayr, starting in the 1950s, adapted Darwin's ideas to eventually come up with the biological species concept, where species are defined as interbreeding natural populations, reproductively isolated from others. Before him, Poulton (1904) had similar ideas, with the notion of "syngamy" (interbreeding) as the true meaning of species. (As did Lotsy and Dobzhansky.)
+
+Some adherents of BSC include those who worked extensively on model organisms like *Drosophila* in the lab (Coyne, Orr, Noor).
+
+**Impact of BSC**
+
+- Species now defined by process important to their own maintenance (biological, as opposed to scientist sitting in a museum describing from specimens). 
+- Allowed, and drew attention to, concepts of gene flow and isolating mechanisms. 
+- Provided criterion for diagnosing cryptic taxa.
+
+**Problems of BSC**
+
+Less universally applicable than Darwinian concept:
+
+- Provides no useful insight regarding large-ranged species having several geographically isolated populations (difficult to check interbreeding in allopatry).
+- Hybridisation is rather common, even between non-sister taxa. This might not be just noise!
+- Cannot deal with asexual organisms that have divided into obviously recognisable populations/groups.
+- Circularity: diagnosis of species and cause of speciation are the same.
+
+Also, reproductive isolation not likely adaptive, and prezygotic compatibility is the true reality underlying species---isolating mechanisms a result rather than a cause of species separateness (Paterson 1985). *Recognition concept* vs isolation concept, common fertilisation system.
+
+### Phylogenetic species concepts
+
+- Hennig 1966: brought about rise of cladistics, and eventually phylogenetic species concept
+    - Clade: monophyletic group
+    - Monophyly, history-based species concept
+- Problems of monophyly-based PSC:
+    - Can lead to considering vary small isolated groups (due to focus on monophyly)
+    - Forced to leave behind paraphyletic taxa
+    - Contingent on quality of trees!  Early on, mostly mitochondrial DNA. 
+    - And species tree vs gene tree discordance. Maddison 1997 showed how this discordance can arise (short speciation event times, wide branches?, related to incomplete lineage sorting). Can't rely blindly on numbers from gene trees.
+- Cracraft 1989: irreducible cluster of organisms, diagnosably distinct from others, and within which there is a parental pattern of ancestry and descent
+    - Most proponents of diagnostic PSC came from museum background.
+    - Recently, this concept has started to make inroads into zoological taxonomy, raising subspecies previously demoted (under polytypic species concept) to species level.
+- Modern phylogenetic approaches:
+    - Species delimitations using multi-locus coalescent (Yang & Rannala 2014); using Bayesian posterior to compare single-species or two-species models based on genomic data
+        - Same problems as Bayesian methods in general: importance of prior info on phylogenetic relationships.
+    - Barcode of Life (Paul Hebert): driven by biodiversity crisis, don't need to wait for taxonomic expertise, can instead just collect and insert in barcoding pipeline.
+        - But for many species, there is no clean gap in barcodes to distinguish intra- and interspecific variation. So, useful for identifying taxa from samples, but controversial for describing new species.
+        - Problems: single gene taxonomy, gene-vs-species tree, introgression of mtDNA
+- Ecological species concept (van Valen 1976):
+    - Focus on stabilising selection over gene flow
+    - Especially true/useful for bacteria (can occupy very different niches and no gene flow, but acting like species in terms of where they are found, physiology, etc.)
+- General lineage concept (De Queiroz 1998): Evolutionary indepndence, species as segments of population-level
+- Alternative (dissent): species are not real!
+    - Genetic markers: gene flow too low to maintain cohesion
+    - Taxonomy: subspecies elevated to species, but grade into each other
+    - Populations as evolutionary units and not species
+    - Phenetics
+    - Spatial and temporal forms that are not easy to tell apart as species vs not.
+- Hellberg's operational definition is based on genotypic cluster criterion (Mallet 1995)
+    - Genotypic gaps between local populations (so cannot be applied to allopatric)
+    - Think of it as bimodal distribution of traits
+    - This view also uses Bayesian stats, "assignment tests"
+    
+# L02: Geography of speciation
+
+Allopatric and sympatric speciation.
+
+**2025-08-28**
+
+- Submit long summary of next week's dicussion papers via Turnitin (before next class on Tue), including the word count (at the top). Make sure to summarise/synthesise in own perspective on the study/results (what they did vs what they found).
+
+- Mayr was a big proponent of allopatry, and specifically peripatry, emphasising drift in populations. Worked on birds of paradise and *Dicrurus*.
+- David Starr Jordan had these ideas well before Mayr; founder of Stanford Uni. His models were Indopacific wrasses.
+    - Jordan's Law (1907): given any species in any region, nearest related species not likely to be found in the same region but in a neighbouring district separated from the first by a barrier of some sort.
+    - e.g., squirrels in Grand Canyon
+- Allopatric speciation has been preferred model until recently.
+    - Easier because no gene flow to contend with
+    - Lots of opportunities for allopatry
+    - Evidence to support:
+        - Concordance of geography and species borders
+        - Young sister species tend to be allopatric
+        - Geographic coincidence of multiple separations of sister species and/or hybrid zones (one barrier/feature showing up again separating multiple groups of species)
+        - Increase in reproductive isolation 
+- Not incorporating selection into calculations results in very long times to generate species
+- Sympatric speciation: early on was problematic
+    - Genetic problem: recombination (Felsenstein 1981; he invented bootstrapping, MLE; 15 papers with >1000 citations); need to mate different
+    - Ecological problem: coexistence, Gause's Rule (competitive exclusion); need to live differently enough from others
+    - Solutions: disruptive sexual selection, disruptive natural selection (tie mating to habitat, fewer genes [of large effect] the better). --> **magic traits**
+    - Some additional requirements for sympatric speciation: need to be sister species, and need to be sure that past allopatry was unlikely.
+    - Lake Victoria cichlids: crazy sympatric speciation possible due to combination of factors like trophic divergence, sexual selection, microallpatry. (But also, idea that they are only 14,000 years old is controversial, some people don't think the lake fully dried out.) 
+    - *Rhagolitis* sympatric differentiation between hawthorn and (Guy Bush) apple host: eventually found out it was allopatric and secondary contact (completion of process was in sympatry), Feder et al 2003
+    - Stickleback ecomorphs in postglacial lakes are a popular model. 
+        - Rundle & Schluter 2004: secondary contact drove character displacement and resulted in sister species, even though completion was in sympatry
+    - Sympatric vs allopatric --> primary divergence vs secondary contact introgression
+        
+# Discussion: Geography of speciation
+
+**2025-09-02**
+
+- Doesn't mean old school is fully obsolete. In fact, palm paper is an example. Hellberg also belieces it should be one model considered.
+- What % hybridisation is relevant gene flow? 5% is kinda high still (1 in 20).
+- Each data point in a genetic structure plot (k-means clustering) is the allele type expressed at each biallelic locus (genotype).
+- Differentiation is different from variation
+- 
+
+# L03: Pre-zygotic isolation
+
+- After WWII well into 90s focused on reproductive isolation. Focusing on two barries: prezygotic and postzygotic. What ended up happening was former was restricted to field scientists while latter was limited to lab scientists (e.g., *Drosophila* folks)
+- Prezygotic: temporal, pollinator, habitat (ecological); behavioural, mechanical, gametic (sexual)
+- Evidence for ecological speciation: parallel speciation, magic traits, strong habitat-specific selection, isolation-by-adaptation.
+    - **Parallel speciation**: stickleback ecomorphs in post-glacial lakes; ecotypes that are geographically isolated still reproduce
+    - **Magic traits**: ecological gene under selection pleiotropically causes assortative mating (affects reproductive isolation). *Heliconius* butterflies of Amazonia, cichlids in E Africa lake (depth of lake affects colouration favoured); feather lice & pigeon hosts (Villa et al 2019 PNAS); check videos https://www.pnas.org/doi/10.1073/pnas.1901247116#supplementary-materials !.
+    - **Habitat selection**: walking sticks in California, immigrant inviability (abiotic-dispersed organisms)
+    - **Isolation-by-distance**: geographic distance or ecological/adaptive divergence --> genetic distance
+- Sexual selection:
+    - **Runaway sexual selection**: positive feedback loops
+    - **Sexual antagonism**: males and females may have different optima for same phenotype
+    - **Sexual/mating isolation**: genitalia differentiation in beetles, moths, etc.; lock-and-key also in pollinator/flower compatibility.
+        - Gametic isolation: post-mating but pre-zygotic (reproductive tracts, bodily fluids). Conspecific sperm precedence (mating order); acrosome reaction for V envelope dissolution around eggs in marine gastropods
+        
+Neither of these levels of hierarchy are mutually exclusive categories.
