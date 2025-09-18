@@ -2,7 +2,7 @@
 title: "Lecture notes"
 ---
 
-# L01: Overview & species concepts
+# Overview & species concepts
 
 **2025-08-26**
 
@@ -49,93 +49,243 @@ Also, reproductive isolation not likely adaptive, and prezygotic compatibility i
 
 ### Phylogenetic species concepts
 
-- Hennig 1966: brought about rise of cladistics, and eventually phylogenetic species concept
-    - Clade: monophyletic group
-    - Monophyly, history-based species concept
-- Problems of monophyly-based PSC:
-    - Can lead to considering vary small isolated groups (due to focus on monophyly)
-    - Forced to leave behind paraphyletic taxa
-    - Contingent on quality of trees!  Early on, mostly mitochondrial DNA. 
-    - And species tree vs gene tree discordance. Maddison 1997 showed how this discordance can arise (short speciation event times, wide branches?, related to incomplete lineage sorting). Can't rely blindly on numbers from gene trees.
-- Cracraft 1989: irreducible cluster of organisms, diagnosably distinct from others, and within which there is a parental pattern of ancestry and descent
-    - Most proponents of diagnostic PSC came from museum background.
-    - Recently, this concept has started to make inroads into zoological taxonomy, raising subspecies previously demoted (under polytypic species concept) to species level.
-- Modern phylogenetic approaches:
-    - Species delimitations using multi-locus coalescent (Yang & Rannala 2014); using Bayesian posterior to compare single-species or two-species models based on genomic data
-        - Same problems as Bayesian methods in general: importance of prior info on phylogenetic relationships.
-    - Barcode of Life (Paul Hebert): driven by biodiversity crisis, don't need to wait for taxonomic expertise, can instead just collect and insert in barcoding pipeline.
-        - But for many species, there is no clean gap in barcodes to distinguish intra- and interspecific variation. So, useful for identifying taxa from samples, but controversial for describing new species.
-        - Problems: single gene taxonomy, gene-vs-species tree, introgression of mtDNA
-- Ecological species concept (van Valen 1976):
-    - Focus on stabilising selection over gene flow
-    - Especially true/useful for bacteria (can occupy very different niches and no gene flow, but acting like species in terms of where they are found, physiology, etc.)
-- General lineage concept (De Queiroz 1998): Evolutionary indepndence, species as segments of population-level
-- Alternative (dissent): species are not real!
-    - Genetic markers: gene flow too low to maintain cohesion
-    - Taxonomy: subspecies elevated to species, but grade into each other
-    - Populations as evolutionary units and not species
-    - Phenetics
-    - Spatial and temporal forms that are not easy to tell apart as species vs not.
-- Hellberg's operational definition is based on genotypic cluster criterion (Mallet 1995)
-    - Genotypic gaps between local populations (so cannot be applied to allopatric)
-    - Think of it as bimodal distribution of traits
-    - This view also uses Bayesian stats, "assignment tests"
+#### Hennig 1966: Cladistics/monophyly-based
+
+Hennig brought about the discipline of *cladistics*, which eventually evolved into the modern PSC, where a clade means a monophyletic group. Therefore, this species concept is based on monophyly, i.e., history. Problems:
+
+- Can lead to considering very small isolated groups (due to focus on monophyly)
+- Forced to leave behind paraphyletic taxa
+- Contingent on quality of trees!  Early on, mostly mitochondrial DNA. 
+- Species tree vs gene tree discordance. 
+    - Maddison 1997 showed how this discordance can arise (short speciation event times, wide branches?, related to incomplete lineage sorting). 
+    - Can't rely blindly on numbers from gene trees.
+
+#### Cracraft 1989: Irreducible cluster/diagnosably distinct
+
+Focus on irreducible clusters of organisms, diagnosably distinct from others, and among which there is a parental pattern of ancestry and descent. Most proponents of this were from a museum background. Recently, this concept has started to make inroads into zoological taxonomy, raising subspecies previously demoted (under polytypic species concept) to species level.
+
+#### Modern phylogenetic approaches
+
+- Species delimitations using **multi-locus coalescent** (Yang & Rannala 2014); using Bayesian posterior to compare single-species or two-species models based on genomic data
+    - Problems: Same as Bayesian methods in general---importance of prior info on phylogenetic relationships.
+- **Barcode of Life** (Paul Hebert): driven by biodiversity crisis, don't need to wait for taxonomic expertise, can instead just collect and insert in barcoding pipeline.
+    - Problems: For many species, there is no clean gap in barcodes to distinguish intra- and interspecific variation. So, useful for identifying taxa from samples, but controversial for describing new species.
+    - Also, single gene taxonomy, gene-vs-species tree, introgression of mtDNA
+
+### van Valen 1976: Ecological species concept
+
+Places greater focus on stabilising selection than gene flow. This is an especially true/useful approach for bacteria: different bacteria can occupy very different niches and have no gene flow, but act/behave the same in terms of where they are found, physiology, etc.
+
+### De Queiroz 1998: General lineage concept 
+
+Focuses on evolutionary independence, and considers species as segments of population-level variation?
+
+### Alternative/dissenting species concepts
+
+**Species are not real!**
+
+Some perspectives/justifications for this view:
+
+- Taxonomic perspective: subspecies may be elevated to species, but still grade into each other so don't hold much meaning
+- Consider populations as evolutionary units, not species
+- Spatial and temporal forms that are not easy to tell apart as species vs not.
+- Genetic markers: gene flow too low to maintain cohesion
+- Phenetics
+
+### Operational definition
+
+Hellberg's operational definition is based on **genotypic cluster criterion (Mallet 1995)**. The emphasis is on how combinations of traits cluster separately or together between groups. What's critical is the presence of genotypic gaps between local populations, so this concept makes sense for sympatric populations but not so much for allopatric ones. 
+
+It can be pictured as a bimodal distribution of traits. This view relies on Bayesian stats, using "assignment tests" and so on.
     
-# L02: Geography of speciation
+# Geography of speciation
 
-Allopatric and sympatric speciation.
+**2025-08-28**: Allopatric and sympatric speciation.
 
-**2025-08-28**
+Allopatric speciation has always been popular, and has been the preferred model of speciation until recently, whereas sympatric speciation has kinda been the underdog. 
 
-- Submit long summary of next week's dicussion papers via Turnitin (before next class on Tue), including the word count (at the top). Make sure to summarise/synthesise in own perspective on the study/results (what they did vs what they found).
+## Allopatric speciation
 
-- Mayr was a big proponent of allopatry, and specifically peripatry, emphasising drift in populations. Worked on birds of paradise and *Dicrurus*.
-- David Starr Jordan had these ideas well before Mayr; founder of Stanford Uni. His models were Indopacific wrasses.
-    - Jordan's Law (1907): given any species in any region, nearest related species not likely to be found in the same region but in a neighbouring district separated from the first by a barrier of some sort.
-    - e.g., squirrels in Grand Canyon
-- Allopatric speciation has been preferred model until recently.
-    - Easier because no gene flow to contend with
-    - Lots of opportunities for allopatry
-    - Evidence to support:
-        - Concordance of geography and species borders
-        - Young sister species tend to be allopatric
-        - Geographic coincidence of multiple separations of sister species and/or hybrid zones (one barrier/feature showing up again separating multiple groups of species)
-        - Increase in reproductive isolation 
-- Not incorporating selection into calculations results in very long times to generate species
-- Sympatric speciation: early on was problematic
-    - Genetic problem: recombination (Felsenstein 1981; he invented bootstrapping, MLE; 15 papers with >1000 citations); need to mate different
-    - Ecological problem: coexistence, Gause's Rule (competitive exclusion); need to live differently enough from others
-    - Solutions: disruptive sexual selection, disruptive natural selection (tie mating to habitat, fewer genes [of large effect] the better). --> **magic traits**
-    - Some additional requirements for sympatric speciation: need to be sister species, and need to be sure that past allopatry was unlikely.
-    - Lake Victoria cichlids: crazy sympatric speciation possible due to combination of factors like trophic divergence, sexual selection, microallpatry. (But also, idea that they are only 14,000 years old is controversial, some people don't think the lake fully dried out.) 
-    - *Rhagolitis* sympatric differentiation between hawthorn and (Guy Bush) apple host: eventually found out it was allopatric and secondary contact (completion of process was in sympatry), Feder et al 2003
-    - Stickleback ecomorphs in postglacial lakes are a popular model. 
-        - Rundle & Schluter 2004: secondary contact drove character displacement and resulted in sister species, even though completion was in sympatry
-    - Sympatric vs allopatric --> primary divergence vs secondary contact introgression
-        
-# Discussion: Geography of speciation
+**Jordan's Law (1907):** David Starr Jordan was the founder of Stanford University. His model system was Indopacific wrasses, and he had ideas about allopatric speciation well before Ernst Mayr. He believed: given any species in any region, nearest related species not likely to be found in the same region but in a neighbouring district separated from the first by a barrier of some sort. A demonstrative example was squirrels in the Grand Canyon.
+
+Ernst Mayr was a big proponent of allopatry, and specifically peripatry. He emphasised the role of drift in populations. Model systems were birds of paradise and *Dicrurus* in SE Asia.
+
+This has been the preferred model for multiple reasons:
+
+- Easier: no gene flow to contend with
+- Lots of opportunities in nature for allopatry
+- Lots of evidence:
+    - Young sister species tend to be allopatric
+    - Concordance between geography and species borders
+    - Extension of above: Geographic coincidence of multiple separations of sister species and/or hybrid zones (one barrier/feature showing up again separating multiple groups of species)
+    - Increase in reproductive isolation in allopatry 
+    
+However, even in this model, not incorporating explicit selection (i.e., relying only on drift/mutation) into calculations of species generation times results in very long times.
+
+## Sympatric speciation
+
+### Problems
+
+**Genetic problem:** Felsenstein (1981)---also inventor of bootstrapping, maximum likelihood estimation, etc.; has 15 papers with >1000 citations---argued for the problem of recombination. In sympatry, need to avoid recombination by mating differentially.
+
+**Ecological problem:** Ecological patterns like coexistence, competitive exclusion (Gause's Rule) occur because in sympatry need to live differently enough from others.
+
+### Solutions
+
+Disruptive sexual selection; disruptive natural selection (mating is linked to habitat, and the fewer genes [of large effect] the better). These are now very much linked to the concept of **magic traits**, for which there has been much evidence.
+
+### Outstanding problem
+
+Additional requirements for sympatric speciation are that they need to be sister species, and we need to be sure that past allopatry was unlikely. This has been more difficult to show, and many popular examples fail here.
+
+Lake Victoria cichlids had crazy sympatric speciation possible due to a combination of factors like trophic divergence, sexual selection, and microallopatry. However, there is controversy around the idea that they are only 14,000 years old---some people don't think the lake fully dried out.
+
+In the case of *Rhagoletis* fruit flies, which have sympatric differentiation in host plant choice (between hawthorn and apple; GL Bush), it turned out that they were actually allopatric at some point and only the completion of the speciation process happened in sympatry (Feder et al 2003).
+
+Similarly, in the case of stickleback ecomorphs in postglacial lakes, secondary contact drove character displacement and resulted in sister species, even though completion was in sympatry (Rundle & Schulter 2004).
+
+Thus, more and more evidence has piled up to transform the dichotomy from sympatric vs allopatric speciation, to **primary sympatric divergence vs secondary contact introgression**.
+
+# Discussion: Geography of speciation {.unnumbered}
 
 **2025-09-02**
 
-- Doesn't mean old school is fully obsolete. In fact, palm paper is an example. Hellberg also belieces it should be one model considered.
+- Doesn't mean old school (primary sympatric divergence) is fully obsolete. In fact, palm paper is an example. Hellberg also believes it should be one model under consideration.
 - What % hybridisation is relevant gene flow? 5% is kinda high still (1 in 20).
 - Each data point in a genetic structure plot (k-means clustering) is the allele type expressed at each biallelic locus (genotype).
-- Differentiation is different from variation
-- 
+- *Differentiation* is different from *variation*
 
-# L03: Pre-zygotic isolation
+# Prezygotic isolation
 
-- After WWII well into 90s focused on reproductive isolation. Focusing on two barries: prezygotic and postzygotic. What ended up happening was former was restricted to field scientists while latter was limited to lab scientists (e.g., *Drosophila* folks)
-- Prezygotic: temporal, pollinator, habitat (ecological); behavioural, mechanical, gametic (sexual)
-- Evidence for ecological speciation: parallel speciation, magic traits, strong habitat-specific selection, isolation-by-adaptation.
-    - **Parallel speciation**: stickleback ecomorphs in post-glacial lakes; ecotypes that are geographically isolated still reproduce
-    - **Magic traits**: ecological gene under selection pleiotropically causes assortative mating (affects reproductive isolation). *Heliconius* butterflies of Amazonia, cichlids in E Africa lake (depth of lake affects colouration favoured); feather lice & pigeon hosts (Villa et al 2019 PNAS); check videos https://www.pnas.org/doi/10.1073/pnas.1901247116#supplementary-materials !.
-    - **Habitat selection**: walking sticks in California, immigrant inviability (abiotic-dispersed organisms)
-    - **Isolation-by-distance**: geographic distance or ecological/adaptive divergence --> genetic distance
-- Sexual selection:
-    - **Runaway sexual selection**: positive feedback loops
-    - **Sexual antagonism**: males and females may have different optima for same phenotype
-    - **Sexual/mating isolation**: genitalia differentiation in beetles, moths, etc.; lock-and-key also in pollinator/flower compatibility.
-        - Gametic isolation: post-mating but pre-zygotic (reproductive tracts, bodily fluids). Conspecific sperm precedence (mating order); acrosome reaction for V envelope dissolution around eggs in marine gastropods
-        
-Neither of these levels of hierarchy are mutually exclusive categories.
+**2025-09-04**
+
+Reproductive isolation was a hot topic in evolution after WWII and well into the 1990s. Studies focused on two kinds of reproductive barriers (prezygotic and postzygotic), and eventually this dichotomy was paralleled in the scientists who studied them (field vs lab [e.g., *Drosophila* folks] respectively).
+
+Prezygotic isolation can be considered in two broad, but not mutually exclusive, categories: ecological (temporal, pollinator, habitat) and sexual (behavioural, mechanical, gametic) isolation.
+
+## Evidence for ecological prezygotic isolation
+
+**Parallel speciation**: stickleback ecomorphs in post-glacial lakes; ecotypes that are geographically isolated still reproduce
+
+**Magic traits**: ecological gene under selection pleiotropically causes assortative mating (affects reproductive isolation). *Heliconius* butterflies of Amazonia; cichlids in E Africa lake (depth of lake affects colouration favoured); feather lice & pigeon hosts (Villa et al 2019 PNAS; check [videos](https://www.pnas.org/doi/10.1073/pnas.1901247116#supplementary-materials)).
+
+**Strong habitat selection**: walking sticks in California, immigrant inviability (abiotic-dispersed organisms)
+
+**Isolation-by-distance/adaptation**: geographic distance $\longrightarrow$ genetic distance OR ecological/adaptive divergence $\longrightarrow$ genetic distance
+
+## Evidence for sexual prezygotic isolation
+
+**Runaway sexual selection**: positive feedback loops
+
+**Sexual antagonism**: males and females may have different optima for same phenotype
+
+**Mating isolation**: genitalia differentiation in beetles, moths, etc.; lock-and-key also in pollinator/flower compatibility. 
+
+**Gametic isolation** is a special case which is post-mating but pre-zygotic (reproductive tracts, bodily fluids). Conspecific sperm precedence (mating order); acrosome reaction for V envelope dissolution around eggs in marine gastropods.
+
+# Discussion: Prezygotic isolation {.unnumbered}
+
+**2025-09-09**
+
+- Sentences in Science are usually more assertive/confident than would be otherwise. 
+- GWAS: genome-wide association studies. 
+- Sex chromosomes limit damage when dangerous alleles show up (doesn't work same in both sexes, sexually antagonistic)
+
+# Postzygotic isolation
+
+**2025-09-11**
+
+Barriers after the zygote is formed, which can act via reduced hybrid viability, reduced hybrid fertility, hybrid breakdown, etc. 
+
+This topic has received much less focus than prezygotic isolation, because of ascertainment bias: once prezygotic isolation is completed, then cannot see postzygotic isolation. Also, other things like reinforcement strengthen prezygotic isolation.
+
+However, there are many reasons to consider postzygotic isolation. First, in many ways, **ecological isolation** is a form of postzygotic isolation. Moreover, even in cases where hybrid formation occurs, the persistence of distinct species means there is something **decreasing the fitness of these hybrids**. Also, **intrinsic post- isolation may become stronger** at $\ge$ F2 crosses, while extrinsic post- and pre- become weaker
+
+Darwin had a conundrum about contradictory ways in which evolution worked: on the one hand natural selection operates, but on the other hand unfit hybrids are produced. His solution for this was that sterility arises as an incidental byprouct of "unknown differences".
+
+Much of the interest in postzygotic isolation is wrt intrinsic.
+
+## Extrinsic postzygotic isolation
+
+External to the individual/organism, i.e., non-developmental. This includes things like habitat isolation, where say niche of hybrids falls somewhere between parental lineages but fitness of hybrids is lower than that of either parent. But in some cases, hybrids may have higher fitness in intermediate habitats, which would explain the increase in hybridisation in the first place.
+
+In stickleback crossing studies, Rundle 2002 found that F1s were bad (relative to parents), but F1-parent backcrosses yielded some fitter individuals (proportional to how much parental heredity the cross had).
+
+Other times, hybrids could have higher disease susceptibility, or intermediate traits that are less attractive (sexual selection).
+    
+## Intrinsic postzygotic isolation
+
+Internal to the individual/organism, so quite simply, developmental defects lead to hybrid sterility or inviability.
+
+It can be **meiosis issues** related to ploidy levels, where hybrids like F1s simply cannot perform meiosis. Or **chromosomal rearrangements/inversions** like in Australian morabine grasshoppers (White 1978). However, many inversions surprisingly have no effect on heterozygote fitness, because recombination can still happen in other regions of genome.
+
+Other mechanisms include **endosymbiotic infection** risk for hybrids, or **cytoplasmic incompatibilities** especially relating to parasites (e.g., intracellular parasites like *Wolbachia*: when uninfected female flies are crossed with infected males, many/all progeny die, but infection transmitted from mother so those that are born from infected females are infected). There can even be **mitonuclear incompatibilities** (i.e., between mitochrondrial and cytoplasmic genetic material), famously in copepods (Ron Burton), so much so that Geoffrey Hill even introduced a *mitonuclear compatibility species concept*. 
+
+**Allelic incompatibilities** are a major way intrinsic postzygotic isolation can occur. The original definition of Dobzhansky-Muller Incompatibility focused on alleles at different loci, arguing that low hybrid fitness is a byproduct of genomes that are geographically isolated. The newer, more specific definition emphasises epistasis (effects of an allele at one locus depend on alleles present at other loci), arguing that negative epistatic interactions occur between alleles of different loci with different evolutionary histories. Some assumptions of this theory are that there occurs at least one pair of allele changes, that most incompatibilities are due to derived alleles(?), and that the no. if incompatible combinations snowballs over time. 
+
+### Haldane's Rule
+
+Rule about **sex chromosome incompatibilities**; it is an exception, because there are very rare exceptions to the rule. Basically: in offspring of two different races, if one (and only one) sex is messed up (absent, rare, or sterile) then that is the heterozygous sex. 
+
+**NOT caused by:** incompatibilities between X- and Y-linked genes; dosage compensation (compensate based on importance of stuff on X); chromosomal arrangement.
+
+Possible causes:
+
+- **Dominance**: in XY species, hybrid males are affected by all X-linked genes involved in genic incompatibilities, whereas hybrid females are affected only by dominant X-linked genes
+- ~~**Faster-males**: in XY species, incompatibilities affecting XY hybrids accumulate more quickly~~ (but exceptions to this, so doesn't satisfactorily explain)
+- **Faster-X**: faster drift at population levels because more X than Y in population (thus this mechanism interacts with dominance)
+- **Meiotic drive**: distorter alleles that distort Mendelian ratios to their own advantage; suppressors evolve to stop them. When two allopatric populations each independently evolve a driver and suppressor, suppressed drivers can become unmasked. 
+    
+# Discussion: Prezygotic isolation {.unnumbered}
+
+**2025-09-16**: *(absent)*
+
+# Reinforcement
+
+**2025-09-18**
+
+Reinforcement has been explored in the context of driving enhanced prezygotic isolation in sympatry. It has traditionally defined as when the **formation of maladaptive hybrids** selects for **enhanced prezyogtic isolation**---where hybrids are maladaptive if their fitness is non-zero but lower than either parent's. The late 1980s saw renewed interest in exploring such questions of reinforcement.
+
+However, there was also a concurrent realisation that enhanced prezygotic isolation in sympatry could arise not just due to selection against hybrids, but also due to ecological or other factors. This brought focus to **reproductive character displacement**, where selection for enhanced prezygotic isolation occurs in order to reduce wasted reproductive effort between RI species. For instance, acoustic space divergence in frogs in TX/MX occurs between not just close congeners but also distant relatives. 
+
+Many early popular examples of reinforcement are actually of reproductive character displacement, because the hybrid has zero fitness (no hybrid formation in sympatry). Reviewed in Butlin 1987. Other cases, like the Collared and Pied flycatchers, do conform to the strictly reinforcement expectations, but we no know that there is more going on there.
+
+## Experimental tests for reinforcement
+
+Reviewed in Rice & Hostert 1993.
+
+- **Kill-the-hybrid:** let them mate but kill hybrids and see if displacement develops
+    - But this is actually evidence of RCD than of reinforcement
+    - Seemingly high success rate, but publication bias?
+- **Disruptive selection on arbitrary trait:** kill everything but high and low values of certain neutral trait (like bristles in *Drosophila*)
+    - Bristles are not really neutral/arbitrary, have important function
+    - On the other hand, these results were never replicated in further studies
+
+## Comparative studies of reinforcement
+
+Can ask the following questions:
+
+- Is prezyogtic isolation greater in sympatry?
+- (Difficult to test) Are they forming hybrids? 
+- (Difficult to test) What is the genetic basis? (e.g., does having many great effect genes at few nearby loci facilitate more reinforcement (magic traits)?
+
+Lots of work in this area, including on *Drosophila* from Dobzhansky & Koller 1938 (western US) to Matute 2010 (Sao Tome & Principe), and bindin protein in sea urchins. In the case of the *Ficedula* flycatchers, male plumage is driven by female choice (because females in sympatry are not different, only males are), and this is just females being choosier than males (fewer eggs than sperm). However, it is not fully clear whether the brown in Pied males evolved to enhance isolation from sympatric Collared, or whether it's just female-mimicry in order to reduce intermale aggression. This is the *more going on* in this case.
+
+The genetic basis of reinforcement has been reviewed in Garner et al 2018, and consists of genetic divergence both within species (allopatric vs sympatric contrasts) and between species (greater in sympatry, lower in allopatry). One example is flower colour in *Phlox* wildflowers, where colour is driven by two loci (intensity and hue), but selection happens on the intensity one.     
+
+## Objections to reinforcement
+
+- Need to reconcile selection and recombination (antagonism, similar to that in case of sympatric speciation), which gets worse with more interacting genes
+- Race against extinction: Have to be ecologically distinct to survive in hybrid zone, BUT not enough, need to stick around in hybrid zone (asking for a lot)
+- Swamping effect: genes for reinforcement must be favoured only in sympatry; genes from outside hybrid zone may swamp out (again, asking a lot)
+
+## Solutions to objections
+
+- Liou & Price 1994: **sexual selection** can promote reinforcement in hybrid zone
+- Kelly & Noor 1996: selection for greater female discrimination can promote reinforcement; "one-allele" solution (same allele favoured in both species); not just sexual selection but **strength of selection** (turn up volume/intensity)
+
+## Bottom line
+
+This is a theoretically possible mechanism, but in most cases it's asking for a lot. There is a lot of evidence for greater divergence in sympatry, but most of these cases also have alternative explanations. 
+
+The best bet for such a mechanism would involve female choice resulting in heavier divergence in sympatry. This means that systems with greater sexual selection may be more likely to have reinforcement.

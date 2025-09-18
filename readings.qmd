@@ -63,3 +63,71 @@ Environmental differences, sexual selection, ecological interactions
 
 ## Zhang et al 2024
 
+- Role of ecology and geography have not been explored much at later stages of speciation, because traditionally focus on role of ecology in *initiating* speciation and on role of geography (reinforcement) on species pairs lacking divergent characteristics.
+- How divergent ecology interacts with geography to affect RI in later stages of speciation remains unclear
+- Reinforcement: increased favour towards prezygotic isolation in sympatry, peripatry or parapatry, due to fitness cost to hybridisation
+- Increased habitat isolation can also arise from direct selection against immigrants (high fidelity to native environment favoured)
+- Three gall wasps in genus *Belonocnema*, specific to *Quercus* hosts.
+- Existing knowledge: two sympatric wasp species are in later stages of speciation
+- Test: in allopatry, does host plant divergence yield higher RI? In host plant divergence, does sympatry yield higher RI than allopatry (due to selection for reduced migration and reduced hybridisation)?
+- Measured "degree of sexual isolation in the absence of host plant"
+- Natural temporal difference in the wasp species, so they stored some galls at 4 dec C for one week which delayed the emergence. Adults were used in experiments 1-2 days after emergence. 
+- Measured host plant selection using a controlled two-choice experiment, using females instead of males (female host choice determines environment for next generation, and males display lower host fidelity). 
+    - Female aspirated into the container and observed for 30 min at 2-min intervals (15 obs), with the assumption that time spent on host plant is correlated with oviposition decision.
+    - Calculated proportion of time spent on natal plant ($[0, 1]$), compared using GLMM.
+    - Also calculated pairwise estimates of host plant preference difference: absolute difference between preference values calculated above (also $[0, 1]$).
+- Measured sexual isolation by observing courtship and mating interactions between males and females, using controlled no-choice preference trials.
+    - Male and female (same or different species) aspirated into container, observed for same time, and recorded three interactions: male wing buzzing/fanning, male mounting female, copulation.
+    - Calculated probability of mating between conspecific and heterospecific pairs, and compared using GLMM.
+    - Comparison between species pair type and individual pair cannot be done using GLMM, so they also calculated strength of sexual isolation between species pairs using a formula.
+- Evidence that host use (ecological) interacts with geography in driving divergent selection in *Belonocnema* wasps.
+    - Sympatric wasp species with different host plant showed highest habitat isolation, while allopatric with same host plant showed lowest.
+    - Proximity to two host plant options increased host preference (Petri dish vs cups)
+    - Sympatric also showed highest sexual isolation, while allopatric with same host plant showed lowest.
+- High isolation in allopatric species with same host plant suggest that selection is not directly driven by habitat use. Similar selection environment could have taken different phenotypic pathways (mutation-order speciation). 
+- Three possible mechanisms for high isolation in sympatric species:
+    - Templeton effect/differential fusion: in sympatry, strong isolation is required for isolated populations to persist, whereas weakly isolated populations fuse.
+    - Reinforcement: natural selection against hybrids with lower fitness
+    - Reproductive interference: presence of sympatric species during mating (or cost of migration) could elevate prezygotic isolation
+- Also found asymmetry between habitat isolation and sexual isolation between allopatric species sharing the same host plant: lineage that emigrates more shows stronger habitat isolation (lower fitness of immigrants in alternative habitat) while lineage that receives more immigrants shows stronger sexual isolation (lower fitness of hybrids).
+- The three closely related wasp species are a good model for speciation research, due to their unique ecology and geography. Their framework is also useful for exploring completion of speciation, a knowledge gap.
+
+## Schield et al 2024
+
+- How does the genetic basis of sexual selection result in barrier to gene flow in secondary contact?
+- Most studies explore links between either sexual traits and reproductive isolation, or genomic divergence and genetic association with sexual traits. Not the full flow from genomic divergence to reproductive isolation via barrier to gene flow.
+- For species like Barn Swallow which are early in speciation process, sexual selection may be driving RI at small number of barrier loci involved in sexual traits. 
+    - Genetic coupling of barrier loci (linkage disequilibrium) facilitates speciation, via both direct and indirect selection. With increase in coupled barrier loci, barrier to gene flow is stengthened.
+    - Coupling is likely to arise in allopatry, and can promote RI upon further secondary contact.
+- Barn Swallow populations all diverged recently from the common ancestor about 11 kya, and there is strong evidence for divergent sexual selection among these populations.
+    - Not only does the species have multiple populations (subspecies), but there are also multiple hybrid zones, with varying divergence in sexual traits. These hybrid zones allow tests of whether sexual selection results in RI upon secondary contact.
+    - Further, two of these hybrid zones also have divergences in nonbreeding migratory route, which is a potential coupled trait (low survival of hybrids taking nonadaptive migratory routes; i.e., hybrid fitness).
+    - Explicit tests of effects of trait loci on gene flow are necessary because degree of concordance between allopatric evolutionary processes and hybrid fitness is not clear a priori.
+- Do sexual trait loci experience divergent sexual selection in allopatry and promote RI upon secondary contact? Is there LD among barrier loci (sexual traits, migratory route) in secondary contact, mainting RI via effects on hybrid fitness?
+- Found that 6 ssp. cluster in 3 groups. Individuals from hybrid zones show intermediate/similar to parent plumage trait values (breast feather colour, tail streamer length) and admixture proportions.
+- Prevalence of back-crossed, late generation hybrids, and demographic models, suggest that hybrid zones formed upon secondary contact following allopatry.
+- *rustica*-*gutturalis* hybrid zone estimated to have formed 2000 generations ago, while the *tytleri* ones were more recent (< 1000 generations).
+- Trait variation is controlled by few loci and not several genes: both traits have high proportion of phenotypic variation explained (PVE) by SNP genotypes, and high proportion of genetic effects (PGE) by small number of SNPs.
+- Ventral colour SNPs on chromosome 1A and Z (genes affecting melanogenesis and feathering phenotype), whereas tail streamer length SNPs on chromosome 2 (enzymes with regulatory functions potentially affecting transcription, intracellular transport, growth factor stability).
+    - Concentration of ventral colour associations on Z chromosome (sex chromosome) supports that sex linkage is favourable for traits involved in mate choice and sexual isolation.
+- Across allopatric populations, sexual trait loci show more genetic differentiation (FST) than do genome-wide comparisons.
+    - This could just be due to "background selection" in regions with reduced recombination. However, regions with extremely low recombination rates like centromeres also show higher FST in trait loci---high differentiation in trait loci is due to divergent positive selection rather than background selection alone. Elevated allelic differentitation and extended haplotype homozygosity, also suggest this.
+    - Greater fitness effects of ventral colour than tail streamer length.
+- Geographic and genomic cline analysis, comparing trait loci--background loci differences across space along the three hybrid zone transects. 
+    -Found steeper transition between parental ancestries in trait loci cf background loci. 
+    - Steepness itself could arise due to low population density in hybrid zones, but this would show similar clines in trait loci as in other highly differentiated loci (not the case)
+    - Stronger selection and barrier to gene flow between *rustica* and other ssp.
+    - Cline patterns are weakest in *tytleri*-*gutturalis* hybrid zone, possibly linked to absence of migratory divide between the two populations (though remains to be tested).
+- LD arises from hybridisation, but extent of erosion of LD by recombination over generations can be impacted by selection-driven genetic coupling. 
+    - They compared interchromosomal LD between trait loci and background loci; if the LD was formed by admixture but not maintained by selection, would find similar levels between the two. But they found much higher LD levels in trait loci.
+    - Increase in LD shows consistent differences between hybrid zones, with *rustic* hybrids showing higher.
+    - Also no differences in LD between parental populations, therefore admixture important followed by selection.
+    - Starting levels of admixture LD higher than current levels, suggesting that selection worked by slowing erosion of LD, rather enhancing LD beyond starting levels.
+- Primary/major role of divergent sexual selection in genomic divergence and RI.
+
+
+Prevalence of back-crossed, late generation hybrids, and demographic models, suggest that hybrid zones formed upon secondary contact following allopatry. Assuming secondary contact? What if never isolated in the first place?
+
+Nice detailed figures. Good communication/presentation.
+
+Genetic links of sexual trait loci --> sexual trait loci divergence in fitness and selection --> sexual trait loci are barriers to gene flow in sympatry ---> genetic coupling of barriers promotes RI

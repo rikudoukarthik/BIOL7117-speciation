@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -117,8 +146,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#mallet-2013" id="toc-mallet-2013" class="nav-link active" data-scroll-target="#mallet-2013">Mallet 2013</a></li>
-  <li><a href="#foote-2018" id="toc-foote-2018" class="nav-link" data-scroll-target="#foote-2018">Foote 2018</a></li>
+  <li><a href="#mallet-2013" id="toc-mallet-2013" class="nav-link active" data-scroll-target="#mallet-2013"><span class="header-section-number">1</span> Mallet 2013</a></li>
+  <li><a href="#foote-2018" id="toc-foote-2018" class="nav-link" data-scroll-target="#foote-2018"><span class="header-section-number">2</span> Foote 2018</a></li>
+  <li><a href="#discussion-geography-of-speciation" id="toc-discussion-geography-of-speciation" class="nav-link" data-scroll-target="#discussion-geography-of-speciation"><span class="header-section-number">3</span> Discussion: Geography of speciation</a>
+  <ul class="collapse">
+  <li><a href="#coathup-et-al-2024" id="toc-coathup-et-al-2024" class="nav-link" data-scroll-target="#coathup-et-al-2024"><span class="header-section-number">3.1</span> Coathup et al 2024</a></li>
+  <li><a href="#dean-et-al-2019" id="toc-dean-et-al-2019" class="nav-link" data-scroll-target="#dean-et-al-2019"><span class="header-section-number">3.2</span> Dean et al 2019</a></li>
+  </ul></li>
+  <li><a href="#rundle-nosil-2005" id="toc-rundle-nosil-2005" class="nav-link" data-scroll-target="#rundle-nosil-2005"><span class="header-section-number">4</span> Rundle &amp; Nosil 2005</a>
+  <ul class="collapse">
+  <li><a href="#ecological-causes-of-divergent-selection" id="toc-ecological-causes-of-divergent-selection" class="nav-link" data-scroll-target="#ecological-causes-of-divergent-selection"><span class="header-section-number">4.1</span> Ecological causes of divergent selection</a></li>
+  </ul></li>
+  <li><a href="#discussion-pre-zygotic-isolation" id="toc-discussion-pre-zygotic-isolation" class="nav-link" data-scroll-target="#discussion-pre-zygotic-isolation"><span class="header-section-number">5</span> Discussion: Pre-zygotic isolation</a>
+  <ul class="collapse">
+  <li><a href="#zhang-et-al-2024" id="toc-zhang-et-al-2024" class="nav-link" data-scroll-target="#zhang-et-al-2024"><span class="header-section-number">5.1</span> Zhang et al 2024</a></li>
+  <li><a href="#schield-et-al-2024" id="toc-schield-et-al-2024" class="nav-link" data-scroll-target="#schield-et-al-2024"><span class="header-section-number">5.2</span> Schield et al 2024</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -144,14 +187,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="mallet-2013" class="level1">
-<h1>Mallet 2013</h1>
+<section id="mallet-2013" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Mallet 2013</h1>
 <ul>
 <li></li>
 </ul>
 </section>
-<section id="foote-2018" class="level1">
-<h1>Foote 2018</h1>
+<section id="foote-2018" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Foote 2018</h1>
 <ul>
 <li>Sympatric speciation does not involve physical/geographic barriers, so offers insights into role of selection (natural and sexual) in driving speciation.</li>
 <li>This speciation (divergence with gene flow) is therefore rare, extreme, restrictive, and controversial.</li>
@@ -163,8 +206,155 @@ ul.task-list li input[type="checkbox"] {
 <li>Modern genomic methods are still biased towards disproving (and not supporting) primary sympatric speciation. Palaeogenomics is a useful tool to tackle this.</li>
 <li>Author argues that focus should be placed on sympatric speciation, and away from primary vs secondary.</li>
 </ul>
+</section>
+<section id="discussion-geography-of-speciation" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Discussion: Geography of speciation</h1>
+<section id="coathup-et-al-2024" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="coathup-et-al-2024"><span class="header-section-number">3.1</span> Coathup et al 2024</h2>
+<ul>
+<li>Theory says sympatric speciation facilitated by magic traits which might be encoded by pleiotropic genes, but little evidence exists of sympatric speciation and empirical evidence of magic traits is rare. Authors investigated role of pleitropy in <em>Howea</em> speciation. They found multiple genes showing adaptive divergence between the sister species (sign of pleiotropy, in soil stress tolerance and flowering time).</li>
+<li>Alternative to magic traits/pleiotropy driving sympatric ecological speciation is linkage disequilibrium. (i.e., one allele with multiple effects vs two close alleles not separated in recombination.) In either case, “major effect loci”.</li>
+<li>Dunning et al 2016 and Osborne et al 2019 assessed gene expression and genetic divergence. They identified candidate pleiotropic speciation genes. The current study aimed to test whether these genes actually are pleiotropic loci affecting soil stress tolerance and flowering time. If so, this would be positive evidence for magic traits.</li>
+<li>Method: T-DNA knockout <em>A. thaliana</em> used for high-throughput phenotyping (knockouts in orthologues of candidate speciation genes, 11 knockout mutants).
+<ul>
+<li>Grown under various stress emulating Lord Howe Island. Then morphology, stress responses and flowering time measured.</li>
+</ul></li>
+<li>Five genes potential speciation genes: knockouts in each of these showed displaced flowering times and altered soil stress response (cadmium, drought, salt). Largest effect sizes in SAL1 (latest flowering) and SIZ1 (earliest flowering)
+<ul>
+<li>Knockout of SIZ1 caused reduced drought tolerance. <em>H. belmoreana</em> has lower expression of the two SIZ1 homologues and also cannot colonise calcareous soils. On the other hand, knockout of SAL1 caused increased drought tolerance (consistent with <em>H. forsteriana</em>), but reduced salt tolerance which doesn’t match with <em>Howea</em> scenario—so less evidence for this locus driving sympatric speciation cf SIZ1.</li>
+</ul></li>
+<li>Robust example of genetic architecture of sympatric speciation. Evidence of pleiotropy in multiple loci, so could be a combination of pleiotropy and linkage disequilibrium.</li>
+</ul>
+<p>How did knockout (removal) give these results? Counterintuitive?</p>
+</section>
+<section id="dean-et-al-2019" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="dean-et-al-2019"><span class="header-section-number">3.2</span> Dean et al 2019</h2>
+<ul>
+<li>An assumption when considering sympatric species pairs is that they originated from a recent, genetically homogenous ancestor, but most evidence invokes introgression/admixture upon secondary contact as responsible for speciation. The authors compare two ecotypes of three-spined stickleback (no, multiple species-pairs?) using morphological data, targeted genotyping and genome-wide SNP data.
+<ul>
+<li>The two ecotypes show extensive hybridisation in sympatry/parapary.</li>
+<li>There are rare cases of complete reproductive isolation in sticklebacks, but these cases involve ancient allopatric origins.</li>
+</ul></li>
+<li>Importance of genetic admixture upon secondary contact widely known in plants since 1970s, but has also started gaining popularity in animals.
+<ul>
+<li>Classic examples like Darwin’s finches, Lake Victoria cichlids and <em>Anopheles</em> species complex all either involved genetic admixture events or are cryptic cases of homoploid hybrid speciation.</li>
+</ul></li>
+<li>Overwhelming evidence for ancient allopatry, and against “true” sympatric ecological speciation. (And authors found the same.)</li>
+<li>They find that the two ecotypes are strongly reproductively isolated, but also a complex colonisation history suggesting admixture upon secondary contact in addition to disruptive ecological selection (i.e., older allopatric origin).</li>
+<li>Three hypotheses (none consider sympatric speciation option? wait, the first classic one probably is)</li>
+<li>Compelling morphological and genetic evidence of unusually strong reproductive isolation between lagoon resident and anadromous stickleback, in spite of (low) gene flow. Classic purely-ecological speciation model (relative sea level change) unlikely; at least two colonisation and therefore admixture upon secondary contact (alongside strong selection for maintenance of differentiation, i.e.&nbsp;partial ecological basis)</li>
+<li>Reproductive isolation in this island species-pair example is considerably stronger than most other stickleback examples, so this could potentially be a very useful system to work further on these questions.</li>
+<li>Also evidence against “linear, bifurcating process” model.</li>
+</ul>
+<p>Species pairs? Or just ecotypes? Confusing.</p>
+</section>
+</section>
+<section id="rundle-nosil-2005" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Rundle &amp; Nosil 2005</h1>
+<ul>
+<li>Renewed interest in microevolutionary processes driving macroevolutionary speciation was linked to reclassficiation of speciation models from geographic scheme (sympatry vs allopatry) to focus on reproductive isolation.</li>
+<li>Barriers as a result of ecologically driven divergent selection</li>
+<li>Ecological speciation different from other models that focus on chance events (polyploidisation, hybridisation, genetic drift, founder events, population bottlenecks), or on non-divergent and/or non-ecological selection (runaway selection, sexual conflict)</li>
+</ul>
+<section id="ecological-causes-of-divergent-selection" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="ecological-causes-of-divergent-selection"><span class="header-section-number">4.1</span> Ecological causes of divergent selection</h2>
+<p>Environmental differences, sexual selection, ecological interactions</p>
+</section>
+</section>
+<section id="discussion-pre-zygotic-isolation" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Discussion: Pre-zygotic isolation</h1>
+<section id="zhang-et-al-2024" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="zhang-et-al-2024"><span class="header-section-number">5.1</span> Zhang et al 2024</h2>
+<ul>
+<li>Role of ecology and geography have not been explored much at later stages of speciation, because traditionally focus on role of ecology in <em>initiating</em> speciation and on role of geography (reinforcement) on species pairs lacking divergent characteristics.</li>
+<li>How divergent ecology interacts with geography to affect RI in later stages of speciation remains unclear</li>
+<li>Reinforcement: increased favour towards prezygotic isolation in sympatry, peripatry or parapatry, due to fitness cost to hybridisation</li>
+<li>Increased habitat isolation can also arise from direct selection against immigrants (high fidelity to native environment favoured)</li>
+<li>Three gall wasps in genus <em>Belonocnema</em>, specific to <em>Quercus</em> hosts.</li>
+<li>Existing knowledge: two sympatric wasp species are in later stages of speciation</li>
+<li>Test: in allopatry, does host plant divergence yield higher RI? In host plant divergence, does sympatry yield higher RI than allopatry (due to selection for reduced migration and reduced hybridisation)?</li>
+<li>Measured “degree of sexual isolation in the absence of host plant”</li>
+<li>Natural temporal difference in the wasp species, so they stored some galls at 4 dec C for one week which delayed the emergence. Adults were used in experiments 1-2 days after emergence.</li>
+<li>Measured host plant selection using a controlled two-choice experiment, using females instead of males (female host choice determines environment for next generation, and males display lower host fidelity).
+<ul>
+<li>Female aspirated into the container and observed for 30 min at 2-min intervals (15 obs), with the assumption that time spent on host plant is correlated with oviposition decision.</li>
+<li>Calculated proportion of time spent on natal plant (<span class="math inline">\([0, 1]\)</span>), compared using GLMM.</li>
+<li>Also calculated pairwise estimates of host plant preference difference: absolute difference between preference values calculated above (also <span class="math inline">\([0, 1]\)</span>).</li>
+</ul></li>
+<li>Measured sexual isolation by observing courtship and mating interactions between males and females, using controlled no-choice preference trials.
+<ul>
+<li>Male and female (same or different species) aspirated into container, observed for same time, and recorded three interactions: male wing buzzing/fanning, male mounting female, copulation.</li>
+<li>Calculated probability of mating between conspecific and heterospecific pairs, and compared using GLMM.</li>
+<li>Comparison between species pair type and individual pair cannot be done using GLMM, so they also calculated strength of sexual isolation between species pairs using a formula.</li>
+</ul></li>
+<li>Evidence that host use (ecological) interacts with geography in driving divergent selection in <em>Belonocnema</em> wasps.
+<ul>
+<li>Sympatric wasp species with different host plant showed highest habitat isolation, while allopatric with same host plant showed lowest.</li>
+<li>Proximity to two host plant options increased host preference (Petri dish vs cups)</li>
+<li>Sympatric also showed highest sexual isolation, while allopatric with same host plant showed lowest.</li>
+</ul></li>
+<li>High isolation in allopatric species with same host plant suggest that selection is not directly driven by habitat use. Similar selection environment could have taken different phenotypic pathways (mutation-order speciation).</li>
+<li>Three possible mechanisms for high isolation in sympatric species:
+<ul>
+<li>Templeton effect/differential fusion: in sympatry, strong isolation is required for isolated populations to persist, whereas weakly isolated populations fuse.</li>
+<li>Reinforcement: natural selection against hybrids with lower fitness</li>
+<li>Reproductive interference: presence of sympatric species during mating (or cost of migration) could elevate prezygotic isolation</li>
+</ul></li>
+<li>Also found asymmetry between habitat isolation and sexual isolation between allopatric species sharing the same host plant: lineage that emigrates more shows stronger habitat isolation (lower fitness of immigrants in alternative habitat) while lineage that receives more immigrants shows stronger sexual isolation (lower fitness of hybrids).</li>
+<li>The three closely related wasp species are a good model for speciation research, due to their unique ecology and geography. Their framework is also useful for exploring completion of speciation, a knowledge gap.</li>
+</ul>
+</section>
+<section id="schield-et-al-2024" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="schield-et-al-2024"><span class="header-section-number">5.2</span> Schield et al 2024</h2>
+<ul>
+<li>How does the genetic basis of sexual selection result in barrier to gene flow in secondary contact?</li>
+<li>Most studies explore links between either sexual traits and reproductive isolation, or genomic divergence and genetic association with sexual traits. Not the full flow from genomic divergence to reproductive isolation via barrier to gene flow.</li>
+<li>For species like Barn Swallow which are early in speciation process, sexual selection may be driving RI at small number of barrier loci involved in sexual traits.
+<ul>
+<li>Genetic coupling of barrier loci (linkage disequilibrium) facilitates speciation, via both direct and indirect selection. With increase in coupled barrier loci, barrier to gene flow is stengthened.</li>
+<li>Coupling is likely to arise in allopatry, and can promote RI upon further secondary contact.</li>
+</ul></li>
+<li>Barn Swallow populations all diverged recently from the common ancestor about 11 kya, and there is strong evidence for divergent sexual selection among these populations.
+<ul>
+<li>Not only does the species have multiple populations (subspecies), but there are also multiple hybrid zones, with varying divergence in sexual traits. These hybrid zones allow tests of whether sexual selection results in RI upon secondary contact.</li>
+<li>Further, two of these hybrid zones also have divergences in nonbreeding migratory route, which is a potential coupled trait (low survival of hybrids taking nonadaptive migratory routes; i.e., hybrid fitness).</li>
+<li>Explicit tests of effects of trait loci on gene flow are necessary because degree of concordance between allopatric evolutionary processes and hybrid fitness is not clear a priori.</li>
+</ul></li>
+<li>Do sexual trait loci experience divergent sexual selection in allopatry and promote RI upon secondary contact? Is there LD among barrier loci (sexual traits, migratory route) in secondary contact, mainting RI via effects on hybrid fitness?</li>
+<li>Found that 6 ssp. cluster in 3 groups. Individuals from hybrid zones show intermediate/similar to parent plumage trait values (breast feather colour, tail streamer length) and admixture proportions.</li>
+<li>Prevalence of back-crossed, late generation hybrids, and demographic models, suggest that hybrid zones formed upon secondary contact following allopatry.</li>
+<li><em>rustica</em>-<em>gutturalis</em> hybrid zone estimated to have formed 2000 generations ago, while the <em>tytleri</em> ones were more recent (&lt; 1000 generations).</li>
+<li>Trait variation is controlled by few loci and not several genes: both traits have high proportion of phenotypic variation explained (PVE) by SNP genotypes, and high proportion of genetic effects (PGE) by small number of SNPs.</li>
+<li>Ventral colour SNPs on chromosome 1A and Z (genes affecting melanogenesis and feathering phenotype), whereas tail streamer length SNPs on chromosome 2 (enzymes with regulatory functions potentially affecting transcription, intracellular transport, growth factor stability).
+<ul>
+<li>Concentration of ventral colour associations on Z chromosome (sex chromosome) supports that sex linkage is favourable for traits involved in mate choice and sexual isolation.</li>
+</ul></li>
+<li>Across allopatric populations, sexual trait loci show more genetic differentiation (FST) than do genome-wide comparisons.
+<ul>
+<li>This could just be due to “background selection” in regions with reduced recombination. However, regions with extremely low recombination rates like centromeres also show higher FST in trait loci—high differentiation in trait loci is due to divergent positive selection rather than background selection alone. Elevated allelic differentitation and extended haplotype homozygosity, also suggest this.</li>
+<li>Greater fitness effects of ventral colour than tail streamer length.</li>
+</ul></li>
+<li>Geographic and genomic cline analysis, comparing trait loci–background loci differences across space along the three hybrid zone transects. -Found steeper transition between parental ancestries in trait loci cf background loci.
+<ul>
+<li>Steepness itself could arise due to low population density in hybrid zones, but this would show similar clines in trait loci as in other highly differentiated loci (not the case)</li>
+<li>Stronger selection and barrier to gene flow between <em>rustica</em> and other ssp.</li>
+<li>Cline patterns are weakest in <em>tytleri</em>-<em>gutturalis</em> hybrid zone, possibly linked to absence of migratory divide between the two populations (though remains to be tested).</li>
+</ul></li>
+<li>LD arises from hybridisation, but extent of erosion of LD by recombination over generations can be impacted by selection-driven genetic coupling.
+<ul>
+<li>They compared interchromosomal LD between trait loci and background loci; if the LD was formed by admixture but not maintained by selection, would find similar levels between the two. But they found much higher LD levels in trait loci.</li>
+<li>Increase in LD shows consistent differences between hybrid zones, with <em>rustic</em> hybrids showing higher.</li>
+<li>Also no differences in LD between parental populations, therefore admixture important followed by selection.</li>
+<li>Starting levels of admixture LD higher than current levels, suggesting that selection worked by slowing erosion of LD, rather enhancing LD beyond starting levels.</li>
+</ul></li>
+<li>Primary/major role of divergent sexual selection in genomic divergence and RI.</li>
+</ul>
+<p>Prevalence of back-crossed, late generation hybrids, and demographic models, suggest that hybrid zones formed upon secondary contact following allopatry. Assuming secondary contact? What if never isolated in the first place?</p>
+<p>Nice detailed figures. Good communication/presentation.</p>
+<p>Genetic links of sexual trait loci –&gt; sexual trait loci divergence in fitness and selection –&gt; sexual trait loci are barriers to gene flow in sympatry —&gt; genetic coupling of barriers promotes RI</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

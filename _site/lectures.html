@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -117,16 +146,53 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#l01-overview-species-concepts" id="toc-l01-overview-species-concepts" class="nav-link active" data-scroll-target="#l01-overview-species-concepts">L01: Overview &amp; species concepts</a>
+  <li><a href="#overview-species-concepts" id="toc-overview-species-concepts" class="nav-link active" data-scroll-target="#overview-species-concepts"><span class="header-section-number">1</span> Overview &amp; species concepts</a>
   <ul class="collapse">
-  <li><a href="#course-overview" id="toc-course-overview" class="nav-link" data-scroll-target="#course-overview">Course overview</a></li>
-  <li><a href="#concepts-of-species" id="toc-concepts-of-species" class="nav-link" data-scroll-target="#concepts-of-species">Concepts of species</a>
+  <li><a href="#course-overview" id="toc-course-overview" class="nav-link" data-scroll-target="#course-overview"><span class="header-section-number">1.1</span> Course overview</a></li>
+  <li><a href="#concepts-of-species" id="toc-concepts-of-species" class="nav-link" data-scroll-target="#concepts-of-species"><span class="header-section-number">1.2</span> Concepts of species</a>
   <ul class="collapse">
-  <li><a href="#biological-species-concept" id="toc-biological-species-concept" class="nav-link" data-scroll-target="#biological-species-concept">Biological species concept</a></li>
-  <li><a href="#phylogenetic-species-concepts" id="toc-phylogenetic-species-concepts" class="nav-link" data-scroll-target="#phylogenetic-species-concepts">Phylogenetic species concepts</a></li>
+  <li><a href="#biological-species-concept" id="toc-biological-species-concept" class="nav-link" data-scroll-target="#biological-species-concept"><span class="header-section-number">1.2.1</span> Biological species concept</a></li>
+  <li><a href="#phylogenetic-species-concepts" id="toc-phylogenetic-species-concepts" class="nav-link" data-scroll-target="#phylogenetic-species-concepts"><span class="header-section-number">1.2.2</span> Phylogenetic species concepts</a></li>
+  <li><a href="#van-valen-1976-ecological-species-concept" id="toc-van-valen-1976-ecological-species-concept" class="nav-link" data-scroll-target="#van-valen-1976-ecological-species-concept"><span class="header-section-number">1.2.3</span> van Valen 1976: Ecological species concept</a></li>
+  <li><a href="#de-queiroz-1998-general-lineage-concept" id="toc-de-queiroz-1998-general-lineage-concept" class="nav-link" data-scroll-target="#de-queiroz-1998-general-lineage-concept"><span class="header-section-number">1.2.4</span> De Queiroz 1998: General lineage concept</a></li>
+  <li><a href="#alternativedissenting-species-concepts" id="toc-alternativedissenting-species-concepts" class="nav-link" data-scroll-target="#alternativedissenting-species-concepts"><span class="header-section-number">1.2.5</span> Alternative/dissenting species concepts</a></li>
+  <li><a href="#operational-definition" id="toc-operational-definition" class="nav-link" data-scroll-target="#operational-definition"><span class="header-section-number">1.2.6</span> Operational definition</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#l02-geography-of-speciation" id="toc-l02-geography-of-speciation" class="nav-link" data-scroll-target="#l02-geography-of-speciation">L02: Geography of speciation</a></li>
+  <li><a href="#geography-of-speciation" id="toc-geography-of-speciation" class="nav-link" data-scroll-target="#geography-of-speciation"><span class="header-section-number">2</span> Geography of speciation</a>
+  <ul class="collapse">
+  <li><a href="#allopatric-speciation" id="toc-allopatric-speciation" class="nav-link" data-scroll-target="#allopatric-speciation"><span class="header-section-number">2.1</span> Allopatric speciation</a></li>
+  <li><a href="#sympatric-speciation" id="toc-sympatric-speciation" class="nav-link" data-scroll-target="#sympatric-speciation"><span class="header-section-number">2.2</span> Sympatric speciation</a>
+  <ul class="collapse">
+  <li><a href="#problems" id="toc-problems" class="nav-link" data-scroll-target="#problems"><span class="header-section-number">2.2.1</span> Problems</a></li>
+  <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions"><span class="header-section-number">2.2.2</span> Solutions</a></li>
+  <li><a href="#outstanding-problem" id="toc-outstanding-problem" class="nav-link" data-scroll-target="#outstanding-problem"><span class="header-section-number">2.2.3</span> Outstanding problem</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#discussion-geography-of-speciation" id="toc-discussion-geography-of-speciation" class="nav-link" data-scroll-target="#discussion-geography-of-speciation">Discussion: Geography of speciation</a></li>
+  <li><a href="#prezygotic-isolation" id="toc-prezygotic-isolation" class="nav-link" data-scroll-target="#prezygotic-isolation"><span class="header-section-number">3</span> Prezygotic isolation</a>
+  <ul class="collapse">
+  <li><a href="#evidence-for-ecological-prezygotic-isolation" id="toc-evidence-for-ecological-prezygotic-isolation" class="nav-link" data-scroll-target="#evidence-for-ecological-prezygotic-isolation"><span class="header-section-number">3.1</span> Evidence for ecological prezygotic isolation</a></li>
+  <li><a href="#evidence-for-sexual-prezygotic-isolation" id="toc-evidence-for-sexual-prezygotic-isolation" class="nav-link" data-scroll-target="#evidence-for-sexual-prezygotic-isolation"><span class="header-section-number">3.2</span> Evidence for sexual prezygotic isolation</a></li>
+  </ul></li>
+  <li><a href="#discussion-prezygotic-isolation" id="toc-discussion-prezygotic-isolation" class="nav-link" data-scroll-target="#discussion-prezygotic-isolation">Discussion: Prezygotic isolation</a></li>
+  <li><a href="#postzygotic-isolation" id="toc-postzygotic-isolation" class="nav-link" data-scroll-target="#postzygotic-isolation"><span class="header-section-number">4</span> Postzygotic isolation</a>
+  <ul class="collapse">
+  <li><a href="#extrinsic-postzygotic-isolation" id="toc-extrinsic-postzygotic-isolation" class="nav-link" data-scroll-target="#extrinsic-postzygotic-isolation"><span class="header-section-number">4.1</span> Extrinsic postzygotic isolation</a></li>
+  <li><a href="#intrinsic-postzygotic-isolation" id="toc-intrinsic-postzygotic-isolation" class="nav-link" data-scroll-target="#intrinsic-postzygotic-isolation"><span class="header-section-number">4.2</span> Intrinsic postzygotic isolation</a>
+  <ul class="collapse">
+  <li><a href="#haldanes-rule" id="toc-haldanes-rule" class="nav-link" data-scroll-target="#haldanes-rule"><span class="header-section-number">4.2.1</span> Haldane’s Rule</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#discussion-prezygotic-isolation-1" id="toc-discussion-prezygotic-isolation-1" class="nav-link" data-scroll-target="#discussion-prezygotic-isolation-1">Discussion: Prezygotic isolation</a></li>
+  <li><a href="#reinforcement" id="toc-reinforcement" class="nav-link" data-scroll-target="#reinforcement"><span class="header-section-number">5</span> Reinforcement</a>
+  <ul class="collapse">
+  <li><a href="#experimental-tests-for-reinforcement" id="toc-experimental-tests-for-reinforcement" class="nav-link" data-scroll-target="#experimental-tests-for-reinforcement"><span class="header-section-number">5.1</span> Experimental tests for reinforcement</a></li>
+  <li><a href="#comparative-studies-of-reinforcement" id="toc-comparative-studies-of-reinforcement" class="nav-link" data-scroll-target="#comparative-studies-of-reinforcement"><span class="header-section-number">5.2</span> Comparative studies of reinforcement</a></li>
+  <li><a href="#objections-to-reinforcement" id="toc-objections-to-reinforcement" class="nav-link" data-scroll-target="#objections-to-reinforcement"><span class="header-section-number">5.3</span> Objections to reinforcement</a></li>
+  <li><a href="#solutions-to-objections" id="toc-solutions-to-objections" class="nav-link" data-scroll-target="#solutions-to-objections"><span class="header-section-number">5.4</span> Solutions to objections</a></li>
+  <li><a href="#bottom-line" id="toc-bottom-line" class="nav-link" data-scroll-target="#bottom-line"><span class="header-section-number">5.5</span> Bottom line</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -152,24 +218,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="l01-overview-species-concepts" class="level1">
-<h1>L01: Overview &amp; species concepts</h1>
+<section id="overview-species-concepts" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Overview &amp; species concepts</h1>
 <p><strong>2025-08-26</strong></p>
-<section id="course-overview" class="level2">
-<h2 class="anchored" data-anchor-id="course-overview">Course overview</h2>
+<section id="course-overview" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="course-overview"><span class="header-section-number">1.1</span> Course overview</h2>
 <p>Follows Coyne &amp; Orr 2004(?) broadly. This was a highly impactful book, very timely, and heralded the dawn of the genomic era. The period of roughly 2012–20 saw incredible growth in our understanding of genomes and speciation. Species concepts are important, especially if your thesis includes the term “speciation”, but we won’t spend too much time in the class on these debates on definition.</p>
 <p>Till exam 1: reading fundamentals of speciation questions. Post-exam-1: stick with basic questions but delve on what genomics has done to advance understanding. Word and sentence counts in assignments need to be followed strictly, aim is to get used to condensing important information.</p>
 </section>
-<section id="concepts-of-species" class="level2">
-<h2 class="anchored" data-anchor-id="concepts-of-species">Concepts of species</h2>
+<section id="concepts-of-species" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="concepts-of-species"><span class="header-section-number">1.2</span> Concepts of species</h2>
 <p>Species are not just for bookkeeping; different species are actually different, and they do different things. Cryptic species are an example of why (community) ecologists should care about work of population geneticists.</p>
 <blockquote class="blockquote">
 <p>If one could conclude as to the nature of the Creator from a study of creation it would appear that God has an inordinate fondness for stars and beetles.</p>
 <p>— JBS Haldane, on creationism and the sheer number of beetle species</p>
 </blockquote>
 <p>Early ideas of species concepts can date back to, as with many things, Aristotle. His notion of a perfect “essence” asserted the existence of a perfect form for each species, variations from which are imperfections in its actualisation. The essence of a species was fixed, but involved descent as the crucial factor tying different individuals in a species together. This implied a fundamental difference between inter- and intraspecific variation.</p>
-<section id="biological-species-concept" class="level3">
-<h3 class="anchored" data-anchor-id="biological-species-concept">Biological species concept</h3>
+<section id="biological-species-concept" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="biological-species-concept"><span class="header-section-number">1.2.1</span> Biological species concept</h3>
 <p>The <strong>Darwinian revolution</strong> insisted that variation is not just noise, but rather the core (nuisance vs crux). <em>Everything</em> shares common descent, <em>variation</em> is at the heart of evolution, and there is no true difference between inter- and intraspecific variation. His way of distinguishing variants was using the morphological gap criterion (few intermediates), although his concept can be applied to ecology, behaviour or genetics too.</p>
 <p>Ernst Mayr, starting in the 1950s, adapted Darwin’s ideas to eventually come up with the biological species concept, where species are defined as interbreeding natural populations, reproductively isolated from others. Before him, Poulton (1904) had similar ideas, with the notion of “syngamy” (interbreeding) as the true meaning of species. (As did Lotsy and Dobzhansky.)</p>
 <p>Some adherents of BSC include those who worked extensively on model organisms like <em>Drosophila</em> in the lab (Coyne, Orr, Noor).</p>
@@ -189,104 +255,243 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Also, reproductive isolation not likely adaptive, and prezygotic compatibility is the true reality underlying species—isolating mechanisms a result rather than a cause of species separateness (Paterson 1985). <em>Recognition concept</em> vs isolation concept, common fertilisation system.</p>
 </section>
-<section id="phylogenetic-species-concepts" class="level3">
-<h3 class="anchored" data-anchor-id="phylogenetic-species-concepts">Phylogenetic species concepts</h3>
+<section id="phylogenetic-species-concepts" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="phylogenetic-species-concepts"><span class="header-section-number">1.2.2</span> Phylogenetic species concepts</h3>
+<section id="hennig-1966-cladisticsmonophyly-based" class="level4" data-number="1.2.2.1">
+<h4 data-number="1.2.2.1" class="anchored" data-anchor-id="hennig-1966-cladisticsmonophyly-based"><span class="header-section-number">1.2.2.1</span> Hennig 1966: Cladistics/monophyly-based</h4>
+<p>Hennig brought about the discipline of <em>cladistics</em>, which eventually evolved into the modern PSC, where a clade means a monophyletic group. Therefore, this species concept is based on monophyly, i.e., history. Problems:</p>
 <ul>
-<li>Hennig 1966: brought about rise of cladistics, and eventually phylogenetic species concept
-<ul>
-<li>Clade: monophyletic group</li>
-<li>Monophyly, history-based species concept</li>
-</ul></li>
-<li>Problems of monophyly-based PSC:
-<ul>
-<li>Can lead to considering vary small isolated groups (due to focus on monophyly)</li>
+<li>Can lead to considering very small isolated groups (due to focus on monophyly)</li>
 <li>Forced to leave behind paraphyletic taxa</li>
 <li>Contingent on quality of trees! Early on, mostly mitochondrial DNA.</li>
-<li>And species tree vs gene tree discordance. Maddison 1997 showed how this discordance can arise (short speciation event times, wide branches?, related to incomplete lineage sorting). Can’t rely blindly on numbers from gene trees.</li>
-</ul></li>
-<li>Cracraft 1989: irreducible cluster of organisms, diagnosably distinct from others, and within which there is a parental pattern of ancestry and descent
+<li>Species tree vs gene tree discordance.
 <ul>
-<li>Most proponents of diagnostic PSC came from museum background.</li>
-<li>Recently, this concept has started to make inroads into zoological taxonomy, raising subspecies previously demoted (under polytypic species concept) to species level.</li>
+<li>Maddison 1997 showed how this discordance can arise (short speciation event times, wide branches?, related to incomplete lineage sorting).</li>
+<li>Can’t rely blindly on numbers from gene trees.</li>
 </ul></li>
-<li>Modern phylogenetic approaches:
+</ul>
+</section>
+<section id="cracraft-1989-irreducible-clusterdiagnosably-distinct" class="level4" data-number="1.2.2.2">
+<h4 data-number="1.2.2.2" class="anchored" data-anchor-id="cracraft-1989-irreducible-clusterdiagnosably-distinct"><span class="header-section-number">1.2.2.2</span> Cracraft 1989: Irreducible cluster/diagnosably distinct</h4>
+<p>Focus on irreducible clusters of organisms, diagnosably distinct from others, and among which there is a parental pattern of ancestry and descent. Most proponents of this were from a museum background. Recently, this concept has started to make inroads into zoological taxonomy, raising subspecies previously demoted (under polytypic species concept) to species level.</p>
+</section>
+<section id="modern-phylogenetic-approaches" class="level4" data-number="1.2.2.3">
+<h4 data-number="1.2.2.3" class="anchored" data-anchor-id="modern-phylogenetic-approaches"><span class="header-section-number">1.2.2.3</span> Modern phylogenetic approaches</h4>
 <ul>
-<li>Species delimitations using multi-locus coalescent (Yang &amp; Rannala 2014); using Bayesian posterior to compare single-species or two-species models based on genomic data
+<li>Species delimitations using <strong>multi-locus coalescent</strong> (Yang &amp; Rannala 2014); using Bayesian posterior to compare single-species or two-species models based on genomic data
 <ul>
-<li>Same problems as Bayesian methods in general: importance of prior info on phylogenetic relationships.</li>
+<li>Problems: Same as Bayesian methods in general—importance of prior info on phylogenetic relationships.</li>
 </ul></li>
-<li>Barcode of Life (Paul Hebert): driven by biodiversity crisis, don’t need to wait for taxonomic expertise, can instead just collect and insert in barcoding pipeline.
+<li><strong>Barcode of Life</strong> (Paul Hebert): driven by biodiversity crisis, don’t need to wait for taxonomic expertise, can instead just collect and insert in barcoding pipeline.
 <ul>
-<li>But for many species, there is no clean gap in barcodes to distinguish intra- and interspecific variation. So, useful for identifying taxa from samples, but controversial for describing new species.</li>
-<li>Problems: single gene taxonomy, gene-vs-species tree, introgression of mtDNA</li>
+<li>Problems: For many species, there is no clean gap in barcodes to distinguish intra- and interspecific variation. So, useful for identifying taxa from samples, but controversial for describing new species.</li>
+<li>Also, single gene taxonomy, gene-vs-species tree, introgression of mtDNA</li>
 </ul></li>
-</ul></li>
-<li>Ecological species concept (van Valen 1976):
+</ul>
+</section>
+</section>
+<section id="van-valen-1976-ecological-species-concept" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="van-valen-1976-ecological-species-concept"><span class="header-section-number">1.2.3</span> van Valen 1976: Ecological species concept</h3>
+<p>Places greater focus on stabilising selection than gene flow. This is an especially true/useful approach for bacteria: different bacteria can occupy very different niches and have no gene flow, but act/behave the same in terms of where they are found, physiology, etc.</p>
+</section>
+<section id="de-queiroz-1998-general-lineage-concept" class="level3" data-number="1.2.4">
+<h3 data-number="1.2.4" class="anchored" data-anchor-id="de-queiroz-1998-general-lineage-concept"><span class="header-section-number">1.2.4</span> De Queiroz 1998: General lineage concept</h3>
+<p>Focuses on evolutionary independence, and considers species as segments of population-level variation?</p>
+</section>
+<section id="alternativedissenting-species-concepts" class="level3" data-number="1.2.5">
+<h3 data-number="1.2.5" class="anchored" data-anchor-id="alternativedissenting-species-concepts"><span class="header-section-number">1.2.5</span> Alternative/dissenting species concepts</h3>
+<p><strong>Species are not real!</strong></p>
+<p>Some perspectives/justifications for this view:</p>
 <ul>
-<li>Focus on stabilising selection over gene flow</li>
-<li>Especially true/useful for bacteria (can occupy very different niches and no gene flow, but acting like species in terms of where they are found, physiology, etc.)</li>
-</ul></li>
-<li>General lineage concept (De Queiroz 1998): Evolutionary indepndence, species as segments of population-level</li>
-<li>Alternative (dissent): species are not real!
-<ul>
-<li>Genetic markers: gene flow too low to maintain cohesion</li>
-<li>Taxonomy: subspecies elevated to species, but grade into each other</li>
-<li>Populations as evolutionary units and not species</li>
-<li>Phenetics</li>
+<li>Taxonomic perspective: subspecies may be elevated to species, but still grade into each other so don’t hold much meaning</li>
+<li>Consider populations as evolutionary units, not species</li>
 <li>Spatial and temporal forms that are not easy to tell apart as species vs not.</li>
-</ul></li>
-<li>Hellberg’s operational definition is based on genotypic cluster criterion (Mallet 1995)
-<ul>
-<li>Genotypic gaps between local populations (so cannot be applied to allopatric)</li>
-<li>Think of it as bimodal distribution of traits</li>
-<li>This view also uses Bayesian stats, “assignment tests”</li>
-</ul></li>
+<li>Genetic markers: gene flow too low to maintain cohesion</li>
+<li>Phenetics</li>
 </ul>
 </section>
+<section id="operational-definition" class="level3" data-number="1.2.6">
+<h3 data-number="1.2.6" class="anchored" data-anchor-id="operational-definition"><span class="header-section-number">1.2.6</span> Operational definition</h3>
+<p>Hellberg’s operational definition is based on <strong>genotypic cluster criterion (Mallet 1995)</strong>. The emphasis is on how combinations of traits cluster separately or together between groups. What’s critical is the presence of genotypic gaps between local populations, so this concept makes sense for sympatric populations but not so much for allopatric ones.</p>
+<p>It can be pictured as a bimodal distribution of traits. This view relies on Bayesian stats, using “assignment tests” and so on.</p>
 </section>
 </section>
-<section id="l02-geography-of-speciation" class="level1">
-<h1>L02: Geography of speciation</h1>
-<p>Allopatric and sympatric speciation.</p>
-<p><strong>2025-08-28</strong></p>
+</section>
+<section id="geography-of-speciation" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Geography of speciation</h1>
+<p><strong>2025-08-28</strong>: Allopatric and sympatric speciation.</p>
+<p>Allopatric speciation has always been popular, and has been the preferred model of speciation until recently, whereas sympatric speciation has kinda been the underdog.</p>
+<section id="allopatric-speciation" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="allopatric-speciation"><span class="header-section-number">2.1</span> Allopatric speciation</h2>
+<p><strong>Jordan’s Law (1907):</strong> David Starr Jordan was the founder of Stanford University. His model system was Indopacific wrasses, and he had ideas about allopatric speciation well before Ernst Mayr. He believed: given any species in any region, nearest related species not likely to be found in the same region but in a neighbouring district separated from the first by a barrier of some sort. A demonstrative example was squirrels in the Grand Canyon.</p>
+<p>Ernst Mayr was a big proponent of allopatry, and specifically peripatry. He emphasised the role of drift in populations. Model systems were birds of paradise and <em>Dicrurus</em> in SE Asia.</p>
+<p>This has been the preferred model for multiple reasons:</p>
 <ul>
-<li><p>Submit long summary of next week’s dicussion papers via Turnitin (before next class on Tue), including the word count (at the top). Make sure to summarise/synthesise in own perspective on the study/results (what they did vs what they found).</p></li>
-<li><p>Mayr was a big proponent of allopatry, and specifically peripatry, emphasising drift in populations. Worked on birds of paradise and <em>Dicrurus</em>.</p></li>
-<li><p>David Starr Jordan had these ideas well before Mayr; founder of Stanford Uni. His models were Indopacific wrasses.</p>
+<li>Easier: no gene flow to contend with</li>
+<li>Lots of opportunities in nature for allopatry</li>
+<li>Lots of evidence:
 <ul>
-<li>Jordan’s Law (1907): given any species in any region, nearest related species not likely to be found in the same region but in a neighbouring district separated from the first by a barrier of some sort.</li>
-<li>e.g., squirrels in Grand Canyon</li>
-</ul></li>
-<li><p>Allopatric speciation has been preferred model until recently.</p>
-<ul>
-<li>Easier because no gene flow to contend with</li>
-<li>Lots of opportunities for allopatry</li>
-<li>Evidence to support:
-<ul>
-<li>Concordance of geography and species borders</li>
 <li>Young sister species tend to be allopatric</li>
-<li>Geographic coincidence of multiple separations of sister species and/or hybrid zones (one barrier/feature showing up again separating multiple groups of species)</li>
-<li>Increase in reproductive isolation</li>
-</ul></li>
-</ul></li>
-<li><p>Not incorporating selection into calculations results in very long times to generate species</p></li>
-<li><p>Sympatric speciation: early on was problematic</p>
-<ul>
-<li>Genetic problem: recombination (Felsenstein 1981; he invented bootstrapping, MLE; 15 papers with &gt;1000 citations); need to mate different</li>
-<li>Ecological problem: coexistence, Gause’s Rule (competitive exclusion); need to live differently enough from others</li>
-<li>Solutions: disruptive sexual selection, disruptive natural selection (tie mating to habitat, fewer genes [of large effect] the better). –&gt; <strong>magic traits</strong></li>
-<li>Some additional requirements for sympatric speciation: need to be sister species, and need to be sure that past allopatry was unlikely.</li>
-<li>Lake Victoria cichlids: crazy sympatric speciation possible due to combination of factors like trophic divergence, sexual selection, microallpatry. (But also, idea that they are only 14,000 years old is controversial, some people don’t think the lake fully dried out.)</li>
-<li><em>Rhagolitis</em> sympatric differentiation between hawthorn and (Guy Bush) apple host: eventually found out it was allopatric and secondary contact (completion of process was in sympatry), Feder et al 2003</li>
-<li>Stickleback ecomorphs in postglacial lakes are a popular model.
-<ul>
-<li>Rundle &amp; Schluter 2004: secondary contact drove character displacement and resulted in sister species, even though completion was in sympatry</li>
-</ul></li>
-<li>Sympatric vs allopatric –&gt; primary divergence vs secondary contact introgression</li>
+<li>Concordance between geography and species borders</li>
+<li>Extension of above: Geographic coincidence of multiple separations of sister species and/or hybrid zones (one barrier/feature showing up again separating multiple groups of species)</li>
+<li>Increase in reproductive isolation in allopatry</li>
 </ul></li>
 </ul>
+<p>However, even in this model, not incorporating explicit selection (i.e., relying only on drift/mutation) into calculations of species generation times results in very long times.</p>
+</section>
+<section id="sympatric-speciation" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sympatric-speciation"><span class="header-section-number">2.2</span> Sympatric speciation</h2>
+<section id="problems" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="problems"><span class="header-section-number">2.2.1</span> Problems</h3>
+<p><strong>Genetic problem:</strong> Felsenstein (1981)—also inventor of bootstrapping, maximum likelihood estimation, etc.; has 15 papers with &gt;1000 citations—argued for the problem of recombination. In sympatry, need to avoid recombination by mating differentially.</p>
+<p><strong>Ecological problem:</strong> Ecological patterns like coexistence, competitive exclusion (Gause’s Rule) occur because in sympatry need to live differently enough from others.</p>
+</section>
+<section id="solutions" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="solutions"><span class="header-section-number">2.2.2</span> Solutions</h3>
+<p>Disruptive sexual selection; disruptive natural selection (mating is linked to habitat, and the fewer genes [of large effect] the better). These are now very much linked to the concept of <strong>magic traits</strong>, for which there has been much evidence.</p>
+</section>
+<section id="outstanding-problem" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="outstanding-problem"><span class="header-section-number">2.2.3</span> Outstanding problem</h3>
+<p>Additional requirements for sympatric speciation are that they need to be sister species, and we need to be sure that past allopatry was unlikely. This has been more difficult to show, and many popular examples fail here.</p>
+<p>Lake Victoria cichlids had crazy sympatric speciation possible due to a combination of factors like trophic divergence, sexual selection, and microallopatry. However, there is controversy around the idea that they are only 14,000 years old—some people don’t think the lake fully dried out.</p>
+<p>In the case of <em>Rhagoletis</em> fruit flies, which have sympatric differentiation in host plant choice (between hawthorn and apple; GL Bush), it turned out that they were actually allopatric at some point and only the completion of the speciation process happened in sympatry (Feder et al 2003).</p>
+<p>Similarly, in the case of stickleback ecomorphs in postglacial lakes, secondary contact drove character displacement and resulted in sister species, even though completion was in sympatry (Rundle &amp; Schulter 2004).</p>
+<p>Thus, more and more evidence has piled up to transform the dichotomy from sympatric vs allopatric speciation, to <strong>primary sympatric divergence vs secondary contact introgression</strong>.</p>
+</section>
+</section>
+</section>
+<section id="discussion-geography-of-speciation" class="level1 unnumbered">
+<h1 class="unnumbered">Discussion: Geography of speciation</h1>
+<p><strong>2025-09-02</strong></p>
+<ul>
+<li>Doesn’t mean old school (primary sympatric divergence) is fully obsolete. In fact, palm paper is an example. Hellberg also believes it should be one model under consideration.</li>
+<li>What % hybridisation is relevant gene flow? 5% is kinda high still (1 in 20).</li>
+<li>Each data point in a genetic structure plot (k-means clustering) is the allele type expressed at each biallelic locus (genotype).</li>
+<li><em>Differentiation</em> is different from <em>variation</em></li>
+</ul>
+</section>
+<section id="prezygotic-isolation" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Prezygotic isolation</h1>
+<p><strong>2025-09-04</strong></p>
+<p>Reproductive isolation was a hot topic in evolution after WWII and well into the 1990s. Studies focused on two kinds of reproductive barriers (prezygotic and postzygotic), and eventually this dichotomy was paralleled in the scientists who studied them (field vs lab [e.g., <em>Drosophila</em> folks] respectively).</p>
+<p>Prezygotic isolation can be considered in two broad, but not mutually exclusive, categories: ecological (temporal, pollinator, habitat) and sexual (behavioural, mechanical, gametic) isolation.</p>
+<section id="evidence-for-ecological-prezygotic-isolation" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="evidence-for-ecological-prezygotic-isolation"><span class="header-section-number">3.1</span> Evidence for ecological prezygotic isolation</h2>
+<p><strong>Parallel speciation</strong>: stickleback ecomorphs in post-glacial lakes; ecotypes that are geographically isolated still reproduce</p>
+<p><strong>Magic traits</strong>: ecological gene under selection pleiotropically causes assortative mating (affects reproductive isolation). <em>Heliconius</em> butterflies of Amazonia; cichlids in E Africa lake (depth of lake affects colouration favoured); feather lice &amp; pigeon hosts (Villa et al 2019 PNAS; check <a href="https://www.pnas.org/doi/10.1073/pnas.1901247116#supplementary-materials">videos</a>).</p>
+<p><strong>Strong habitat selection</strong>: walking sticks in California, immigrant inviability (abiotic-dispersed organisms)</p>
+<p><strong>Isolation-by-distance/adaptation</strong>: geographic distance <span class="math inline">\(\longrightarrow\)</span> genetic distance OR ecological/adaptive divergence <span class="math inline">\(\longrightarrow\)</span> genetic distance</p>
+</section>
+<section id="evidence-for-sexual-prezygotic-isolation" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="evidence-for-sexual-prezygotic-isolation"><span class="header-section-number">3.2</span> Evidence for sexual prezygotic isolation</h2>
+<p><strong>Runaway sexual selection</strong>: positive feedback loops</p>
+<p><strong>Sexual antagonism</strong>: males and females may have different optima for same phenotype</p>
+<p><strong>Mating isolation</strong>: genitalia differentiation in beetles, moths, etc.; lock-and-key also in pollinator/flower compatibility.</p>
+<p><strong>Gametic isolation</strong> is a special case which is post-mating but pre-zygotic (reproductive tracts, bodily fluids). Conspecific sperm precedence (mating order); acrosome reaction for V envelope dissolution around eggs in marine gastropods.</p>
+</section>
+</section>
+<section id="discussion-prezygotic-isolation" class="level1 unnumbered">
+<h1 class="unnumbered">Discussion: Prezygotic isolation</h1>
+<p><strong>2025-09-09</strong></p>
+<ul>
+<li>Sentences in Science are usually more assertive/confident than would be otherwise.</li>
+<li>GWAS: genome-wide association studies.</li>
+<li>Sex chromosomes limit damage when dangerous alleles show up (doesn’t work same in both sexes, sexually antagonistic)</li>
+</ul>
+</section>
+<section id="postzygotic-isolation" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Postzygotic isolation</h1>
+<p><strong>2025-09-11</strong></p>
+<p>Barriers after the zygote is formed, which can act via reduced hybrid viability, reduced hybrid fertility, hybrid breakdown, etc.</p>
+<p>This topic has received much less focus than prezygotic isolation, because of ascertainment bias: once prezygotic isolation is completed, then cannot see postzygotic isolation. Also, other things like reinforcement strengthen prezygotic isolation.</p>
+<p>However, there are many reasons to consider postzygotic isolation. First, in many ways, <strong>ecological isolation</strong> is a form of postzygotic isolation. Moreover, even in cases where hybrid formation occurs, the persistence of distinct species means there is something <strong>decreasing the fitness of these hybrids</strong>. Also, <strong>intrinsic post- isolation may become stronger</strong> at <span class="math inline">\(\ge\)</span> F2 crosses, while extrinsic post- and pre- become weaker</p>
+<p>Darwin had a conundrum about contradictory ways in which evolution worked: on the one hand natural selection operates, but on the other hand unfit hybrids are produced. His solution for this was that sterility arises as an incidental byprouct of “unknown differences”.</p>
+<p>Much of the interest in postzygotic isolation is wrt intrinsic.</p>
+<section id="extrinsic-postzygotic-isolation" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="extrinsic-postzygotic-isolation"><span class="header-section-number">4.1</span> Extrinsic postzygotic isolation</h2>
+<p>External to the individual/organism, i.e., non-developmental. This includes things like habitat isolation, where say niche of hybrids falls somewhere between parental lineages but fitness of hybrids is lower than that of either parent. But in some cases, hybrids may have higher fitness in intermediate habitats, which would explain the increase in hybridisation in the first place.</p>
+<p>In stickleback crossing studies, Rundle 2002 found that F1s were bad (relative to parents), but F1-parent backcrosses yielded some fitter individuals (proportional to how much parental heredity the cross had).</p>
+<p>Other times, hybrids could have higher disease susceptibility, or intermediate traits that are less attractive (sexual selection).</p>
+</section>
+<section id="intrinsic-postzygotic-isolation" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="intrinsic-postzygotic-isolation"><span class="header-section-number">4.2</span> Intrinsic postzygotic isolation</h2>
+<p>Internal to the individual/organism, so quite simply, developmental defects lead to hybrid sterility or inviability.</p>
+<p>It can be <strong>meiosis issues</strong> related to ploidy levels, where hybrids like F1s simply cannot perform meiosis. Or <strong>chromosomal rearrangements/inversions</strong> like in Australian morabine grasshoppers (White 1978). However, many inversions surprisingly have no effect on heterozygote fitness, because recombination can still happen in other regions of genome.</p>
+<p>Other mechanisms include <strong>endosymbiotic infection</strong> risk for hybrids, or <strong>cytoplasmic incompatibilities</strong> especially relating to parasites (e.g., intracellular parasites like <em>Wolbachia</em>: when uninfected female flies are crossed with infected males, many/all progeny die, but infection transmitted from mother so those that are born from infected females are infected). There can even be <strong>mitonuclear incompatibilities</strong> (i.e., between mitochrondrial and cytoplasmic genetic material), famously in copepods (Ron Burton), so much so that Geoffrey Hill even introduced a <em>mitonuclear compatibility species concept</em>.</p>
+<p><strong>Allelic incompatibilities</strong> are a major way intrinsic postzygotic isolation can occur. The original definition of Dobzhansky-Muller Incompatibility focused on alleles at different loci, arguing that low hybrid fitness is a byproduct of genomes that are geographically isolated. The newer, more specific definition emphasises epistasis (effects of an allele at one locus depend on alleles present at other loci), arguing that negative epistatic interactions occur between alleles of different loci with different evolutionary histories. Some assumptions of this theory are that there occurs at least one pair of allele changes, that most incompatibilities are due to derived alleles(?), and that the no. if incompatible combinations snowballs over time.</p>
+<section id="haldanes-rule" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="haldanes-rule"><span class="header-section-number">4.2.1</span> Haldane’s Rule</h3>
+<p>Rule about <strong>sex chromosome incompatibilities</strong>; it is an exception, because there are very rare exceptions to the rule. Basically: in offspring of two different races, if one (and only one) sex is messed up (absent, rare, or sterile) then that is the heterozygous sex.</p>
+<p><strong>NOT caused by:</strong> incompatibilities between X- and Y-linked genes; dosage compensation (compensate based on importance of stuff on X); chromosomal arrangement.</p>
+<p>Possible causes:</p>
+<ul>
+<li><strong>Dominance</strong>: in XY species, hybrid males are affected by all X-linked genes involved in genic incompatibilities, whereas hybrid females are affected only by dominant X-linked genes</li>
+<li><del><strong>Faster-males</strong>: in XY species, incompatibilities affecting XY hybrids accumulate more quickly</del> (but exceptions to this, so doesn’t satisfactorily explain)</li>
+<li><strong>Faster-X</strong>: faster drift at population levels because more X than Y in population (thus this mechanism interacts with dominance)</li>
+<li><strong>Meiotic drive</strong>: distorter alleles that distort Mendelian ratios to their own advantage; suppressors evolve to stop them. When two allopatric populations each independently evolve a driver and suppressor, suppressed drivers can become unmasked.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="discussion-prezygotic-isolation-1" class="level1 unnumbered">
+<h1 class="unnumbered">Discussion: Prezygotic isolation</h1>
+<p><strong>2025-09-16</strong>: <em>(absent)</em></p>
+</section>
+<section id="reinforcement" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Reinforcement</h1>
+<p><strong>2025-09-18</strong></p>
+<p>Reinforcement has been explored in the context of driving enhanced prezygotic isolation in sympatry. It has traditionally defined as when the <strong>formation of maladaptive hybrids</strong> selects for <strong>enhanced prezyogtic isolation</strong>—where hybrids are maladaptive if their fitness is non-zero but lower than either parent’s. The late 1980s saw renewed interest in exploring such questions of reinforcement.</p>
+<p>However, there was also a concurrent realisation that enhanced prezygotic isolation in sympatry could arise not just due to selection against hybrids, but also due to ecological or other factors. This brought focus to <strong>reproductive character displacement</strong>, where selection for enhanced prezygotic isolation occurs in order to reduce wasted reproductive effort between RI species. For instance, acoustic space divergence in frogs in TX/MX occurs between not just close congeners but also distant relatives.</p>
+<p>Many early popular examples of reinforcement are actually of reproductive character displacement, because the hybrid has zero fitness (no hybrid formation in sympatry). Reviewed in Butlin 1987. Other cases, like the Collared and Pied flycatchers, do conform to the strictly reinforcement expectations, but we no know that there is more going on there.</p>
+<section id="experimental-tests-for-reinforcement" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="experimental-tests-for-reinforcement"><span class="header-section-number">5.1</span> Experimental tests for reinforcement</h2>
+<p>Reviewed in Rice &amp; Hostert 1993.</p>
+<ul>
+<li><strong>Kill-the-hybrid:</strong> let them mate but kill hybrids and see if displacement develops
+<ul>
+<li>But this is actually evidence of RCD than of reinforcement</li>
+<li>Seemingly high success rate, but publication bias?</li>
+</ul></li>
+<li><strong>Disruptive selection on arbitrary trait:</strong> kill everything but high and low values of certain neutral trait (like bristles in <em>Drosophila</em>)
+<ul>
+<li>Bristles are not really neutral/arbitrary, have important function</li>
+<li>On the other hand, these results were never replicated in further studies</li>
+</ul></li>
+</ul>
+</section>
+<section id="comparative-studies-of-reinforcement" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="comparative-studies-of-reinforcement"><span class="header-section-number">5.2</span> Comparative studies of reinforcement</h2>
+<p>Can ask the following questions:</p>
+<ul>
+<li>Is prezyogtic isolation greater in sympatry?</li>
+<li>(Difficult to test) Are they forming hybrids?</li>
+<li>(Difficult to test) What is the genetic basis? (e.g., does having many great effect genes at few nearby loci facilitate more reinforcement (magic traits)?</li>
+</ul>
+<p>Lots of work in this area, including on <em>Drosophila</em> from Dobzhansky &amp; Koller 1938 (western US) to Matute 2010 (Sao Tome &amp; Principe), and bindin protein in sea urchins. In the case of the <em>Ficedula</em> flycatchers, male plumage is driven by female choice (because females in sympatry are not different, only males are), and this is just females being choosier than males (fewer eggs than sperm). However, it is not fully clear whether the brown in Pied males evolved to enhance isolation from sympatric Collared, or whether it’s just female-mimicry in order to reduce intermale aggression. This is the <em>more going on</em> in this case.</p>
+<p>The genetic basis of reinforcement has been reviewed in Garner et al 2018, and consists of genetic divergence both within species (allopatric vs sympatric contrasts) and between species (greater in sympatry, lower in allopatry). One example is flower colour in <em>Phlox</em> wildflowers, where colour is driven by two loci (intensity and hue), but selection happens on the intensity one.</p>
+</section>
+<section id="objections-to-reinforcement" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="objections-to-reinforcement"><span class="header-section-number">5.3</span> Objections to reinforcement</h2>
+<ul>
+<li>Need to reconcile selection and recombination (antagonism, similar to that in case of sympatric speciation), which gets worse with more interacting genes</li>
+<li>Race against extinction: Have to be ecologically distinct to survive in hybrid zone, BUT not enough, need to stick around in hybrid zone (asking for a lot)</li>
+<li>Swamping effect: genes for reinforcement must be favoured only in sympatry; genes from outside hybrid zone may swamp out (again, asking a lot)</li>
+</ul>
+</section>
+<section id="solutions-to-objections" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="solutions-to-objections"><span class="header-section-number">5.4</span> Solutions to objections</h2>
+<ul>
+<li>Liou &amp; Price 1994: <strong>sexual selection</strong> can promote reinforcement in hybrid zone</li>
+<li>Kelly &amp; Noor 1996: selection for greater female discrimination can promote reinforcement; “one-allele” solution (same allele favoured in both species); not just sexual selection but <strong>strength of selection</strong> (turn up volume/intensity)</li>
+</ul>
+</section>
+<section id="bottom-line" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="bottom-line"><span class="header-section-number">5.5</span> Bottom line</h2>
+<p>This is a theoretically possible mechanism, but in most cases it’s asking for a lot. There is a lot of evidence for greater divergence in sympatry, but most of these cases also have alternative explanations.</p>
+<p>The best bet for such a mechanism would involve female choice resulting in heavier divergence in sympatry. This means that systems with greater sexual selection may be more likely to have reinforcement.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
