@@ -193,6 +193,10 @@ window.Quarto = {
   <li><a href="#solutions-to-objections" id="toc-solutions-to-objections" class="nav-link" data-scroll-target="#solutions-to-objections"><span class="header-section-number">5.4</span> Solutions to objections</a></li>
   <li><a href="#bottom-line" id="toc-bottom-line" class="nav-link" data-scroll-target="#bottom-line"><span class="header-section-number">5.5</span> Bottom line</a></li>
   </ul></li>
+  <li><a href="#wait-what-background-primer" id="toc-wait-what-background-primer" class="nav-link" data-scroll-target="#wait-what-background-primer"><span class="header-section-number">6</span> Wait, what? Background primer</a>
+  <ul class="collapse">
+  <li><a href="#historical-demography-of-speciation" id="toc-historical-demography-of-speciation" class="nav-link" data-scroll-target="#historical-demography-of-speciation"><span class="header-section-number">6.1</span> Historical demography of speciation</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -489,6 +493,66 @@ window.Quarto = {
 <h2 data-number="5.5" class="anchored" data-anchor-id="bottom-line"><span class="header-section-number">5.5</span> Bottom line</h2>
 <p>This is a theoretically possible mechanism, but in most cases it’s asking for a lot. There is a lot of evidence for greater divergence in sympatry, but most of these cases also have alternative explanations.</p>
 <p>The best bet for such a mechanism would involve female choice resulting in heavier divergence in sympatry. This means that systems with greater sexual selection may be more likely to have reinforcement.</p>
+</section>
+</section>
+<section id="wait-what-background-primer" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Wait, what? Background primer</h1>
+<p><strong>2025-09-25</strong></p>
+<section id="historical-demography-of-speciation" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="historical-demography-of-speciation"><span class="header-section-number">6.1</span> Historical demography of speciation</h2>
+<ul>
+<li>Inferring species tree from gene tree, and different gene trees may be different. SO this variation needs to be accounted for.</li>
+<li>Divergence time between genes is always older than between species</li>
+<li>Gene trees can be complicated by mixing after divergence, disagreements between multiple gene trees (methods issue or actual population demographics or important factors driving speciation itself?)</li>
+<li>Historical demography helps us infer about: population size and changes in, divergence genetics, and isolation and hybridisation. Demographic purpose definitions are:
+<ul>
+<li>Population size: larger populations hold more genetic variation</li>
+<li><span class="math inline">\(\theta\)</span>: common measure of genetic diversity, but people measure it in different ways (confusing but also revealing)</li>
+<li><span class="math inline">\(\theta = 4 N_e u\)</span> where <span class="math inline">\(N_e\)</span> is the effective population size (size of an idealised population that would show the same degree of drift as observed), and <span class="math inline">\(u\)</span> is substitution rate (sometimes aka mutation rate)</li>
+<li>Tajima’s <span class="math inline">\(\theta\)</span> based on frequency so rare alleles don’t matter, Waterson’s ignores frequencies and is strongly affected by rare alleles.
+<ul>
+<li>So Tajima’s <span class="math inline">\(D\)</span> gives an overall measure. Premise is that under neutrality, <span class="math inline">\(D = 0\)</span>.</li>
+<li><span class="math inline">\(D \lt 0\)</span> means more rare alleles than expected (negative selection), suggesting bottleneck (multiple loci) or selective sweep (single locus)
+<ul>
+<li><em>Biston betularia</em> is a classic example of selective sweep</li>
+</ul></li>
+<li><span class="math inline">\(D \gt 0\)</span> means few rare alleles, suggesting balancing selection (malaria resistance) or overdominant selection</li>
+<li>If follow a certain selective pressure over time, <span class="math inline">\(D\)</span> would go from negative to positive</li>
+<li>During selective sweep, when <span class="math inline">\(D\)</span> drops, linkage disequilibrium rises</li>
+</ul></li>
+</ul></li>
+<li>Rogers &amp; Harpending 1992: <strong>mismatch distribution</strong> (mismatches between individuals in a population for each locus)
+<ul>
+<li>Clustered peak shows high sudden mutation event; so we can estimate divergence time (e.g., bottleneck in exploding population)</li>
+<li>At non-recombining bit of DNA (earlier mito, later Y chromosome)</li>
+</ul></li>
+<li>Isolation-migration model (IM), Jody Hey
+<ul>
+<li>Addressing difference in history of gene tree and of species tree</li>
+<li>Coalescent theory: using present-day observed lineage helps because we can ignore others from past who didn’t make it; all the living ones today coalesce going back to one common ancestor. Smaller and younger would coalesce faster. We can also get gene history or gene geneaology along the same steps.</li>
+<li>To test for no isolation between population, look for <span class="math inline">\(t = 0\)</span> (divergence time)</li>
+<li>No (genetic exchange) migration (<span class="math inline">\(m_1 = m_2 = 0\)</span>), i.e., genetic exchange</li>
+<li>On the other hand, can also estimate these two parameters</li>
+<li>At the same time, this model is very simplistic. Just one population size outside of divergence, and migration rate is constant</li>
+</ul></li>
+<li>One alternative is <em>dadi</em>: allows more than one value for each parameter, but work by model comparison between numerous fixed models. So removing very unlikely models from options is important.</li>
+<li>Model selection: AIC (<span class="math inline">\(AIC = 2k - 2l\)</span>) where <span class="math inline">\(k\)</span> (complexity) is number of parameters and <span class="math inline">\(l\)</span> (fit) is log-likelihood of data under model</li>
+<li>Site/allele frequency spectrum: distribution of allele frequencies for all segregatng sites in a sample of DNA sequences
+<ul>
+<li>Certain demographic scenarios like bottleneck would result in close to 0 allele frequency distribution (using combined polymorphism data) for 2nd most common allele (i.e., minor allele in biallelic)</li>
+<li>Can compare frequency with reference of outgroup (unfolded) to get derived vs ancestral</li>
+</ul></li>
+<li>Tests for selection: Tajima’s <span class="math inline">\(D\)</span>, codon-based (selection for new variation, positive selection)
+<ul>
+<li>Codon-based: <span class="math inline">\(\omega = dN/dS\)</span> (non-synonymous substitution per non-synonymous site vs synonymous)</li>
+<li>Neutrally, there should be more n than s (first two alleles of codon)</li>
+<li>Purifying: ratio &lt; 1 (most changes in alleles selected against)</li>
+<li>Diversifying (ratio &gt; 1): positive selection (want changes to proteins, not benign changes)</li>
+<li>Can further use Bayesian analysis if ratio &gt; 1 to see into which class codons go</li>
+<li>Nielsen, Yang</li>
+</ul></li>
+<li><strong>Synteny</strong>: conservation of blocks of (gene) order between two sets of chromosomes being compared</li>
+</ul>
 
 
 </section>
