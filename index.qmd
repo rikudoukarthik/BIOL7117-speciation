@@ -1,5 +1,7 @@
 ---
-title: "BIOL 7117: Speciation"
+title: "BIOL 7117 Speciation (Fall 2025)"
 ---
 
 2025 Fall edition of Speciation by Dr Michael Hellberg at Louisiana State University.
+
+<a href="https://biol7117.kartrick.com">Notes for BIOL 7117 Speciation at Louisiana State University in Fall 2025</a> © 2025 by <a href="https://kartrick.com/about/">Karthik Thrikkadeeri</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">

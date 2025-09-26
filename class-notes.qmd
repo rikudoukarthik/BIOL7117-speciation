@@ -1,5 +1,5 @@
 ---
-title: "Lecture notes"
+title: "Class notes"
 ---
 
 # Overview & species concepts
