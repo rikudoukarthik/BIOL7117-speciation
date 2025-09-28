@@ -296,42 +296,40 @@ The best bet for such a mechanism would involve female choice resulting in heavi
 
 ## Historical demography of speciation
 
-- Inferring species tree from gene tree, and different gene trees may be different. SO this variation needs to be accounted for.
-- Divergence time between genes is always older than between species
-- Gene trees can be complicated by mixing after divergence, disagreements between multiple gene trees (methods issue or actual population demographics or important factors driving speciation itself?)
-- Historical demography helps us infer about: population size and changes in, divergence genetics, and isolation and hybridisation. Demographic purpose definitions are:
-    - Population size: larger populations hold more genetic variation
-    - $\theta$: common measure of genetic diversity, but people measure it in different ways (confusing but also revealing)
-    - $\theta = 4 N_e u$ where $N_e$ is the effective population size (size of an idealised population that would show the same degree of drift as observed), and $u$ is substitution rate (sometimes aka mutation rate)
-    - Tajima's $\theta$ based on frequency so rare alleles don't matter, Waterson's ignores frequencies and is strongly affected by rare alleles. 
-        - So Tajima's $D$ gives an overall measure. Premise is that under neutrality, $D = 0$.
-        - $D \lt 0$ means more rare alleles than expected (negative selection), suggesting bottleneck (multiple loci) or selective sweep (single locus)
-            - *Biston betularia* is a classic example of selective sweep
-        - $D \gt 0$ means few rare alleles, suggesting balancing selection (malaria resistance) or overdominant selection
-        - If follow a certain selective pressure over time, $D$ would go from negative to positive
-        - During selective sweep, when $D$ drops, linkage disequilibrium rises
-- Rogers & Harpending 1992: **mismatch distribution** (mismatches between individuals in a population for each locus)
-    - Clustered peak shows high sudden mutation event; so we can estimate divergence time (e.g., bottleneck in exploding population)
-    - At non-recombining bit of DNA (earlier mito, later Y chromosome)
-- Isolation-migration model (IM), Jody Hey
-    - Addressing difference in history of gene tree and of species tree
-    - Coalescent theory: using present-day observed lineage helps because we can ignore others from past who didn't make it; all the living ones today coalesce going back to one common ancestor. Smaller and younger would coalesce faster. We can also get gene history or gene geneaology along the same steps. 
-    - To test for no isolation between population, look for $t = 0$ (divergence time)
-    - No (genetic exchange) migration ($m_1 = m_2 = 0$), i.e., genetic exchange
-    - On the other hand, can also estimate these two parameters
-    - At the same time, this model is very simplistic. Just one population size outside of divergence, and migration rate is constant
-- One alternative is *dadi*: allows more than one value for each parameter, but work by model comparison between numerous fixed models. So removing very unlikely models from options is important.
-- Model selection: AIC ($AIC = 2k - 2l$) where $k$ (complexity) is number of parameters and $l$ (fit) is log-likelihood of data under model
-- Site/allele frequency spectrum: distribution of allele frequencies for all segregatng sites in a sample of DNA sequences
-    - Certain demographic scenarios like bottleneck would result in close to 0 allele frequency distribution (using combined polymorphism data) for 2nd most common allele (i.e., minor allele in biallelic)
-    - Can compare frequency with reference of outgroup (unfolded) to get derived vs ancestral
-- Tests for selection: Tajima's $D$, codon-based (selection for new variation, positive selection)
-    - Codon-based: $\omega = dN/dS$ (non-synonymous substitution per non-synonymous site vs synonymous)
-    - Neutrally, there should be more n than s (first two alleles of codon)
-    - Purifying: ratio < 1 (most changes in alleles selected against)
-    - Diversifying (ratio > 1): positive selection (want changes to proteins, not benign changes)
-    - Can further use Bayesian analysis if ratio > 1 to see into which class codons go
-    - Nielsen, Yang
-- **Synteny**: conservation of blocks of (gene) order between two sets of chromosomes being compared
-    
-    
+Genetic studies of speciation often infer the species tree from gene trees. Divergence time for the genes is always older than for the species. Trees made with different genes may be different and have disagreements (is this a methods issue, or the actual population demographics, or are they important factors driving speciation itself?). Moreover, gene trees can be complicated by mixing after divergence. So all this variation needs to be accounted for.
+
+Historical demography helps us infer about population size, changes in population size, divergence genetics, and isolation and hybridisation. In this demographic context, certain terms have specific meanings. Population size is considered an indication of genetic variation, with larger populations holding more genetic variation. Genetic diversity is commonly denoted as $\theta$, but there are multiple metrics used. 
+
+## Measures of genetic diversity
+
+$\theta = 4 N_e u$ is a simple metric representing expected genetic variation, where $N_e$ is the effective population size (size of an idealised population that would show the same degree of drift as observed), and $u$ is substitution rate (sometimes aka mutation rate). 
+
+**Watterson's $\theta_w$**: Ignores frequencies, and is strongly affected by rare alleles. Based on the number of segregating sites (polymorphisms) in a DNA sample.
+
+**Tajima's $\theta_\pi$**: Based on frequency so rare alleles don't matter. Observed nucleotide diversity: average number of differences between pairs of sequences in a DNA sample. 
+
+**Tajima's $D$** gives an overall measure. Premise is that under neutrality (observed diversity matching expected diversity), $D = 0$. $D \lt 0$ means more rare alleles than expected (negative selection), suggesting bottleneck (multiple loci) or selective sweep (single locus). During selective sweep, when $D$ drops, linkage disequilibrium rises. *Biston betularia* is a classic example of selective sweep. $D \gt 0$ means few rare alleles, suggesting balancing selection (e.g., malaria resistance) or overdominant selection. If you follow a certain selective pressure over time, $D$ would go from negative to positive.
+
+**Mismatch distribution** (Rogers & Harpending 1992): quantify mismatches between individuals in a population for each locus, and visualise like a histogram. A clustered peak shows sudden high mutation event; so we can estimate divergence time (e.g., bottleneck in exploding population). This requires examining non-recombining bits of DNA, and earlier mitochondrial DNA was used for this, but nowadays it's the Y chromosome.
+
+**Site/allele frequency spectrum**: distribution of allele frequencies for all segregatng sites in a sample of DNA sequences. Certain demographic scenarios like bottleneck would result in allele frequency distribution (using combined polymorphism data) close to 0 for 2nd most common allele (i.e., minor allele in biallelic). We can compare frequency with reference of outgroup (unfolded) to infer derived vs ancestral.
+
+**Synteny**: conservation of blocks of (gene) order between two sets of chromosomes being compared.
+
+## Isolation-migration model for historical demography
+
+Developed by Jody Hey and others, as a way to address the problem of discordance between histories of gene and species trees. It is based on coalescent theory, where all the lineages present today coalesce going back to one common ancestor. Using only the present-day observed lineages helps because we can ignore others from past who didn't make it (simplifies compute). Smaller (pop. size) and younger lineages would coalesce faster. We can also get gene history or gene geneaology along the same steps. 
+
+This can be used to test for *no isolation* between population, by looking for $t = 0$ (divergence time). Similarly, it can test for *no migration* (genetic exchange), if $m_1 = m_2 = 0$. On the other hand, it can also estimate values for these parameters for conditions of isolation and migration. 
+
+## Other models
+
+The IM model is very simplistic, mainly because it assumes just one population size outside of divergence, and migration rate is constant. One alternative is **DaDi** (Diffusion Approximations for Demographic Inference), which allows more than one value for each parameter. However, this is a different framework, because it works by model comparison between numerous fixed (prespecified) models. So it is also important to remove very unlikely models from the starting options.
+
+Model selection is typically done using AIC ($AIC = 2k - 2l$) where $k$ (complexity) is number of parameters and $l$ (fit) is log-likelihood of data under model. In essence, penalised likelihood is a parsimonious compromise. Sometimes, model averaging can be used.
+
+## Tests for selection
+
+Either Tajima's $D$, or codon-based metrics like $\omega = dN/dS$ (non-synonymous substitution per non-synonymous site vs synonymous), can be used to infer selection for new variation, i.e., positive selection in the population. People involved include Nielsen, Yang. 
+
+Neutrally, there should be more N than S (first two alleles of codon vs only third). But there are methods to standardise this to 1, simplifying the other cases. Purifying selection is indicated by $\omega \lt 1$, meaning most changes in alleles are being selected against. Diversifying (positive) selection is indicated by $\omega \gt 1$, meaning the system wants actual changes to proteins, not benign changes. In this case (if $\omega \gt 1$) we can further use Bayesian analysis to see into which class codons go.
