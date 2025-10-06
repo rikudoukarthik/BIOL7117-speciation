@@ -1,0 +1,32 @@
+---
+title: "Genetic basis of speciation I"
+bibliography: "../biol7117-speciation.json"
+csl: "../evolution.csl"
+format: 
+  docx:
+    reference-doc: "../word_template.docx"
+    number-sections: false
+    output-file: "Thrikkadeeri_Long04_Genetic_Speciation.docx"
+---
+
+Word count (koRpus): 781
+
+# Summary
+
+Modern studies of reproductive isolation (RI) and speciation focus on the genetic mechanisms underlying differentiation. Assortative mating typically arises due to divergence in phenotypic traits relating to species recognition, behaviour and ecology. These phenotypes of course have a genetic basis, so combining information on these different aspects can elucidate mechanisms as well as relative stages of speciation. 
+
+@turbek2021 explored how assortative mating, via phenotypic traits and their genomic basis, drives premating isolation in a syntopic species pair within a large radiation of capuchino seedeater birds (*Sporophila* spp.). @raffini2025 used the popular model system of *Littorina saxatilis* snails, which have undergone parallel speciation into two ecotypes, in multiple geographical regions. They attempted to verify past suggestions of divergence mechanisms between the ecotypes, but using a detailed methodology combining high-resolution genome-wide differentiation analyses with dense spatial and geographical sampling.
+
+The two capuchino seedeaters show behavioural isolation but no ecological divergence, and they produce viable hybrids, suggesting a lack of genetic incompatibility. @turbek2021 assessed their genomic divergence using shotgun short-read whole-genome sequencing, followed by PCR amplification for Sanger sequencing of select short genomic regions showing high divergence. They combined this genomic analysis with behavioural choice experiments using song playback and artificial mounts of conspecific and heterospecific males, including a heterospecific control of a sympatric and ecologically similar congener. 
+
+Genomic differentiation across the whole capuchino radiation did not yield consistent species-level monophyly. The focal species however, *S. iberaensis*, was monophyletic, but variants in the divergence peak regions of the genome were shared with many species (albeit in a unique combination). These together suggest recent speciation where divergence likely arose from standing genetic variation. The genomic divergence peaks corresponded with plumage colouration genes, directly linking to phenotypic divergence in males. Although there were suggestions of incomplete lineage sorting or past hybridisation---due to the older species segregating within the younger species at high differentiation sites---present-day hybridisation is likely absent since paired males and females showed the same F~ST~ peaks. Both genomic analyses and behavioural experiments showed that reproduction in the two species often involved extra-pair mating but was still strongly assortative.
+
+Previous studies of the two snail ecotypes have suggested similar phenotypic but different genomic divergence levels and RI, but their methodologies and results have not been the most robust. @raffini2025 conducted snail sampling in Spain and Sweden, with the Spanish populations being older than the Swedish ones which formed after the last glaciation. They sampled snails of the two ecotypes along transects across contact zones, and collected genetic, morphological, and behavioural data. Importantly, the authors assigned group membership based on genetic data rather than phenotypic traits as in previous studies. 
+
+Genomic divergence, assessed using PCA and DAPC of SNP data, existed between ecotypes in both regions, but was greater in the Spanish snails than in the Swedish ones which showed more gradual clines and lower clustering. To assess the role of chromosomal inversions, they used unthinned genetic datasets to produce Manhattan plots of per-locus F~ST~ and PCAs of linkage map positions, and found multiple inversions at the same sites in both countries that were again stronger in Spain. Genetic divergence was matched by strong phenotypic (morphometry) and behavioural (wariness) divergence, but this was interestingly stronger in Sweden than in Spain. The presence of these similarities and differences suggest that the two populations are at different stages of the speciation continuum, and that the completion of speciation in this case involves complex ecological dynamics relating to shore habitat structure.
+
+Both studies highlight the important genetic mechanisms underlying RI, where changes to genomic architecture result in phenotypic divergence and thereby assortative mating, especially in the early stages of speciation. In the seedeaters, not only did genetically inherited plumage traits facilitate assortative mating, but also the most important divergence peaks were located on the Z-chromosome, in line with predictions of the large-Z effect theory. The snails in the two countries had sex determination genes at different loci, exemplifying intraspecific variability in the genetic determination of sex. Moreover, both studies identified potential magic traits: male plumage colouration in the seedeaters and size in the snails.
+
+While their results were interesting, @raffini2025 should have placed more emphasis on the evidence that this divergence of ecotypes occurred independently in the two countries, after the younger Swedish population was formed. Many of their inferences hinge on the claim of parallel speciation, but the strength of the arguments for this was at least not obvious to me. Additionally, they could have also explored patterns of gene flow between snails at different distances along the shore, to compare with that of overlapping ecotypes in the lower parts of the shore and therefore get an idea of the "effect size".
+
+# References

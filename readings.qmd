@@ -175,3 +175,47 @@ About postzygotic (gametic) isolation
     - Overll just too technical!
     - Results too long, longer than discussion, and contains things that should be in methods (like models and tests)! 
     - Paper should overall have been more inferential, rather than technical reporting.
+    
+# Discussion: Genetic basis of speciation I
+
+## Turbek et al 2021
+
+- The role of assortative mating (premating isolation), phenotypic traits of species recognition and their genomic basis and origin.
+- No ecological barriers yet (and low genomic divergence), but behavioural isolation.
+- Viable hybrids are readily formed, indicating lack of genetic incompatibility.
+- Post-mating isolation requires longer time in general than pre-mating isolation mechanisms.
+- Genomic divergence using shotgun short-read whole-genome sequencing
+- PCR amplification for Sanger sequencing of short genomic region having high divergence 
+- Choice experiments using song playback and artificial mounts of conspecific and heterospecific males. Used sympatric and ecologically similar heterospecific control.
+- Genomic divergence peaks contain plumage colouration genes.
+- *Sh* segregating within *Si* at high differentiation sites, suggesting either incomplete lineage sorting or past hybridisation.
+- Female colouration largely overlaps between the two species even in avian visual spectrum. 
+- Paired males and females showed the same F_ST peaks in whole-genome and double-digest restriction site--associated DNA (ddRAD) sequence data, suggesting lack of hybrid pair formation.
+- Although there was high extra-pair mating, candidate fathers and social fathers were of the same species. Social and extra-pair mating maintain assortative mating.
+- Genomic differentiation from phylogenies for the whole capuchino radiation suggested recent speciation because there was no species-level monophyly. However, *Si* and other restricted range species formed clades. On the other hand, in phylogenies derived from only the divergence peak regions, it did not form a clade. Although many species shared variants with it at individual peaks, none showed the specific combination (both divergent peaks) of *Si*. This indicates that *Si* phenotype likely arose from standing genetic variation.
+- Assortative mating through genetically inherited (plumage, song?) and perhaps culturally inherited (song?) traits, at least early in speciation until subsequent reproductive barriers arise.
+- Important divergence peaks are on Z chromosome (large-Z effect).
+
+## Raffini et al 2025
+
+- Inferences about accumulation of RI depend on comparing contemporary populations that are at different stages on a "speciation continuum". Cannot assume a monotic progression from weak to strong isolation.
+- Important to distinguish between different stages of RI from differences among taxa
+- Compare two ecotypes in same marine snail species, showing similar levels of phenotypic divergence (two ecotypes in both regions), but different levels of genomic divergence (and gene flow/isolation). Parallel speciation.
+- The two ecotypes occur close together on many shores and also form contact zones. Spanish (older) and Swedish (younger, after last glaciation).
+- Differences between ecotypes have been suggested by several studies, but detailed data combining genome-wide differentiation and spatial coverage of contact zones has been lacking.
+- Dense transects across contact zones, low-coverage whole-genome sequences, shell features, behavioural traits.
+- Unique: Groups identified/assigned genetically, not based on phenotypic traits.
+- Patterns of genomic divergence explored using PCA and DAPC
+- Patterns of chromosomal inversion, known to contribute to the differentiation of these two ecotypes, were explored using unthinned datasets. First used Manhattan plots of per-locus F_ST between genetic clusters, with randomisation 1000 times. Genomic inversions differing in frequency between clusters would show higher differentiation than non-inverted regions. Second, used PCAs of linkage map position.
+- Some phenotypic traits using standardised image analysis. Cluster analysis and PCA.
+- Both regions showed genomic divergence (PCA of SNPs) between ecotypes, but patterns of genetic differentiation between ecotypes were different in the two regions (Sweden more gradual cline, Spain two genetically distinct clusters with no intermediate genotypes and with wave ecotype spatially clustered in low parts of shores). Divergence between Spanish ecotypes larger than divergence among all Swedish.
+- Role of chromosomal inversions: Found multiple chromosomal inversions at same sites across countries. Although inversion patterns were congruent between the countries, more pronounced in Spain (higher blocks in Manhattan plots, stronger cluster in PCA).
+- Strong phenotypic and behavioural (Crab more wary) divergence between two ecotypes, but strength lower in Sweden where Crab traits more often also seen in Wave than is the case in Spain.
+- Phenotypic variation showed even more gradual cline in Spain than genomic. Sweden showed higher phenotypic divergence between ecotypes than Spain, though both in same direction.
+- While two regions share many similarities, they also show several important differences suggesting that they are at different stages of the speciation continuum: Spanish closer to completion of speciation.
+- Sex determination was on different loci in the two countries, intraspecific variability in genetic determination of sex.
+- Size might be a magic trait, especially in Spain where habitat is more patchy and less gradual.
+- Completion of speciation involves complex ecological and/or evolutionary dynamics.
+
+Is there evidence that this divergence happened independently in the two regions? Relatively young species, and young Swedish population.
+Found low gene flow between overlapping ecotypes in low shore, but I wonder how that looks relative to gene flow between Crab ecotypes at different points on the shore?
