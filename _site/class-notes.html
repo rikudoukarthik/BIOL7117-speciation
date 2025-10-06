@@ -201,6 +201,13 @@ window.Quarto = {
   <li><a href="#other-models" id="toc-other-models" class="nav-link" data-scroll-target="#other-models"><span class="header-section-number">6.4</span> Other models</a></li>
   <li><a href="#tests-for-selection" id="toc-tests-for-selection" class="nav-link" data-scroll-target="#tests-for-selection"><span class="header-section-number">6.5</span> Tests for selection</a></li>
   </ul></li>
+  <li><a href="#genetic-basis-of-speciation-i" id="toc-genetic-basis-of-speciation-i" class="nav-link" data-scroll-target="#genetic-basis-of-speciation-i"><span class="header-section-number">7</span> Genetic basis of speciation I</a>
+  <ul class="collapse">
+  <li><a href="#how-many-genes" id="toc-how-many-genes" class="nav-link" data-scroll-target="#how-many-genes"><span class="header-section-number">7.1</span> How many genes?</a></li>
+  <li><a href="#forward-genetics" id="toc-forward-genetics" class="nav-link" data-scroll-target="#forward-genetics"><span class="header-section-number">7.2</span> Forward genetics</a></li>
+  <li><a href="#candidate-genes" id="toc-candidate-genes" class="nav-link" data-scroll-target="#candidate-genes"><span class="header-section-number">7.3</span> Candidate genes</a></li>
+  <li><a href="#reverse-genetics" id="toc-reverse-genetics" class="nav-link" data-scroll-target="#reverse-genetics"><span class="header-section-number">7.4</span> Reverse genetics</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -426,7 +433,7 @@ window.Quarto = {
 <p>Internal to the individual/organism, so quite simply, developmental defects lead to hybrid sterility or inviability.</p>
 <p>It can be <strong>meiosis issues</strong> related to ploidy levels, where hybrids like F1s simply cannot perform meiosis. Or <strong>chromosomal rearrangements/inversions</strong> like in Australian morabine grasshoppers (White 1978). However, many inversions surprisingly have no effect on heterozygote fitness, because recombination can still happen in other regions of genome.</p>
 <p>Other mechanisms include <strong>endosymbiotic infection</strong> risk for hybrids, or <strong>cytoplasmic incompatibilities</strong> especially relating to parasites (e.g., intracellular parasites like <em>Wolbachia</em>: when uninfected female flies are crossed with infected males, many/all progeny die, but infection transmitted from mother so those that are born from infected females are infected). There can even be <strong>mitonuclear incompatibilities</strong> (i.e., between mitochrondrial and cytoplasmic genetic material), famously in copepods (Ron Burton), so much so that Geoffrey Hill even introduced a <em>mitonuclear compatibility species concept</em>.</p>
-<p><strong>Allelic incompatibilities</strong> are a major way intrinsic postzygotic isolation can occur. The original definition of Dobzhansky-Muller Incompatibility focused on alleles at different loci, arguing that low hybrid fitness is a byproduct of genomes that are geographically isolated. The newer, more specific definition emphasises epistasis (effects of an allele at one locus depend on alleles present at other loci), arguing that negative epistatic interactions occur between alleles of different loci with different evolutionary histories. Some assumptions of this theory are that there occurs at least one pair of allele changes, that most incompatibilities are due to derived alleles(?), and that the no. if incompatible combinations snowballs over time.</p>
+<p><strong>Allelic incompatibilities</strong> are a major way intrinsic postzygotic isolation can occur. The original definition of Dobzhansky-Muller Incompatibility focused on alleles at different loci, arguing that low hybrid fitness is a byproduct of genomes that are geographically isolated. The newer, more specific definition emphasises epistasis (effects of an allele at one locus depend on alleles present at other loci), arguing that <strong>negative epistatic</strong> interactions occur between alleles of different loci with different evolutionary histories. Some assumptions of this theory are that there occurs at least one pair of allele changes, that most incompatibilities are due to <strong>derived alleles</strong>, and that the no. if incompatible combinations snowballs over time.</p>
 <section id="haldanes-rule" class="level3" data-number="4.2.1">
 <h3 data-number="4.2.1" class="anchored" data-anchor-id="haldanes-rule"><span class="header-section-number">4.2.1</span> Haldane’s Rule</h3>
 <p>Rule about <strong>sex chromosome incompatibilities</strong>; it is an exception, because there are very rare exceptions to the rule. Basically: in offspring of two different races, if one (and only one) sex is messed up (absent, rare, or sterile) then that is the heterozygous sex.</p>
@@ -531,6 +538,139 @@ window.Quarto = {
 <h2 data-number="6.5" class="anchored" data-anchor-id="tests-for-selection"><span class="header-section-number">6.5</span> Tests for selection</h2>
 <p>Either Tajima’s <span class="math inline">\(D\)</span>, or codon-based metrics like <span class="math inline">\(\omega = dN/dS\)</span> (non-synonymous substitution per non-synonymous site vs synonymous), can be used to infer selection for new variation, i.e., positive selection in the population. People involved include Nielsen, Yang.</p>
 <p>Neutrally, there should be more N than S (first two alleles of codon vs only third). But there are methods to standardise this to 1, simplifying the other cases. Purifying selection is indicated by <span class="math inline">\(\omega \lt 1\)</span>, meaning most changes in alleles are being selected against. Diversifying (positive) selection is indicated by <span class="math inline">\(\omega \gt 1\)</span>, meaning the system wants actual changes to proteins, not benign changes. In this case (if <span class="math inline">\(\omega \gt 1\)</span>) we can further use Bayesian analysis to see into which class codons go.</p>
+</section>
+</section>
+<section id="genetic-basis-of-speciation-i" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Genetic basis of speciation I</h1>
+<p><strong>2025-10-02</strong></p>
+<p>How many, effect size</p>
+<ul>
+<li>What we’ve seen so far could have been based on only distributions, crosses, etc.</li>
+<li>Nowadays much more based on genomics, and at much greater scale than possible before</li>
+<li>Questions in genetics of speciation
+<ul>
+<li>How many genes &amp; changes (genes of large effect)?</li>
+<li>Structural or regulatory?</li>
+<li><em>cis</em> (close) or <em>trans</em> (far away across genome)?</li>
+<li>Special role for inversions? (as a protective measure against recombination for divergent genes)</li>
+</ul></li>
+</ul>
+<section id="how-many-genes" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="how-many-genes"><span class="header-section-number">7.1</span> How many genes?</h2>
+<ul>
+<li>Before genes, <em>how many changes?</em></li>
+<li>“many slight differences … afford materials for natural selection” — Darwin</li>
+<li><em>gradualism</em> (many genes of small effect)</li>
+<li>Followed by biometricians (agricultural background, working to improve crop growth, size, etc.)</li>
+<li>Douglas Falconer, Introduction to Quantitative Genetics</li>
+<li>T H Huxley on the other side, few genes of large effect: “Nature does make jumps now and then”</li>
+<li>Also influenced by <em>saltationism</em>
+<ul>
+<li>Extreme, Waddington: “hopeful monsters” (e.g., Diaz et al 2020, chameleon and gecko embryo development, two-digit could have been due to single mutation as seen in the gecko) (very aberrant mutation –&gt; monstrosity)</li>
+</ul></li>
+<li>Also Mendelian geneticists: looking at data of pretty big traits (diagnosable)</li>
+<li>This divide continued till start of 20th century</li>
+<li>Modern Synthesis, starting 1930s (–1950s): reconciliation of Mendelian inheritance and Darwinian natural selection
+<ul>
+<li>Julian Huxley (grandson of TH), brother (Aldous), half-brother (Andrew, action potentials): invented “cline”, co-founded WWF, UNESCO</li>
+<li>Fisher (quantitative genetics; farm data)</li>
+<li>Wright (effect pop. size; farm data)</li>
+<li>Mayr (allopatric speciation)</li>
+<li>Dobzhansky (<em>Drosophila</em>)</li>
+<li>Stebbins (plants)</li>
+<li>G G Simpson (fossils, macro-patterns)</li>
+<li>Evolution based on Mendelian genes, involving <em>many alleles of small effect</em> (Fisher, quantitative genetics)</li>
+<li>(more lean towards gradualism)</li>
+</ul></li>
+<li>Evidence:
+<ul>
+<li>People believed as gospel, without looking atWILD populations. (Evidence was good in crops, farm animals, etc.)
+<ul>
+<li>Also linked to turning blind eye to true ecology</li>
+</ul></li>
+<li>Orr &amp; Coyne (1992): looked at studies and how many genes involved in adaptations</li>
+<li>Gavrilets: theoretical models of evolution of RI showed fewer genes most favoured</li>
+<li>Yeaman &amp; Whitlock (2011): fewer genes of large effect, and genes of smaller effect tend to cluster in genome over time</li>
+</ul></li>
+<li>How to identify the genes responsible for speciation?
+<ul>
+<li>Forward genetics
+<ul>
+<li>Start with trait (in crosses), word down to genes</li>
+</ul></li>
+<li>Candidate genes
+<ul>
+<li>Start with knowledge/fundamental idea of genetic basis for trait in other taxa</li>
+</ul></li>
+<li>Reverse genetics
+<ul>
+<li>Start with genomic data (ideally whole genome), look for signals of adaptive changes, then work back to see what traits they encode for</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="forward-genetics" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="forward-genetics"><span class="header-section-number">7.2</span> Forward genetics</h2>
+<ul>
+<li>Association mapping: get sequence individuals for trait across many individuals, look for non-random associations
+<ul>
+<li>Look for correlatinos between markers and particular trait</li>
+<li>Recently emerged traits will be in LD with regions around them</li>
+<li>Can use AFLPs, microsatellites, <strong>SNPs</strong></li>
+<li>Genome wide association mapping (GWAS, like Schield et al 2024):</li>
+<li>Issues:
+<ul>
+<li>If goal not medical but evolutionary, this will give biased result for test for genes of large effect (drown out more genes of small effect)</li>
+<li>Affected by extent of genomic LD: easier to pick up some region if high LD, but low precision especially when high recombination</li>
+</ul></li>
+</ul></li>
+<li>Quantitative Trait Loci mapping (QTL)
+<ul>
+<li>Create recombinant populations (crossing between extremes for F1 (uninformative) then F1-parent backcrosses), correlate trait values with dsitributed genetic markers</li>
+<li>Requires pedigree info (ideally 2 generations of crosses of inbred line), marker map, phenotypes associated with genotypes, need large families of individuals, low power to detect many loci of small effect</li>
+<li>Inbred lines important so that extremes you identify are certainly homozygous</li>
+</ul></li>
+</ul>
+</section>
+<section id="candidate-genes" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="candidate-genes"><span class="header-section-number">7.3</span> Candidate genes</h2>
+<ul>
+<li>Knowledge of genes function applied to new system</li>
+<li>e.g., MC1R for melanin in birds</li>
+<li>Issue: Not open to all variation out there, now where do you go? (close-ended)</li>
+</ul>
+</section>
+<section id="reverse-genetics" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="reverse-genetics"><span class="header-section-number">7.4</span> Reverse genetics</h2>
+<ul>
+<li>Availability of full sequences, large</li>
+<li>Genome scans, outlier analyses</li>
+<li>Search data for footprints of selection</li>
+<li>Outlier analyses:
+<ul>
+<li>Allele frequency sprectrum (AFS)</li>
+<li>Positive selection (<span class="math inline">\(\frac{D_N}{D_S}\)</span>)</li>
+<li><span class="math inline">\(F_{ST}\)</span> (Wright): proportion of total genetic variation that is attributable to diferences among subpopulations
+<ul>
+<li>Survey differentiated pops for many loci, calculate average overall FST, simluate expected range (neutral expectation for variation across loci), identify outliers</li>
+<li>FIT: variation in ind cf pop</li>
+<li>Wilding et al 2001: <em>Littorina saxatilis</em>: snail shell structure differences according to tidal zone</li>
+</ul></li>
+<li>Caveats:
+<ul>
+<li>False positives: outliers due to a lot of other variance</li>
+<li>Demographic history can give false signals</li>
+<li>Need validation (like QTLs)</li>
+</ul></li>
+<li>Poelstra et al 2014: hooded &amp; carrion crows
+<ul>
+<li>Reference genome, then analysis</li>
+<li>Some loci (0.28%, among those most on same chromosome) showed clear separation, some abosolutely no</li>
+<li>Important empirical followup: Later went back and got tissues from various parts ofbody, found substantial difference in gene expression (of that gene) o torso skin and not in any other part.</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>152x sequence coverage vs resequencing difference?</p>
 
 
 </section>

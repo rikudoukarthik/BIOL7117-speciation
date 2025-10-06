@@ -221,7 +221,7 @@ It can be **meiosis issues** related to ploidy levels, where hybrids like F1s si
 
 Other mechanisms include **endosymbiotic infection** risk for hybrids, or **cytoplasmic incompatibilities** especially relating to parasites (e.g., intracellular parasites like *Wolbachia*: when uninfected female flies are crossed with infected males, many/all progeny die, but infection transmitted from mother so those that are born from infected females are infected). There can even be **mitonuclear incompatibilities** (i.e., between mitochrondrial and cytoplasmic genetic material), famously in copepods (Ron Burton), so much so that Geoffrey Hill even introduced a *mitonuclear compatibility species concept*. 
 
-**Allelic incompatibilities** are a major way intrinsic postzygotic isolation can occur. The original definition of Dobzhansky-Muller Incompatibility focused on alleles at different loci, arguing that low hybrid fitness is a byproduct of genomes that are geographically isolated. The newer, more specific definition emphasises epistasis (effects of an allele at one locus depend on alleles present at other loci), arguing that negative epistatic interactions occur between alleles of different loci with different evolutionary histories. Some assumptions of this theory are that there occurs at least one pair of allele changes, that most incompatibilities are due to derived alleles(?), and that the no. if incompatible combinations snowballs over time. 
+**Allelic incompatibilities** are a major way intrinsic postzygotic isolation can occur. The original definition of Dobzhansky-Muller Incompatibility focused on alleles at different loci, arguing that low hybrid fitness is a byproduct of genomes that are geographically isolated. The newer, more specific definition emphasises epistasis (effects of an allele at one locus depend on alleles present at other loci), arguing that **negative epistatic** interactions occur between alleles of different loci with different evolutionary histories. Some assumptions of this theory are that there occurs at least one pair of allele changes, that most incompatibilities are due to **derived alleles**, and that the no. if incompatible combinations snowballs over time. 
 
 ### Haldane's Rule
 
@@ -333,3 +333,99 @@ Model selection is typically done using AIC ($AIC = 2k - 2l$) where $k$ (complex
 Either Tajima's $D$, or codon-based metrics like $\omega = dN/dS$ (non-synonymous substitution per non-synonymous site vs synonymous), can be used to infer selection for new variation, i.e., positive selection in the population. People involved include Nielsen, Yang. 
 
 Neutrally, there should be more N than S (first two alleles of codon vs only third). But there are methods to standardise this to 1, simplifying the other cases. Purifying selection is indicated by $\omega \lt 1$, meaning most changes in alleles are being selected against. Diversifying (positive) selection is indicated by $\omega \gt 1$, meaning the system wants actual changes to proteins, not benign changes. In this case (if $\omega \gt 1$) we can further use Bayesian analysis to see into which class codons go.
+
+# Genetic basis of speciation I
+
+**2025-10-02**
+
+How many, effect size
+
+- What we've seen so far could have been based on only distributions, crosses, etc.
+- Nowadays much more based on genomics, and at much greater scale than possible before
+- Questions in genetics of speciation
+    - How many genes & changes (genes of large effect)?
+    - Structural or regulatory?
+    - *cis* (close) or *trans* (far away across genome)?
+    - Special role for inversions? (as a protective measure against recombination for divergent genes)
+    
+## How many genes?
+
+- Before genes, *how many changes?*
+- "many slight differences ... afford materials for natural selection" --- Darwin
+- *gradualism* (many genes of small effect)
+- Followed by biometricians (agricultural background, working to improve crop growth, size, etc.)
+- Douglas Falconer, Introduction to Quantitative Genetics
+- T H Huxley on the other side, few genes of large effect: "Nature does make jumps now and then"
+- Also influenced by *saltationism* 
+    - Extreme, Waddington: "hopeful monsters" (e.g., Diaz et al 2020, chameleon and gecko embryo development, two-digit could have been due to single mutation as seen in the gecko) (very aberrant mutation --> monstrosity)
+- Also Mendelian geneticists: looking at data of pretty big traits (diagnosable) 
+- This divide continued till start of 20th century
+- Modern Synthesis, starting 1930s (--1950s): reconciliation of Mendelian inheritance and Darwinian natural selection
+    - Julian Huxley (grandson of TH), brother (Aldous), half-brother (Andrew, action potentials): invented "cline", co-founded WWF, UNESCO
+    - Fisher (quantitative genetics; farm data)
+    - Wright (effect pop. size; farm data)
+    - Mayr (allopatric speciation)
+    - Dobzhansky (*Drosophila*)
+    - Stebbins (plants)
+    - G G Simpson (fossils, macro-patterns)
+    - Evolution based on Mendelian genes, involving *many alleles of small effect* (Fisher, quantitative genetics)
+    - (more lean towards gradualism)
+- Evidence:
+    - People believed as gospel, without looking atWILD populations. (Evidence was good in crops, farm animals, etc.)
+        - Also linked to turning blind eye to true ecology
+    - Orr & Coyne (1992): looked at studies and how many genes involved in adaptations
+    - Gavrilets: theoretical models of evolution of RI showed fewer genes most favoured
+    - Yeaman & Whitlock (2011): fewer genes of large effect, and genes of smaller effect tend to cluster in genome over time
+- How to identify the genes responsible for speciation?
+    - Forward genetics
+        - Start with trait (in crosses), word down to genes
+    - Candidate genes
+        - Start with knowledge/fundamental idea of genetic basis for trait in other taxa
+    - Reverse genetics
+        - Start with genomic data (ideally whole genome), look for signals of adaptive changes, then work back to see what traits they encode for
+
+## Forward genetics
+
+- Association mapping: get sequence individuals for trait across many individuals, look for non-random associations
+    - Look for correlatinos between markers and particular trait
+    - Recently emerged traits will be in LD with regions around them
+    - Can use AFLPs, microsatellites, **SNPs**
+    - Genome wide association mapping (GWAS, like Schield et al 2024): 
+    - Issues:
+        - If goal not medical but evolutionary, this will give biased result for test for genes of large effect (drown out more genes of small effect)
+        - Affected by extent of genomic LD: easier to pick up some region if high LD, but low precision especially when high recombination
+- Quantitative Trait Loci mapping (QTL)
+    - Create recombinant populations (crossing between extremes for F1 (uninformative) then F1-parent backcrosses), correlate trait values with dsitributed genetic markers
+    - Requires pedigree info (ideally 2 generations of crosses of inbred line), marker map, phenotypes associated with genotypes, need large families of individuals, low power to detect many loci of small effect
+    - Inbred lines important so that extremes you identify are certainly homozygous
+    
+## Candidate genes
+
+- Knowledge of genes function applied to new system
+- e.g., MC1R for melanin in birds
+- Issue: Not open to all variation out there, now where do you go? (close-ended)
+
+## Reverse genetics
+
+- Availability of full sequences, large
+- Genome scans, outlier analyses
+- Search data for footprints of selection
+- Outlier analyses:
+    - Allele frequency sprectrum (AFS)
+    - Positive selection ($\frac{D_N}{D_S}$)
+    - $F_{ST}$ (Wright): proportion of total genetic variation that is attributable to diferences among subpopulations
+        - Survey differentiated pops for many loci, calculate average overall FST, simluate expected range (neutral expectation for variation across loci), identify outliers
+        - FIT: variation in ind cf pop
+        - Wilding et al 2001: *Littorina saxatilis*: snail shell structure differences according to tidal zone
+    - Caveats:
+        - False positives: outliers due to a lot of other variance
+        - Demographic history can give false signals
+        - Need validation (like QTLs)
+    - Poelstra et al 2014: hooded & carrion crows
+        - Reference genome, then analysis
+        - Some loci (0.28%, among those most on same chromosome) showed clear separation, some abosolutely no
+        - Important empirical followup: Later went back and got tissues from various parts ofbody, found substantial difference in gene expression (of that gene) o torso skin and not in any other part.
+
+        
+        
+152x sequence coverage vs resequencing difference?
