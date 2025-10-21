@@ -236,7 +236,7 @@ Possible causes:
 - **Faster-X**: faster drift at population levels because more X than Y in population (thus this mechanism interacts with dominance)
 - **Meiotic drive**: distorter alleles that distort Mendelian ratios to their own advantage; suppressors evolve to stop them. When two allopatric populations each independently evolve a driver and suppressor, suppressed drivers can become unmasked. 
     
-# Discussion: Prezygotic isolation {.unnumbered}
+# Discussion: Postzygotic isolation {.unnumbered}
 
 **2025-09-16**: *(absent)*
 
@@ -429,3 +429,50 @@ How many, effect size
         
         
 152x sequence coverage vs resequencing difference?
+
+# Discussion: Genetic basis of speciation I {.unnumbered}
+
+**2025-10-07**
+
+- Snails have so many sites of small differentiation because low gene flow (very low dispersal).
+- They are ovoviviparous
+- Scaffolds are fragments of genome that you make using pipeline. If same data and same pipeline, should end up with pretty similar scaffolds.
+
+# Genetic basis of speciation II
+
+**2025-10-09**
+
+## Regulatory sequences
+
+- In crows, colour divergence not always necessarily due to differences in amino acids but rather in coding regions like introns
+- Do regulatory changes underlie qualitatively different types of phenotypic change?
+    - Structural: what is being made; regulatory: when and how much being made.
+    - Most regulation at level of transcription, some at translation, via attachment of siRNAs (small interfering; becomes double stranded when attach to mRNA so no translation)
+    - Mechanism of regulation:
+        - Fundamentally transcription regulation is due to sequence-specific binding (close to protein-coding region, so (*cis-*)) of transcription factors (*trans-*, far across)
+        - cis-regulatory elements: regions of non-coding DNA that regulate the transcription of nearby genes; intra-molecular; act via binding sequences
+        - trans-regulatory elements: proteins that regulate the transcription of distant genes; inter-molecular (can be intra- but generally not 1:1, act on many); transcription factors 
+    - Controversy regarding what has driven most fundamental morphological changes important in adaptive history: cis-regulatory changes vs structural changes
+        - Now known to be false dichotomy
+        - Selection works differently on cis-reg regions: they are co-dominant (as opposed to recessive; transcription factors are either on-off, but cis elements have three expression levels), reduced pleiotropy ( modular cis-reg regions)
+        - Sean Carroll, UoWisconsin, hhmi (millions of funding over 7 years, renewable). Convergent evolution of CRE for same gene in multiple *Drosophila* species. Also wrote popular books. 
+        - "regulatory evolution is *the* creative force underlying morphological diversity across the evolutionary spectrum, from variation within species to body plans"
+        - His argument:
+            - Mosaic pleiotropy: most proteins regulating development particpiate in multiple indepndent developmental processes
+            - Ancestral genetic complexity: morph. disparate and long-diveged animal txa share similar toolkits of body-building and -patterning genes
+            - Functional equivalence of distant homologs: many animal toolkit proteins exhibit functional equivalency (redundancy) in vivo when substituted for one another
+            - Deep homology: formation and differentiation of many structures are governed by simlar sets of genes and regulatory circuits
+            - Infrequent toolkit gene duplication
+            - Heterotopy: changes in spatial regulation of toolkit genes and the genes they regulate are associate with morphological divergence
+            - Modularity of CRE: can have multiple CRE for same genes controlling different aspects of it, like differential expression in different tissues/body parts. (Hoekstra et al argument is that duplication can give same result by copying both CRE and gene.)
+            - Vast regulatory networks of transcription factors: individual regulatory proteins (transcription factors) control scores to hundreds of target gene CREs; so changes to TF are "catastrophic"
+            
+        - Proponents of this view: Britten & Davidson, Wray, Valentine
+        - Hoekstra & Coyne (2007): rebuttal (defence of structural changes)
+            - Carroll saw morphology as unique to development; but they are actually not so special
+            - Gene duplications can accomplish many of cis-regulatory genes' special claims (we now know gene duplication rates are almost similar to point mutation rates)
+            - Some "regulatory" changes are actually structural: transcription factors include some of fastest evolving human genes. 
+            - At the time there was more evidence of protein changes than CR changes
+        - Later, more evidence of both factors. Both Carroll and Hoekstra ended up publishing later concluding opposite to their own earlier POV.
+        - Lot of this is strong focus on characters, not necessarily tied to speciation in closely related species.
+        

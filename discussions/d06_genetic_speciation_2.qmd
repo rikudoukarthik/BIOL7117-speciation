@@ -1,0 +1,64 @@
+---
+title: "Genetic basis of speciation II: Gene regulation"
+bibliography: "../biol7117-speciation.json"
+csl: "../evolution.csl"
+format: 
+  docx:
+    reference-doc: "../word_template.docx"
+    number-sections: false
+    output-file: "Thrikkadeeri_Short01_Gene_Regulation.docx"
+---
+
+# Chen et al., 2024
+
+## Motivation for work
+
+<!-- Previous work and gaps -->
+<!-- 3 sentences max -->
+
+Endogenous retroviruses (ERVs) are sequences in the host genome left over from past retroviral infections, and are widespread across taxa, contributing novel genetic material and biological function despite having become non-coding over evolutionary time. Solitary long terminal repeats (solo-LTRs) are remnant parts of ERVs indicative of host defence via ERV purging, but their biological function remains poorly known. The authors thus explored the evolutionary function of solo-LTRs, seeking out the specific mechanisms of regulation of their gene expression, and asking whether solo-LTR formation explains the small genome size of birds relative to reptiles and mammals.
+
+## Approach and new data
+
+<!-- 3 sentences max -->
+
+They first analysed genomes of several bird species, and reptile and mammal outgroups, comparing the proportion and frequency of solo-LTR formation across the phylogeny to understand its role in diversification. Next, they collected data on transcription expression and population resequencing in zebra finches, to trace the accumulation of solo-LTRs across speciation events. Finally, they used fluorescence in situ hybridisation (FISH) to experimentally assess differential gene expression in zebra finches, by comparing lineage-specific solo-LTRs with orthologs in chicken, and used dual-luciferase reporter assays to confirm cis-regulatory activity of solo-LTRs specifically on the ITGA2 gene involved in song traits.
+
+## What new data show
+
+<!-- 3 sentences max -->
+
+The frequency of solo-LTR formation was higher in birds than in reptiles and mammals, suggesting that their higher efficiency in EVE purging may have led to the smaller genome size. Importantly, they found continuous accumulation of solo-LTRs throughout the speciation history of Passeriformes, until the present day, suggesting its sustained adaptive function. Twenty of the 68 genes having lineage-specific solo-LTRs showed differential expression in zebra finches versus chickens, of which ITGA2 showed signs of cis-regulation via solo-LTR elements. 
+
+## Bottom line
+
+<!-- 1 sentence, <= 15 words -->
+
+Species diversification can be driven by non-coding, remnant genetic material through adaptive cis-regulatory pathways.
+
+# Yusuf et al., 2025
+
+## Motivation for work
+
+<!-- Previous work and gaps -->
+<!-- 3 sentences max -->
+
+Cis-regulation of gene expression is known to influence reproductive isolation through morphological or physiological pathways. However, its role on mate recognition behaviour, which is often a strong proximal barrier to gene flow, remains poorly understood. The authors therefore set out to explore the specific genetic mechanisms that drive this divergence in sexual signalling and mate preferences and potentially accelerate speciation.
+
+## Approach and new data
+
+<!-- 3 sentences max -->
+
+They studied two cricket species that show strong sexual isolation even in natural sympatry, conducting allele-specific expression analyses in F~1~ hybrids, which ensured identical genetic, developmental and environmental backgrounds and thus eliminated major confounds. They compared neural gene expression of female crickets exposed to varied conditions of male song (conspecific, heterospecific, mixed-species as in sympatry). They also analysed genetic differentiation, local admixture proportions, and Tajima's D values of implicated genes in wild population genomes, looking for signs of divergent selection.
+
+## What new data show
+
+<!-- 3 sentences max -->
+
+There were widespread differences in gene expression between maternal and paternal copies, and F~1~ hybrid female neural samples grouped by parental allele, suggesting strong cis-regulatory divergence in neural expression patterns between the two species. They found more differentially expressed genes shared between the species than expected by chance, indicating the absence of completely disparate cis-regulatory evolution in the two species, even though some genes were unique to each condition. Finally, population genomic measures showed strong signals of diversifying selection in allopatry that were subject to homogenisation in sympatry due to gene flow.
+
+## Bottom line
+
+<!-- 1 sentence, <= 15 words -->
+
+Behavioural reproductive isolation is linked to genome-wide divergence in cis-regulatory expression.

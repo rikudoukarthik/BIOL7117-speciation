@@ -219,3 +219,22 @@ About postzygotic (gametic) isolation
 
 Is there evidence that this divergence happened independently in the two regions? Relatively young species, and young Swedish population.
 Found low gene flow between overlapping ecotypes in low shore, but I wonder how that looks relative to gene flow between Crab ecotypes at different points on the shore?
+
+# Discussion: Genetic basis of speciation II: Gene regulation
+
+## Chen et al 2024
+
+- Residual sequences of ancient retroviruses influence the adaptive diversification of species by regulating host gene expression.
+- ERVs are typically non-coding, having lost most their function over time. However, they still introduce novel genetic material and biological function in hosts. Therefore, acquisition of ERVs may have been adaptive and contributed to the evolution of novel traits.
+- In birds, which have generally smaller genomes than near outgroups, estimates of LTR elements of ERV genome have been low. Biological function of solo-LTR poorly known.
+- Found higher frequencies of solo-LTR formation (higher efficiency in purging EVE from genome), continuous accumulation of solo-LTR through speciation of Passeriformes (data on transcription expression and population resequencing in zebra finches), 20 genes in zebra finches with lineage-specific solo-LTR differentially expressed cf orthologs in chicken, dual-luciferase reporter assays confirm cis-regulatory activity of solo-LTRs upstream of ITGA2 gene.
+- Solo-LTR formation as host defence mechanism or result of high recombination activity among LTRs. Additionally, many solo-LTRs carry regulatory elements and have cis-regulatory function.
+
+## Yusuf et al 2025
+
+(Much more dense and difficult to follow. Simple, interpretive language, guys!)
+
+- Cis-regulation known to influence morphological and physiological RI, but not much known about mate recognition behaviour, specifically about genetic mode of action driving signals and preferences.
+- Allele-specific expression differences (differences in expression of gene copies from maternal vs paternal genomes) across conditions. F1 hybrid female neural samples grouped by parental allele, indicating strong cis-regulatory divergence in neural expression patterns between species irrespective of acoustic environment.
+- Found extensive, genome-wide CRE divergence related to response to male acoustic sexual signals. (Broad distribution of diverged CR genes across chromosomes, differences in function of genes having context-dependent divergent expression, genomic signatures of divergent selection in allopatry.)
+- Notably more CRE divergence in sympatry than allopatry, suggesting that neurogenetic pathways of mate recognition are social context-dependent.
