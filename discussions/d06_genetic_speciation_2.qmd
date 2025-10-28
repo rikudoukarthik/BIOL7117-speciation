@@ -22,7 +22,7 @@ Endogenous retroviruses (ERVs) are sequences in the host genome left over from p
 
 <!-- 3 sentences max -->
 
-They first analysed genomes of several bird species, and reptile and mammal outgroups, comparing the proportion and frequency of solo-LTR formation across the phylogeny to understand its role in diversification. Next, they collected data on transcription expression and population resequencing in zebra finches, to trace the accumulation of solo-LTRs across speciation events. Finally, they used fluorescence in situ hybridisation (FISH) to experimentally assess differential gene expression in zebra finches, by comparing lineage-specific solo-LTRs with orthologs in chicken, and used dual-luciferase reporter assays to confirm cis-regulatory activity of solo-LTRs specifically on the ITGA2 gene involved in song traits.
+They first analysed genomes of several bird species, and reptile and mammal outgroups, comparing the proportion and frequency of solo-LTR formation across the phylogeny to understand its role in diversification. Next, they collected data on transcription expression and population resequencing in zebra finches, to trace how solo-LTRs accumulated across speciation events. Finally, they used fluorescence in situ hybridisation (FISH) to experimentally assess differential gene expression in the zebra finches, by comparing lineage-specific solo-LTRs with orthologs in chicken, and used dual-luciferase reporter assays to confirm cis-regulatory activity of solo-LTRs specifically on the ITGA2 gene involved in song traits.
 
 ## What new data show
 
@@ -55,7 +55,7 @@ They studied two cricket species that show strong sexual isolation even in natur
 
 <!-- 3 sentences max -->
 
-There were widespread differences in gene expression between maternal and paternal copies, and F~1~ hybrid female neural samples grouped by parental allele, suggesting strong cis-regulatory divergence in neural expression patterns between the two species. They found more differentially expressed genes shared between the species than expected by chance, indicating the absence of completely disparate cis-regulatory evolution in the two species, even though some genes were unique to each condition. Finally, population genomic measures showed strong signals of diversifying selection in allopatry that were subject to homogenisation in sympatry due to gene flow.
+There were widespread differences in gene expression between maternal and paternal copies, and neural samples of F~1~ hybrid females clustered by parental allele, suggesting cis-regulatory divergence in patterns of neural expression between the two species. They found more differentially expressed genes shared between the species than expected by chance, indicating the absence of completely disparate cis-regulatory evolution in the two species, even though some genes were unique to each condition. Finally, population genomic measures showed strong signals of diversifying selection in allopatry that were subject to homogenisation in sympatry due to gene flow.
 
 ## Bottom line
 

@@ -475,4 +475,49 @@ How many, effect size
             - At the time there was more evidence of protein changes than CR changes
         - Later, more evidence of both factors. Both Carroll and Hoekstra ended up publishing later concluding opposite to their own earlier POV.
         - Lot of this is strong focus on characters, not necessarily tied to speciation in closely related species.
-        
+
+# Discussion: Genetic basis of speciation II (Gene regulation) {.unnumbered}
+
+**2025-10-21**
+
+- Fundamental of -omics approach: look at everything (genomes or transcriptomes), let data show you who's interesting
+- Genome size related to cell size, so in flying birds for metabolic reasons cells have to be small and therefore genomes small. Same in bats versus other mammals.
+
+# Genomic architecture
+
+aka, Islands of Discord
+
+**2025-10-23**
+
+- Felsenstein: Skepticism towards Santa Rosalia (against Hutchinson)
+    - Felsenstein's paradox: recombination brings good genes together, but makes it hard for them to *stay* together
+- Genomic islands of differentiation: relatively small regions of genome that have elevated divergence, surrounded by regions of low/no divergence. Few key influences around same time, ~ 20 years ago. 
+    - Rebirth of reinforcement
+    - Genic speciation, Chung-I Wu (versed Coyne): shifting emphasis from isolation at whole genome to individual genes
+    - Isolation-with-migration model (Nielsen, Wakeley, Hey): shift from coalescent approaches to speciation with gene flow
+    - *Helianthus anomalus* is a dune specialist. Non-random hybrid composition between two parental lineages, even in lab crosses, very similar to that in wild hybrid. "Interactions between coadapted parental species' genes contstrain the genomic composition of hgybrid species.", Rieseberg et al 1996.
+    - *Anopheles gambiae*, Turner et al 2005. Three regions (< 2.8 Mb) contain most differentiation, and these speciation islands remain differentiated despite considerable gene flow (therefore responsible for RI).
+- By 2010--15, speciation with gene flow was already dogmatic.
+- Genomic islands of differentiation:
+    - In regions of low recombination
+    - Co-localise with species-defining traits (e.g., hood in Hooded Crow)
+    - LD among unlinked islands (e.g., capuchino seedeaters)
+    - Island (gene) trees = species trees (gene tree--species tree concordance)
+- Via 2012: because recombination fragment size is larger than individual genes, some genes/loci hitchhike along with loci under selection. Island grows over time. 
+- Potential disproportionate role of inversions
+    - Noor et al 2001 (inc. Jane Reiland): QTLs also associated with regions of inversion
+    - Inversion: rearrangement (flipping) of gene order in chromatin packing
+    - Inverted/rearranged areas simply do not get recombined, stay the same, due to the differing order
+- Role of structural genomic variants, beyond just SNPs; often associated with adaptations, clines, speciation (Hooper & Price 2015)
+- Disputed islands: Turner & Hahn 2010 (genomic islands *of* speciation or genomic islands *and* speciation?)
+    - What is "divergence"? 
+        - Relative: between vs within (F~ST~; sub, tot). Problem: markers with high variation within populations less able to show between (max F~ST~ will be low when H~S~, i.e., recombination, high). Low recombination within population will drive up F~ST~.
+        - Absolute (d~xy~): average # pairwise diffs between sequences from two species. Not sensitive to within-population variation.
+        - If genomic islands of speciation, both relative and absolute divergence should be high.
+        - Shift from islands of speciation to islands of differentiation.
+        - Cruickshank & Hahn 2014 showed that absolute doesn't keep up. Divergence-after-speciation.
+        - ~~In regions of low recombination~~
+        - ~~Co-localise with species-defining traits (e.g., hood in Hooded Crow)~~ traits arose post-speciation
+        - ~~LD among unlinked islands (e.g., capuchino seedeaters)~~ impossible to maintain
+        - ~~Island (gene) trees = species trees (gene tree--species tree concordance)~~ selection speeds lineage sorting
+        - Speciation as sieve (Guerrero & Hahn 2017). Speciation only responsible for sorting/sieving process, the divergence itself ancestral (polymorphism in population). Ancestral balanced polymorphisms are sorted unequally between descendant lineages. (Balanced: both coexist in population.)
