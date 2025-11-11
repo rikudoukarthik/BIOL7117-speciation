@@ -238,3 +238,85 @@ Found low gene flow between overlapping ecotypes in low shore, but I wonder how 
 - Allele-specific expression differences (differences in expression of gene copies from maternal vs paternal genomes) across conditions. F1 hybrid female neural samples grouped by parental allele, indicating strong cis-regulatory divergence in neural expression patterns between species irrespective of acoustic environment.
 - Found extensive, genome-wide CRE divergence related to response to male acoustic sexual signals. (Broad distribution of diverged CR genes across chromosomes, differences in function of genes having context-dependent divergent expression, genomic signatures of divergent selection in allopatry.)
 - Notably more CRE divergence in sympatry than allopatry, suggesting that neurogenetic pathways of mate recognition are social context-dependent.
+
+# Discussion: Genome architecture
+
+## Meyer et al 2024
+
+- Large structural variants (SVs) like inversions both establish and maintain divergent haplotypes (and reducing inter-haplotype recombination). 
+- Although popular in studies of differentiation (and ecotype formation), still don't know what conditions give rise to inversions, how they are maintained over the long term, and how they contribute to RI and speciation.
+- LD can form between multiple distant functional sites, but also between co-adapted gene complexes and deleterious mutations (by chance). So dynamics of inversion can be driven by multiple simultaneous processes.
+- Allelic content of inversion can also change over time: new mutations, or gene flux between inverted haplotypes. This can influence the ferquency of an inversion and ultimately the evolutionary trajectory (and contribution to RI).
+- N-S lineages in Northeast Atlantic and marine-lagoon lineages in Mediterranean. Strong genetic differences in the same part of the genome, meaning genomic architecture probably relies on shared structural variation.
+- Whole-genome resequencing of samples; high-coverage linked-read sequencing for reference genome. PCA on SNPs for population structure. Genetic differentiation (F~ST~), nucleotide diversity ($\pi$), absolute genetic divergence (d~xy~) to characterise genomic landscape of divergence. Ancestral recombination graphs (ARGs) to describe variation in coalescence times across genome using time to the most recent common ancestor (TMRCA); local ancestry for each haplotype within inversion regions.
+- Pronounced population structure even in adjacent sampling locations; tight LD. Clustering by geography is only for LD regions, overall clustering seems to be based on chromosomal inversions (three inversion genotypes), suggesting two polymorphic inversions containing large numbers of sites in strong LD. Similarly, genome-wide differentiation is relatively weak, but F~ST~ and d~xy~ values were high in two chromosomes (2, 12). 
+- Sufficient time has elapsed since appearance of inverted haplotypes to have mutation-drift equilibrium.
+- Origin of inversions: inversions appeared within the lineage with no introgression or gene flow upon secondary contact---instead, incomplete lineage sorting (inversion in B12 is near chromosome extremity), remained polymorphic for long period of time.
+- B12 is type 1 (divergent) but B2 involves interaction of Type 1 and Type 2 (within-population variation). B2 inversion is private to Mediterranean lagoons: intermediate haplotype frequencies, heterozygote advantage; because it is longer, more likely to have accumulated deleterious mutations, so polymorphism maintained by pseudo-overdominance.
+- B12 might facilitate speciation over the long term, but uncertain whether B2 will undergo differential fixation between habitats or universal fixation of one haplotype.
+
+## Huang et al 2025
+
+- Because inversions tightly link locally adapted alleles, adaptive response is poor when the population encounters a new environment.
+- Dunes have low nitrogen levels, low vegetation cover, than surrounding sand sheet. Dune ecotype has larger/heavier seeds.
+- Habitat data + genotyping-by-sequencing data --> genotype-environment association (GEA) analyses to test for associations between inversions and shared selective pressures. QTL mapping to identify seed size difference regions. Whole-genome sequences (existing), population genomics to identify selective sweeps shared by two dune ecotypes (do inversions contribute disproportionately to parallel genetic evolution).
+- Independent origins of the two dune ecotypes, because SNP PCA yielded geographical clusters of both dune and non-dune. This is despite habitat variables (soil and vegetation) separating between dune and non-dune (PC1).
+- Crosses on seed size had F~1~ with intermediate seed size. In F~2~, many genomic regions were overrepresented in large-seeded plants, meaning seed size is highly polygenic.
+- QTLs associated with seed size belonged to inversions more likely than not, and more QTL windows were shared than expected by chance in pairs within and between locations.
+
+# Discussion: Introgression
+
+## Jensen et al 2024
+
+- Due to Haldane's rule, gene flow between divergent lineages more likely through homogametic hybrids than heterogametic sex---leading to phylogenetic discordance between autosomes and homogametic sex loci.
+- Y chromosome introgression therefore rare, and the few cases reported have mostly been in relatively recently diverged lineages. Related to positive selection and meiotic drive.
+- In guenons, which hybridise a lot in the past and present, males disperse after maturation, giving opportunities for introgression across species boundaries. Maternal introgression cases already known in these organisms.
+- WGS two guenon species (*Cercopithecus denti*, *C. wolfi*) to add to recent dataset, and resequenced two others. 
+- Why compared against rhesus macaque? Why not another species from the same continent, near relative?
+- Saw mitonuclear discordance, but Y tree was very similar to species tree, in line with Haldane's rule---except for *C. denti* which in the Y tree was closest to *C. mitis* and not *C. wolfi*. 
+- To distinguish between introgression and ILS, compared pairwise nucleotide differences (d~xy~), and found that nucleotide divergence was 3.6 times greater on autosomes than Y (suggesting introgression from *mitis* into *denti*).
+- Autosomal gene flow tested using D-statistic, and found overall low levels of allele sharing between *mitis* and *denti*, suggesting that the *mitis*-like Y chromosome in *denti* was initially introduced at a low frequency.
+- Then compared neutral (drift) and non-neutral processes using simulations (multi-species-coalescence-with-introgression, MSci). Low initial frequency but selective force allowed fixation. 
+- Looked for possible targets of selection in Y-linked genes with amino acid substitutions in the different lineages. Found potential in genes linked to sperm competition.
+- Tried to compare adaptive introgression with meiotic drive, but didn't get conclusive results that suggest one over the other.
+
+## Jorquera et al 2025
+
+- Three skua species in S Hemisphere with rather distinct breeding ranges; generalist scavengers and predators. Failure to resolve phylogenetic status/taxonomic relationships of Brown Skua subspecies (ILS, introgression, methodology limitations). 
+- Clarified evolutionary history of SH skuas (reconstructing demographic history), revealing timing of diversification and impact of past climate oscillations on effective population size. Then, used SDMs to predict range changes in areas of introgression. 
+- Used high-coverage (15x) WGS from 111 skuas in 21 locations, covering entire SH spatial extent of their ranges. 
+- Genetic structure and differentiation (using SNPs) suggest three clusters, aligning with current species groups. But also show several admixed populations. Phylogeny and population structure based on nuclear SNPs show 7 phylogeographic groups. 
+- Reconstrcuted phylogeny using TreeMix, which suggests gene flow events in the past (not just branching tree).
+- D-statistics and f-branch test to distinguish between ILS and introgression.
+- Genomic signatures of adaptation using RAiSD and XP-nSL: detect genome-wide selective sweeps that produce regions of reduced genetic diversity near an adaptive mutation. Generally, chromosomes 9 and 18, with broad cellular functions. Strongest differential selection, nearing fixation, associated with growth, reproductive processes, and pigmentation. 
+- Specifically, might be related to thermogenic adaptations. Lipid metabolism in Brown Skua, fatty acid degradation and metabolic pathways in SP Skua, glycerolipid metabolism in Chilean. Traits: ability to endure extreme temperatures, prolonged periods without food, various environmental pressures.
+- SDMs predict changes for all species, and this will change overlaps and therefore introgression. Balance between disruptive selection and homogenisation via gene flow will determine future genetic differentiation, and future of the species groups. 
+- Very weirdly written paper, hotchpotch (flow is poor). Even discussion ends abruptly.
+
+# Discussion: Old variation
+
+(not detailed reads this time)
+
+## Meier et al 2023
+
+- African lake cichlids: largest radiation was in a very young lake, and all ecological guilds evolved in situ through lineage fusion (admixture) and fission (speciation), from several ancestral populations that met.
+- LVRS cichlid fishes had a hybrid origin: 2-3 older lineages that had split from common ancestor through geographical isolation
+- Should Lake Victoria clades all be considered monophyletic, instead of having same genera across lakes?
+- Entire LVRS had hybrid origin between Congolese and Upper Nile lineages. Victoria Radiation formed from hybridisation when lake refilled. Later, hybridisation within VR gave rise to ecological groups and hybrid species with novel trait combinations.
+- Syngaemon dynamics similar to metapopulation dynamics.
+- Natural hybrids should not be dismissed as detrimental or evolutionary dead-ends.
+
+## Lutgen et al 2025
+
+- Wheatears show high incidence of convergence plumage colour evolution and frequent hybridisation. Same phenotypes reappear multiple times across the genus.
+- In *hispanica* complex, throat colour is polymorphic in 3 of 4 species, while mantle/neck colour is recombined by hybridisation.
+- Variation in throat and mantle colouration are associated with agouti signalling protein (ASIP) locus
+- Combination of new and old/introgressed variation at a single gene. This (complex recombined phenotypes underpinned by monogenic architecture) is rare.
+- Recombined phenotypes (due to introgression) in extant hybrid zones may be a source for future phenotypic evolution
+- Even if phenotypes at different body parts are monogenic, they can be decoupled
+- Transspecific throat colour polymorphism is associated with alternative foraging niches (different N isotope signatures)
+- Abundance of genotypic and phenotypic admixture: pervasive hybridisation in the complex
+- White-throated individuals prey on insects from narrower and lower trophic level than black-throated. Thus, throat polymorphism is related to trophic niche of prey and thereby foraging strategy.
+- White mantle evolved adaptively (selection involved)
+- Story: originally, all members of *hispanica* complex had black throat and mantle, then white mantle evolved in *melanoleuca* through upstream mutations fixed by positive selection. Later, new variation introduced white throat in *melanoleuca*, which then introgressed into *hispanica* (along with white mantle, LD) and maintained as balanced polymorphism. In *pleschanka*, introgression introduced white throat but not white mantle (selected against).
+- Overall, introgression shuffled plumage colouration and led to convergent evolution.

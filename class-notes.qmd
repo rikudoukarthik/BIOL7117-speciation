@@ -521,3 +521,93 @@ aka, Islands of Discord
         - ~~LD among unlinked islands (e.g., capuchino seedeaters)~~ impossible to maintain
         - ~~Island (gene) trees = species trees (gene tree--species tree concordance)~~ selection speeds lineage sorting
         - Speciation as sieve (Guerrero & Hahn 2017). Speciation only responsible for sorting/sieving process, the divergence itself ancestral (polymorphism in population). Ancestral balanced polymorphisms are sorted unequally between descendant lineages. (Balanced: both coexist in population.)
+
+# Discussion: Genomic architecture
+
+**2025-10-28**
+
+- Parallel speciation: Speciation version of convergent evolution. Parallel evolution assumes more similar starting points, is a subset of convergent evolution. 
+- Type I inversions: divergent/balancing selection. Type II: good things on both inversions, so best is to have heterozygous (e.g., trapped along with good stuff might be bad, and some bad effects may be covered by having heterokaryotype). (Zygote: single locus; karyotype: can be set of loci, structural variants.)
+
+# Hybridisation and introgression
+
+**2025-10-30**
+
+- Hybridisation: Reproduction between members of genetically differentiated populations that yields offspring of mixed ancestry. e.g., Carrion & Hooded Crows
+- Initiated by range change, habitat shifts/mosaics, disturbance
+- Outcomes: fusion (speciation reversal), hybrid speciation (transgressive variation; forms a 3rd group), balance (hybrid zones), introgression (seeping of small set of genes; adaptations jump the species barrier; cf fusion)
+- Fusion: Common & Chihuahuan Raven. Chi. originally split from Common, then one fused back with Common forming the California type, while the other remains Chi. So the California lineage is considered to have fused (subsumed by Common).
+    - Wholesale collapse of distinct entity, continue to be more homogenised.
+- Hybrid speciation
+    - Allopolyploid speciation: different numbers of chromosomes. Angiosperms, ferns, *Acropora*.
+    - Homoploid hybrid speciation: no ploidy changes, more common in animals. *Cottus* fish, sparrows (House, Italian, Spanish), snub-nosed monkey
+    - Transgressive phenotypes: does hybridisation generate fitness-related phenotypes that lie outside the parental distribution?
+- Balance (hybrid zones)
+    - Mice, mussels, crickets (habitat mosaics)
+    - Tension zones: *dispersal* into zone vs *selection* against crossing. 
+        - Nick Barton developed a lot of the theory. 
+        - Fire-bellied Toad brilliant example of this.
+        - Ratio of effective selection and recombination (see photo in phone).
+        - Spatial coupling of clines (genotypic & phenotypic). Hybrid zones tend to be drawn to areas of lo wpopulation density. 
+        - What enhances coupling? Reduced recombination, epistasis among barrier loci, moving clines to low fitness landscape.
+        - Brumfield et al 2001, clines in manakins do not line up with hybrid zones. The transition in certain markers are at some different geographical location than the actual hybrid zone (where crucial trait also transitions), so looking at just that would suggest introgression.
+        - Carling & Brumfield 2008: Lazuli and Indigo Buntings. 
+- Introgression
+    - Kind of an exception to hybrid zone, it manages to escape forces acting to keep it within the zone. Something that was originally in one species ends up in another. 
+    - Hybridisation as a source of *adaptive variation*: hybridisation is common, mutations are rare.
+    - Grants in Galapagos finches. High altitude adaptation in Tibetans (adaptive introgression with denisovans). *Heliconius* aposematism: same morph in sympatry, different in allopatry. 
+    - ABBA-BABA test (Patterson's D =  (ABBA - BABA) / (ABBA + BABA)): test for introgression vs incomplete lineage sorting. In former, ABBA should be more likely than BABA, in latter should be equal (random). Need four groups, use large genome if not whole genome.
+    - Migrant tracts: chromosome segments that show migrant ancestry. Length distribution will change over time due to recombination. Archaic ancestor SNPs will become smaller/rarer farther away from introgression event. Can compare increasing vs decreasing vs constant introgression. 
+        - Identify private alleles (only found in one population). If due to *de novo* mutations, random distribution, but if past introgression, expect longer runs of identity in SNPs. 
+- Is introgression the new allopatry?
+
+# Discussion: Introgression
+
+**2025-11-04**
+
+- Looks like Jensen et al 2024 did not start out with hypothesis/prediction, instead got the data and framed the story around it.
+- PSMC: only need one individual to recreate the population history
+
+# Old variation is the new thing
+
+**2025-11-06**
+
+- *G. difficilis* has few genes with large effect on beak size, so also ecological impact on top of easily identifiable morphological feature. When looking at overall species tree, the genetic basis for the difference between these species is older than the basis for species split itself (currently sister species can be blunt or pointed beak). Introgression with blunt type introduced blunt beak in new lineages.
+- DMI is a long waiting game (de novo variants): point mutations, duplication, scrambling, retroposition, mobile elements, lateral gene transfer (viruses, parasites), fission and fusion, chimeric genes (origins in separate genes)
+- Problems with this
+    - Most are deleterious
+    - Start at low frequency (1/2 N~e~)
+    - Small effect mutations genomically diffuse
+- Standing variation
+    - Diversity of genetic variant present in a population. Can include de novo mutation.
+    - Ancestral variation: genetic variation present in common ancestor of populations/species being compared
+        - Substrate for rapid divergence, no waiting. Explain why speciation alleles often predate species divergence. 
+            - No wait for new mutations
+            - Pre-screened for deleterious alleles
+            - High initial frequency
+            - Theoretically, small effect alleles clustered (so enriched for large-effect haplotypes/islands)
+        - Co-adapted genes may be clustered, e.g., LD
+        - Sources: mutation, large N~e~, balanced polymorphisms (broad geo/ecological range species, e.g., balanced alleles for two different habitats), introgression (admixture variation)
+- Speciation with gene flow vs sieve
+- Old hybridisation creates variation that can be sorted into new species
+- Combinatorial view of speciation: Seehausen. Started thinking about this over 20 years ago.
+    - 2005: not the origin but the reassembly of several old variants into novel combinations that constitutes the beginning of a speciation event
+    - Hybrid swarm: hybridisation upon invasion of new habitat producing lots of heritable variation for ecological traits
+    - Syngameon: a complex of genetically weakly but ecologically highly distinctive species capable of exchanging genetic material
+- Implications of combinatorial speciation:
+    - Decoupling of mutation and speciation rates
+    - Facilitates evolution of LD in face of gene flow
+    - These two together: no wait when ecological opportunity arises
+- Things still to do:
+    - Rapid (inc. non-adaptive) radiations vs depauperate sister taxa
+    - Compare allele splits to species splits
+    - Compare LD among species
+    - Locus size effects for old vs new variants
+    - Revisit old data (e.g., incongruent gene trees)
+    
+# Discussion: Old variation
+
+**2025-11-11**
+
+- Mitochondrial DNA has way more drift for same eff pop size than nuclear, which is why you usually see discordance.
+- 

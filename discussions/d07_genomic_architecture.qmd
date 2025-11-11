@@ -1,0 +1,64 @@
+---
+title: "Genomic architecture"
+bibliography: "../biol7117-speciation.json"
+csl: "../evolution.csl"
+format: 
+  docx:
+    reference-doc: "../word_template.docx"
+    number-sections: false
+    output-file: "Thrikkadeeri_Short02_Genomic_Architecture.docx"
+---
+
+# Meyer et al., 2024
+
+## Motivation for work
+
+<!-- Previous work and gaps -->
+<!-- 3 sentences max -->
+
+Chromosomal inversions are a kind of large structural variant (SV) which can create and maintain genetic differentiation. However, little is known about how inversions arise, how they are maintained over time, and how exactly they influence reproductive isolation and, eventually, speciation. The authors studied structural genomic variation, specifically inversions, in the long-snouted seahorse (*Hippocampus guttulatus*) across distinct lineages, and explored the potential role of this structural variation in the formation of distinct marine-lagoon ecotypes and geographic lineages.
+
+## Approach and new data
+
+<!-- 3 sentences max -->
+
+They conducted whole genome re-sequencing, and also assembled a reference genome using high-coverage linked-read sequencing. They used SNP data in a PCA to analyse population structure, and also characterised the genomic divergence landscape in terms of genetic differentiation (F~ST~), nucleotide diversity, and absolute genetic divergence (d~xy~). Variation in coalescence times across the genome was analysed with ancestral recombination graphs (ARGs) using time to the most recent common ancestor (TMRCA).
+
+## What new data show
+
+<!-- 3 sentences max -->
+
+They found strong population structure across lineages, even in adjacent sampling locations, and overall differentiation was linked to chromosomal inversions via three inversion genotypes, indicating the role of linkage disequilibrium. Interestingly, genome-wide differentiation was weak, but F~ST~ and d~xy~ values were high in two chromosomes (2, 12), and the inversions included both Type I and Type II polymorphisms. Their data suggest that inversion appeared independently within lineages a long time ago, perhaps through incomplete lineage sorting, without introgression or gene flow upon secondary contact.
+
+## Bottom line
+
+<!-- 1 sentence, <= 15 words -->
+
+Ancient intraspecific inversion polymorphisms are responsible for ecotype formation in long-snouted seahorse.
+
+# Huang et al., 2025
+
+## Motivation for work
+
+<!-- Previous work and gaps -->
+<!-- 3 sentences max -->
+
+Chromosomal inversions facilitate differentiation by suppressing recombination of alleles within them and enhancing their collective phenotypic effect. This influences selection strength and genomic architecture constraints, and may result in greater probability of parallel genomic divergence. The authors explored whether inversions play a disproportionate role in parallel genetic evolution in the dune ecotypes of *Helianthus petiolaris*. 
+
+## Approach and new data
+
+<!-- 3 sentences max -->
+
+They combined habitat data (soil and vegetation variables) and genotyping-by-sequencing data, and ran genotype-environment association (GEA) analyses to test for associations between chromosomal inversions and shared selective pressures in the different habitats. They used QTL mapping to identify regions of the genome associated with difference in seed size, a known diverged phenotype in this species. To test whether inversions disproportionately influence parallel genetic evolution, they used existing whole-genome sequences of multiple closely related species, and applied approaches of population genomics to identify selective sweeps shared by the two dune ecotypes. 
+
+## What new data show
+
+<!-- 3 sentences max -->
+
+PCA using the SNP data yielded geographical clusters of both dune and non-dune ecotypes, despite habitat variables separating between dune and non-dune, which suggests independent origins of the two dune ecotypes, through inversions, in response to common selective pressures. They verified that larger seed size was one such trait that had undergone parallel evolution, and its QTLs were part of inversions more frequently than expected by chance. Their data from whole-genome sequencing showed that most genomic regions under selective sweep were also within inversions.
+
+## Bottom line
+
+<!-- 1 sentence, <= 15 words -->
+
+Chromosomal inversions play a disproportionate role in the parallel evolution of ecotypes in *Helianthus petiolaris*.

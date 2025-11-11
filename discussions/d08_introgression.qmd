@@ -1,0 +1,64 @@
+---
+title: "Introgression"
+bibliography: "../biol7117-speciation.json"
+csl: "../evolution.csl"
+format: 
+  docx:
+    reference-doc: "../word_template.docx"
+    number-sections: false
+    output-file: "Thrikkadeeri_Short03_Introgression.docx"
+---
+
+# Jensen et al., 2024
+
+## Motivation for work
+
+<!-- Previous work and gaps -->
+<!-- 3 sentences max -->
+
+Haldane's rule, which suggests lower fitness of heterogametic hybrids, makes introgression through the Y chromosome in mammals extremely rare, especially between deeply diverged lineages. Guenons, an African group of primates, have an extensive history of hybridisation continuing to the present, and male post-maturation dispersal presents opportunities for introgression across lineages via the Y chromosome. The authors thus explored the demographic history of this unique system, attempting to distinguish between introgression and incomplete lineage sorting (ILS), and generally between neutral (drift) and non-neutral (adaptive selection) processes, driving evolution in this group.
+
+## Approach and new data
+
+<!-- 3 sentences max -->
+
+They conducted whole genome sequencing (WGS) on four *Cercopithecus* species, and combined this with recently published WGS data on several closely related guenon species, to compare the species tree, mitochondrial gene tree and Y-chromosome tree. They compared pairwise nucleotide differences (d~xy~) to differentiate between introgression and ILS, and used D-statistics to estimate allelic introgression levels. Finally, they used simulation models (multi-species-coalescence-with-introgression, MSci) to compare the relative likelihoods of neutral and non-neutral processes in driving the observed phylogenetic relationships, and explored Y-linked genes that could be potential targets of selection.
+
+## What new data show
+
+<!-- 3 sentences max -->
+
+Despite mitonuclear discordance, the Y chromosome tree was very similar to the species tree as expected from Haldane's rule, except for *C. denti* which was closest to *C. mitis* and not *C. wolfi* as in the species tree. Nucleotide differences were roughly 3.6 times higher in autosomes than in the Y chromosome, which suggests that *C. mitis* introgressed into *C. denti*, but low allele sharing between them indicates very low initial frequency of the introgressed allele. Nevertheless, allele fixation was facilitated by selective forces, perhaps acting on genes related to sperm competition. 
+
+## Bottom line
+
+<!-- 1 sentence, <= 15 words -->
+
+Selective forces facilitate heterogametic introgression even between deeply diverged lineages.
+
+# Jorquera et al., 2025
+
+## Motivation for work
+
+<!-- Previous work and gaps -->
+<!-- 3 sentences max -->
+
+Skuas are generalist seabirds having complicated and/or unresolved phylogenetic and taxonomic relationships, especially in the Southern Hemisphere which has three recognised species with relatively distinct breeding ranges. There is also no conclusive evidence yet regarding the relative roles of introgression, ILS, and methodological limitations, in our current understanding of their phylogenetic relationships and demographic history. The authors thus aimed to clarify the evolutionary history of these three skua species, with special focus on the timing of diversification events and the impact of climate oscillations, and also to predict future range changes in the areas of introgression.
+
+## Approach and new data
+
+<!-- 3 sentences max -->
+
+Using high-coverage (15x) WGS data from 111 individuals in 21 locations across the spatial extent of their distributions, the authors explored genetic structure and differentiation with SNPs. They reconstructed the phylogeny using TreeMix and used D-statistics and the f-branch test to distinguish between ILS and introgression. RAiSD and XP-nSL were used to detect genome-wide selective sweeps, i.e., potential adaptive signals, and macroclimatic SDMs were used to predict future species ranges under low and high emission scenarios (RCP 2.6, RCP 8.5).
+
+## What new data show
+
+<!-- 3 sentences max -->
+
+Analysis of population structure confirmed the current three-species delimitation, but showed finer intraspecies structure (seven phylogeographic groups) as well as several admixed populations. The reconstructed phylogeny was indicative of past gene flow and introgression, rather than ILS, with potential adaptive selection on thermogenic genes associated with lipid metabolism (Brown Skua), fatty acid degradation (South Polar Skua), and glycerolipid metabolism (Chilean Skua)---and thus conferring greater fitness in extreme temperatures and food scarcity. Distribution ranges were predicted to change for all species, which will in turn alter the areas of overlap and introgression, thus bringing into question the future evolutionary trajectories of these species groups.
+
+## Bottom line
+
+<!-- 1 sentence, <= 15 words -->
+
+Adaptation via genome-wide introgression allows colonisation of extreme environments.
