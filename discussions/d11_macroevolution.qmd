@@ -1,0 +1,30 @@
+---
+title: "Macroevolution"
+bibliography: "../biol7117-speciation.json"
+csl: "../evolution.csl"
+format: 
+  docx:
+    reference-doc: "../word_template.docx"
+    number-sections: false
+    output-file: "Thrikkadeeri_Long05_Macroevolution.docx"
+---
+
+Word count (koRpus): 790
+
+# Summary
+
+Studying species diversification patterns over geological time scales can yield insights into how traits link together evolution and ecology. @heuer2024 explored the associations of coat colour polymorphism in carnivore species with their divergence times, speciation rates, ancestral/derived states, and niche breadth. @title2024 used scaled reptiles as a case study for understanding the role of big, singular phenotypic shifts in driving rapid biodiversity expansions. 
+
+Colour polymorphism is widespread in carnivores, and can confer several fitness advantages such as the ability to colonise new niches or to survive habitat change. @heuer2024 predicted polymorphic carnivore lineages to have higher speciation rates and niche breadths, more recent divergence times, and more ancestral lineages than derived ones, when compared with monomorphic carnivores. To test these, they used phylogenetic comparative methods on a recent time-calibrated supertree for Carnivora, estimating speciation rates using several speciation and extinction models, and analysing branch lengths and niche breadths using numerous statistical tests (e.g., Wilcoxon rank, Pearson's contingency coefficient, Kruskal-Wallis, t) as well as phylogenetic GLMMs and R^2^. 
+
+Speciation rates were higher in polymorphic carnivores than monomorphic ones, but branch lengths were not significantly different, and polymorphism was not associated with niche breadth either. However, polymorphism could be linked to other ecologically relevant factors such as temporal niche or predator-prey dynamics (e.g., co-evolution), as seen in examples of pleiotropy. Temporal niche segregation or assortative mating in general could be mechanisms that facilitate sympatric speciation. Polymorphisms therefore have played, and continue to play, an important role in the diversification of mammalian carnivores.
+
+The evolutionary history of snakes is interesting because they are phylogenetically nested within lizards, but have had unique diversification trajectories and remain very distinct from other lineages despite repeated convergent evolution of similar traits in non-snake lineages. This places snakes as a potential exemplar of Simpsonian macroevolution, where diversification is punctuated by rapid changes along many axes that not only seem instantaneous at geological time scales but also unpredictable from prior states. @title2024 tested this by combining a phylogeny constructed from their own data with existing data from GenBank, which yielded a time-calibrated, species-level, dated phylogenomic tree. They obtained trait data from literature and museum specimens, then for each of these traits calculated an index of net innovation as the absolute difference in phenotype between the focal species and the inferred ancestral state. They also calculated a second index of absolute branch-specific change along the branches. They calculated a TR statistic, similar to the popular diversification rate, and used ordination methods to identify which nodes in the tree best explained species-level phenotypic variation.
+
+They did indeed find evidence of major phenotypic transformations in the evolutionary history of snakes, particularly at the origin and early stages, and in traits related to feeding, locomotion and sensing. In fact, much of the phenotypic variation was attributable to one singular, early diversification event. Snakes also showed much higher net innovation rates than lizards, and morphological shifts were also associated with ecological trait diversification, especially by means of diet divergence but not climatic niche or life history. Specifically, snakes cover wider overall dietary niche breadths than lizards, including aquatic and semi-aquatic prey, though this pattern reverses at the level of individual species. CLaDS and BAMM models revealed higher speciation rates in snakes compared with lizards, but this was not linked to species richness or individual traits. The authors suggest that snakes are an ongoing adaptive radiation with sustained diversification, whose origin and early stages were characterised by singularities that may not map neatly onto extrapolations from contemporary microevolution studies.
+
+Although both studies presented very interesting macroevolutionary cases, I walked away slightly apprehensive about the methods in @heuer2024. Firstly, the sheer number of analyses and tests within each analysis was difficult to keep track of and make sense of; the logic behind each, and its implications, could have been better presented. Moreover, the intermixing of advanced Bayesian modelling with simplistic statistical tests was confusing and lacked justification too. And other questionable choices, like treating body size, range size, and number of habitats---their variables of interest---as random effects in PGLMMs, and confidence estimates of unknown provenance, collectively make their analyses and results very hard to interpret reasonably. 
+
+Nevertheless, both studies together shed light on the importance of variability in tempo and mode of evolution, either in the form of dramatic singular, unpredictable, and unreplicable shifts, or as repeated dichotomic events across several lineages such as through pleiotropic loci and magic traits. Further, the discordance between processes operating at contemporary versus geological time scales demonstrates the transmutation problem which makes bridging the macro-micro divide challenging [@mcgill2019a]. However, the two studies still highlight the fertile ground of mechanistic questions reconciling macroevolution and macroecology, which is a more feasible, and urgently necessary, conceptual union [@mcgill2019a].
+
+# References

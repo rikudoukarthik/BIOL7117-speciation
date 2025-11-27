@@ -610,4 +610,107 @@ aka, Islands of Discord
 **2025-11-11**
 
 - Mitochondrial DNA has way more drift for same eff pop size than nuclear, which is why you usually see discordance.
-- 
+
+# Microbes, microbiomes and speciation
+
+**2025-11-13**
+
+- Unculturable paradigm: only 1-2% of bacteria are culturable (so biased view)
+- Rule of thumb for bacterial species definition is 3% divergent at small-ribosomal subunit (SSU) rRNA. Why SSU?
+    - Encoded by nucleus and organelles (e.g, 16S)
+    - Slow and fast (hour-hands, minute-hands)
+    - Conserved structure
+    - Practicalities
+    - Ancient and essential (ribosome)
+    - Highly integrated (>100 co-evolved cellular RNAs and proteins). Should also minimise LGT
+    - Lateral/Horizontal Gene Transfer: Movement of genetic material between organisms other than by vertical (parent-to-offspring) transmission.
+- Problems with SSU rRNA:
+    - Discordance with DNA hybridisation: overall rates of DNA similarity (reannealing) did not match with those of SSU rRNA
+    - Ecological differentiation within "species": 3% rule of thumb doesn't capture full picture. 
+    - Descriptive, not a species *concept*
+- Reality of species in bacteria is different (how recombination works), so definitions will be too
+    - No meiosis, so recombination rare (not every single generation)
+    - Recombining happens with wide array of organisms (promiscuous)
+    - Highly localised: adding/dropping individual genes at very small levels
+    - Transfer of non-homologous loci
+    - **Exogenous DNA is a major raw material for adaptation**
+- Basis of bacterial species cohesion
+    - Extinction/recolonisation
+        - Metapopulation model, bottlenecks
+    - Stabilising selection on ecotypes
+- Bacterial species, OK... Are there bacterial communities? From different habitats? On/in different hosts? How tight are associations between species or between species and environment?
+    - Yes, habitat-wise.
+    - Yes, host-specific.
+    - Tight association with host life cycle (transfer of symbionts/microbiota)
+- Microbiome
+    - Microbes that live on and inside a defined habitat (e.g., an organism's body)
+    - Human body has 10x prokaryotic cells than eukaryotic
+    - *C. difficile* is natural part of microbiome, but in hospitals the antibiotics around affect other bacteria that hold it down in normal condition. Fecal transplants help with this more than antibiotics.
+- Holobiont
+    - A host and its microbiota. Multicellular eukaryotes are not and never have been autonomous organisms.
+    - **Hologenome**: the complete genetic content of the host genome, its organelles, and its microbiome
+    - Host's nuclear genome inherited *a la* Mendel, but microbiome is Lamarckian and often uniparental
+    - So, sources of holobiont variation:
+        - SNPs
+        - Recombination
+        - Gene loss and duplication
+        - **Microbe loss or amplification**
+        - **Horizontal gene transfer**:
+            - Red alga seaweed *Porphyra*: genes that allow humans to digest, usually only found on bacteria that live on the plant, were transferred via HGT to people in Japan, especially mother-child (Hehemann et al 2010)
+    - WRT evolution: equate genes in genome with microbes in microbiome
+    - How many host-associated microbes cause speciation and what are they? Microbe-free (antibiotic) versions of same old experiments
+        - Brucker & Bordenstein 2013: *Nasonia* wasps and microbiome affecting viability
+    - Phylosymbiosis: microbial community similarity that mirrors the phylogeny of their host (Lim & Bordenstein 2020). Dunaj et al 2020 showed phylosymbiosis in ovaries and silk glands but not fat/midgut. 
+    - Cophylogeny: agreement of evolutionary histories of symbionts and their hosts (Mark Hafner LSU; not bacteria, but lice and the host gophers).
+    
+# Macroevolution
+
+**2025-11-20**
+
+- Evolution above the species level
+- Patterns of diversity over time, their drivers, species selection (whether natural selection can occur at level higher than species)
+- Patterns
+    - Mode and tempo of evolution
+    - Speciation *and extinction*
+- Drivers
+    - Key innovations (tied to rates)
+    - Ecological/geographical circumstances
+- Fossil record
+    - Calibrate molecular clock
+    - Transitional forms
+    - Morphological history
+    - Ecological history
+    - Mass extinctions
+        - Terminal Ordovician (444 Ma), Late Devonian (360 Ma), End Permian (251 Ma), End Triassic (200 Ma), Cretaceous-Paleogene (65.5 Ma)
+        - Only 4% of all extinctions; others are all *background extinctions*
+        - Biotic replacement (e.g., ecological): brachiopods vs bivalves
+    - Extinction rates
+    - "Tempo and mode" of speciation
+        - Phyletic gradualism vs punctuated equilibrium (SJ Gould, Eldredge; most morphological change accumulates over short time, then stays quiet for long time; Gould influenced by Marxist ideas)
+        - Punctuated equilibrium aka "evolution by jerks"
+        - Arguments against PE: incomplete fossil record
+        - But examples of adaptive radiation, etc. suggest this may not be all impossible
+        - So the more remarkable pattern is sometimes patterns of *stasis* (at least morphological) in fossil records, despite rapid change elsewhere. 
+        - Examples from Louisiana: horseshoe crab, gar
+        - Genetic evolution rates similar between horseshoe crab and hermit crab, so must be something else about organisation of genome
+- ILS throws off fossil calibrations; also if fossils are old and you're looking at recent events, bias (and converse). 
+- Macroevolution based on phylogenetic trees
+    - Changes in no. of surviving lineages over time (net diversification rate = speciation rate - extinction rate)
+    - Speciation rate: Yule process (birth/speciation only), generates distribution of clade ages and sizes
+    - Extinction rate: contingent on sampling completeness, branch length estimation, constancy rates
+    - In general, our methods are really good at infering topology (branch order), but not good at nailing down branch lengths
+    - Detecting diversification patterns:
+        - Sister clade comparison
+            - Farrell 1998: beetles and angiosperm associations
+        - Lineage-through time (LTT) plots
+            - How many lineages exist at a specific time through time (e.g., Glor 2010)
+            - Slow constant species accumulation vs adaptive radiation
+        - Bromeliads: C3-C4 vs tankless--tank-forming
+        - Adaptive radiation: short early branches and long later branches
+            - Antarctic icefish: anti-freeze glycoproteins (hyperdiver) prevent growth of ice crystals
+        - BAMM: Bayesian Analysis of Macroevolutionary Mixtures (Rabosky 2014). Like cluster analysis, but this identifies how many different groups of differential diversification rates exist in your tree.
+            - Likelihood ignoers rate shifts on extinct lineages, biases estimates of extinction probabilities. CPP prior used for distribution of rate shifts over tree are too sensitive. (Moore et al 2016).
+- Species selection
+    - Diversification of clades caused by heritable species-level traits
+    - Rabosky & McCune 2010?
+    - Problem was need trait that's species-level, not individual-level. e.g., polymorphism, *range size*

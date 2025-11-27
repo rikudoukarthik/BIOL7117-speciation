@@ -320,3 +320,70 @@ Found low gene flow between overlapping ecotypes in low shore, but I wonder how 
 - White mantle evolved adaptively (selection involved)
 - Story: originally, all members of *hispanica* complex had black throat and mantle, then white mantle evolved in *melanoleuca* through upstream mutations fixed by positive selection. Later, new variation introduced white throat in *melanoleuca*, which then introgressed into *hispanica* (along with white mantle, LD) and maintained as balanced polymorphism. In *pleschanka*, introgression introduced white throat but not white mantle (selected against).
 - Overall, introgression shuffled plumage colouration and led to convergent evolution.
+
+# Discussion: Microbes and microbiomes
+
+## Wang et al 2021
+
+- Microbiome is a source of phenotypic and evolutionary novelty for hosts, since they can respond more rapidly to new selective pressures and therefore provide fitness benefits. But drastic changes in microbiome can also be problematic, and lead to dysbiosis. 
+- *Nasonia vitripennis* grown over 85 generations under subtoxic levels of atrazine herbicide(!), and monitored both microbiome composition and function, and host physiology and genetic differentiation.
+- 16S rRNA gene amplicon sequencing of microbiome of two wasp populations over 85 generations, for genetic divergence. 
+- qPCR for monitoring bacterial density.
+- After 24 generations, both groups split into two subpopulations then fed opposite diets. 
+- Exposure mediated adaptive changes within the microbiome (efficient metabolism of atrazine) leading to resistance, lasting for more than 11 generations after removal of atrazine.
+- Untargeted metabolomic analysis by LC-MS, to understand how exactly microbiome mediated host resistance to atrazine. Found that hosts with the evolved microbiome more efficiently detoxified atrazine. 
+- F~ST~ different in two populations, suggesting gradual genetic divergence, and this was corroborated by ADMIXTURE plot which identified two clusters.
+- Immune challenge experiments, to test host immunity differences: heat-inactivated bacteria into wasp pupae, then used proportion of eclosed adults in 120 h as inverse measure of immune activation (induced response would channel energy away from metamorphosis). 
+- Also induced selective pressure on host genome (altered gene expression and immune response). Both host and microbiome adapted, either independently or in synergy.
+- Microbiome transplants to test compatibility without coadaptation. Found an asymmetric host genome--microbiome incompatibility, suggesting that coadaptation was necessary for host to tolerate new microbiome which in turn might have resulted in differential expression and fixation of specific host genes involved in microbiome regulation.
+- Throughout, comparisons with germ-free groups helped attribute differences to microbiome.
+- They identified signatures of selection and adaptation in holobiont and hologenome, at the physiological, transcriptional and genomic levels.
+- Selection may act at multiple levels on any organism: on the host, on the microbiome, or on both in synergy. This means host-microbiome equilibrium is important and changes with adaptation.
+
+## Baiz et al 2024
+
+- What happens to diverged host microbiomes when host populations come in secondary contact?
+    - Extension of DMI: intimate host-bactera relationships could mean deleterious combinations or incompatible interactions.
+    - On the other hand, beneficial mutations can spread via adaptive introgression, and admixture can create opportunities for selection. Intermediate environment in hybrids may allow wider diversity of microbes than each parent alone.
+- Syntopic sister taxa, which have diverged mostly in melanin-based and carotenoid-based pigmentation, but hybridise in contact zones.
+- Aimed to identify species-specific bacteria, quantify differences in gut microbiome diversity, and test whether admixed individuals exhibit disrupted microbiome diversity and whether microbiome variation is correlated with host admixture.
+- 16S amplicon sequencing from faecal samples to quantify gut microbiome diversity (alpha and beta).
+- Extent of host admixture was assessed visually using plumage phenotype, which are known to be nearly perfectly correlated, summarised as a 0--1 proportion based on ordinal scores for 9 individual traits.
+- ASV abundance was higher in admixed individuals more similar to BWWA, which are more yellow (more carotenoids), suggesting that the ASVs may be linked to carotenoid deposition.
+- Overall, found low (but one ASV each) specific-specific divergence in host microbiome, unlike previous study on 15 other warbler species (here, year and locality explained more variation). They speculate that this is due to unique evolutionary history of *Vermivora*: relatively young and high genomic homogenisation due to hybridisation. Or, lack of habitat divergence could overpower species-specific effects.
+- GWWA had *Rickettsia* ASV, which showed evidence of additive genetic effects correlated with plumage score, with preference for more GWWA ancestry. On the other hand, BWWA had *Kineococcus* ASV, which is orange and encodes for carotenoid synthesis genes, and seemed to have high affinity for non-admixed BWWAs. Gut microbiome variation (abundance of ASVs) is associated with degree of host admixture.
+- But admixed individuals did not host both species-specific parental ASVs, and abundance of some ASVs is correlated with degree of admixture. 
+- No sign of dysbiosis.
+
+# Discussion: Macroevolution
+
+## Heuer et al 2024
+
+- Carnivores have extensive colour polymorphism. This is thought to confer several evolutionary advantages, especially in colonising new niches.
+- Tested predictions that speciation rates are higher in polymorphic lineages, and their divergence times are more recent, and that within closely related groups the polymorphic lineages are ancestral and monomorphic are dervied.
+- They also checked whether greater speciation rates are associated with niche breadth (no. of occupied habitats and range size).
+- Used phylogenetic comparative methods using recent Carnivora phylogenetic, time-calibrated supertree. 
+- Tip branch lengths compared, then Wilcoxon rank tests and Pearson's contingency coefficients.
+- Speciation rates estimated using Diversitree package, with multiple models: binary-state speciation and extinction (BiSSE), HiSSE, QuaSSE, SecSSE.
+- Tested niche breadth using Wilcoxon and Kruskal-Wallis tests, then somehow 95% CI and t-test...? PGLMMs with everything as random effect, then R^2^...? All stats are so fishy.
+- Branch lengths not significantly different between two; polymorphic carnivores higher speciation rate than monomorphic; niche breadth not important.
+- Other selective forces like predator-prey coevolution could be at play. (Suggestions of pleiotropy.)
+- Suggest that polymorphism could facilitate sympatric speciation via temporal niche segregation or assortative mating.
+
+## Title et al 2024
+
+- Evolution of snakes within scaled reptiles is interesting, because distinct from lizards in several ways.
+- Simpsonian macroevolution is when major biodiversity expansions occur through qualitative phase shifts into new adaptive zones, and snakes potentially align with this.
+- These phase shifts can be considered as singularities: rapid changes along many axes that appear to have been instantaneous at geological time scales, but also those that are unpredictable from prior states.
+- Authors explored the role of such phenotypic shifts in the evolutionary diversification of squamate reptiles.
+- Combined their own sequenced phylogeny with GenBank, then time-calibrated the species-level dated phylogenomic tree. 
+- Traits obtained from literature and museum specimens.
+- Index of net innovation, absolute difference in phenotype between focal species and (inferred) ancestral state, separate for each trait. Another index of absolute branch-specific change along branches.
+- TR statistic similar to diversification rate, ordination to identify nodes best explaining species-level phenotypic variation.
+- Snakes have undergone major phenotypic transformations, and have much higher net innovation rates than lizards. This means the origin or early stages of snakes saw massive shifts in traits for feeding, locomotion, sensing; much of the phenotypic variation explained by one singular event early on.
+- Morphological evolution mirrored by ecological trait diversification: trophic niche evolution and diet divergence.
+- Overall, snakes cover wider dietary breadth than lizards, including aquatic and semiaquatic prey. However, diets of individual snake species are narrower than those of lizard species. Snakes also feed much less than lizards on adults of insects.
+- While morphology and diet seem to have diverged in snakes from lizards, climatic niche and life history haven't changed much.
+- Snakes show higher speciation rates than lizards (CLaDS, BAMM), but this is not linked to richness or individual traits. In latter case, potential statistical confound with the singularity at the origin of snakes and the most successful Colubriformes radiation.
+- Snakes are an ongoing radiation characterised by sustained ecological and species (adaptive) diversification, earlier on triggered by one or more singular events.
+- Importance of dramatic shifts in tempo and mode; extrapolating contemporary microevolution through geological time may not give us the right answers.

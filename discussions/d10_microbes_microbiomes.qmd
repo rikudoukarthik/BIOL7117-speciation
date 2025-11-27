@@ -1,0 +1,64 @@
+---
+title: "Microbes and microbiomes"
+bibliography: "../biol7117-speciation.json"
+csl: "../evolution.csl"
+format: 
+  docx:
+    reference-doc: "../word_template.docx"
+    number-sections: false
+    output-file: "Thrikkadeeri_Short04_Microbes.docx"
+---
+
+# Wang et al., 2021
+
+## Motivation for work
+
+<!-- Previous work and gaps -->
+<!-- 3 sentences max -->
+
+Microbes can respond rapidly to novel selective pressures, so microbiomes can provide their hosts crucial fitness benefits, but drastic changes to the microbiome could also be counterproductive and lead to dysbiosis. Host-microbiome interactions are therefore complex and little is known about their co-diversification dynamics. The authors used a model insect, the wasp *Nasonia vitripennis*, to study how a new selective pressure of herbicide exposure alters evolutionary trajectories of both the host and the microbiome.
+
+## Approach and new data
+
+<!-- 3 sentences max -->
+
+They used an experimental evolution approach, growing *N. vitripennis* over 85 generations under either control conditions or subtoxic levels of the herbicide atrazine, and monitoring both the microbiome and the host throughout. After 24 generations, each group was further split into two subpopulations, one of which was fed the opposite diet, but throughout the study, comparisons with germ-free populations helped attribute any differences to the microbiome. They measured microbiome genetic divergence using 16S rRNA gene amplicon sequencing followed by F~ST~ and ADMIXTURE analyses, and bacterial densities using qPCR; untargeted metabolomic analysis by LC-MS indicated mechanisms of microbiome-mediated host resistance to atrazine; and immune challenge and microbiome transplant experiments indicated benefits and importance of co-adaptation. 
+
+## What new data show
+
+<!-- 3 sentences max -->
+
+Exposure to non-lethal levels of atrazine led to adaptive changes within the microbiome, allowing more efficient detoxification of atrazine, in turn conferring resistance to the host. This resistance lasted for more than 11 generations even after the removal of atrazine from the environment, and also created a selective pressure on the host at the genomic, physiological (immune response), and transcriptional (gene expression) levels. Incompatibility between host genome and microbiome was asymmetric, with control wasps being unable to tolerate newly adapted microbiomes, suggesting the importance of co-adaptation and of the host-microbiome equilibrium.  
+
+## Bottom line
+
+<!-- 1 sentence, <= 15 words -->
+
+Selective forces may induce either independent or synergistic adaptation in hosts and microbiomes.
+
+# Baiz et al., 2024
+
+## Motivation for work
+
+<!-- Previous work and gaps -->
+<!-- 3 sentences max -->
+
+When divergent host populations come into secondary contact, divergence in their microbiomes can theoretically be either adaptive (admixture, intermediate environments) or maladaptive (DMIs). Empirical evidence for this is scarce, however, and little is known about species-specificity of microbiomes and the association between microbiome diversity and extent of host admixture. To understand this, the authors studied two bird species in the genus *Vermivora*, a pair of syntopic sister taxa that hybridise in contact zones, and have diverged mostly in pigmentation associated with melanin and carotenoids. 
+
+## Approach and new data
+
+<!-- 3 sentences max -->
+
+Faecal samples were obtained from bagged birds, and species in the microbiome were identified to amplicon sequence variants (ASVs) using 16S amplicon sequencing. Further, alpha and beta diversity of gut microbiomes were calculated using several common metrics. The extent of host admixture was measured visually, using ordinal scores (0--32) for 9 different plumage phenotype characters, collectively summarised as a standardised 0--1 score. 
+
+## What new data show
+
+<!-- 3 sentences max -->
+
+Contrary to expectations, there were low overall levels of species-specific divergence in host microbiomes, perhaps due to the relatively recent divergence of *Vermivora* and genomic homogenisation via hybridisation, or the high similarity in habitat requirements. However, there was no sign of dysbiosis, and *Rickettsia* ASV showed evidence of additive genetic effects correlated with host admixture levels, preferring greater Golden-winged Warbler ancestry, while *Kineococcus* ASV was associated with non-admixed Blue-winged Warblers. The latter encodes for genes in the carotenoid synthesis pathway, which is a crucial point of divergence in that species, suggesting that microbiomes may be responsible for evolutionary divergence in hosts.
+
+## Bottom line
+
+<!-- 1 sentence, <= 15 words -->
+
+Admixture may facilitate host divergence via adaptive selection on microbiome interactions.
