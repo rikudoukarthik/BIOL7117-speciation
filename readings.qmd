@@ -387,3 +387,9 @@ Found low gene flow between overlapping ecotypes in low shore, but I wonder how 
 - Snakes show higher speciation rates than lizards (CLaDS, BAMM), but this is not linked to richness or individual traits. In latter case, potential statistical confound with the singularity at the origin of snakes and the most successful Colubriformes radiation.
 - Snakes are an ongoing radiation characterised by sustained ecological and species (adaptive) diversification, earlier on triggered by one or more singular events.
 - Importance of dramatic shifts in tempo and mode; extrapolating contemporary microevolution through geological time may not give us the right answers.
+
+# Discussion: Macroevolution
+
+**2025-12-02**
+
+- Pianka interesting guy; blew off his leg at 13 with bazooka shell
