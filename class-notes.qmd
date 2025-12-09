@@ -404,13 +404,13 @@ Create recombinant populations by first crossing between extremes for F1 (uninfo
 
 **Issues:** Requires pedigree info (ideally 2 generations of crosses; inbred lines important so that extremes are certainly homozygous), marker map, phenotypes associated with genotypes, need large families of individuals. Again, it has low power to detect many loci of small effect.
     
-## Candidate genes
+### Candidate genes
 
 Start with knowledge, or a fundamental idea, of the genetic basis for a trait in other taxa, and apply it to the new system. e.g., MC1R for melanin in birds. 
 
 But this prior assumption means that this is closed in two ways: it's not open to all variation out there, and it's also close-ended because there is no further path of questioning to follow.
 
-## Reverse genetics
+### Reverse genetics
 
 Start with genomic data---ideally the whole genome---and look for signals of adaptive changes, then work back to see what traits they encode for. This of course has grown recently with the availability large whole genome sequences. Essentially, search the data for footprints of selection using genome scans, outlier analyses, etc.
 
@@ -449,7 +449,7 @@ Issues of $F_{ST}$: **false positives** in outliers that arise from many other k
 
 Structural gene sequences control what is being made, whereas regulatory sequences control when and how much is being made. Most regulation happens at the level of transcription, but some at translation via attachment of siRNAs (small interfering; becomes double stranded when attach to mRNA so no translation).
 
-In crows, colour divergence was not always necessarily due to differences in amino acids but rather in coding regions like introns. Do regulatory changes underlie qualitatively different types of phenotypic change?
+In crows, colour divergence was not always necessarily due to differences in amino acids but rather in non-coding regions like introns. Do regulatory changes underlie qualitatively different types of phenotypic change?
 
 ## *cis* vs *trans* | mechanism of regulation
 
@@ -652,7 +652,7 @@ Why SSU?
 - Practicalities
 - Ancient and essential (ribosome)
 - Highly integrated (>100 co-evolved cellular RNAs and proteins). Should also minimise LGT
-- Lateral/Horizontal Gene Transfer: Movement of genetic material between organisms other than by vertical (parent-to-offspring) transmission.
+    - Lateral/Horizontal Gene Transfer: Movement of genetic material between organisms other than by vertical (parent-to-offspring) transmission.
 
 Problems with SSU rRNA:
 
